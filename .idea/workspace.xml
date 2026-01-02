@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4f4e6-f657-4c45-aa61-36dbcfb2d24c" name="변경" comment="remove Spring Security">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jinouk/lostark/domain/controller/homecontroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/assets/쌀숭이.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/AuctionPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/CharacterInfo.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/LegionPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/MainPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/MariShopPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/src/pages/SimulatorPage.jsx" beforeDir="false" />
+    <list default="true" id="caa4f4e6-f657-4c45-aa61-36dbcfb2d24c" name="변경" comment="edit react design">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +99,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.LostArkApplication.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/me/Desktop/노트북 코딩파일/로아전정/LostArk",
@@ -131,6 +117,8 @@
       <recent name="C:\Users\me\Desktop\노트북 코딩파일\LostArk\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\me\Desktop\노트북 코딩파일\로아전정\LostArk\src\main\resources\static" />
+      <recent name="C:\Users\me\Desktop\노트북 코딩파일\로아전정\LostArk\src\main" />
       <recent name="C:\Users\me\Desktop\노트북 코딩파일\LostArk\src\main\resources" />
     </key>
   </component>
@@ -175,7 +163,8 @@
       <workItem from="1767329275932" duration="74000" />
       <workItem from="1767329456047" duration="405000" />
       <workItem from="1767329902622" duration="6000" />
-      <workItem from="1767330231069" duration="187000" />
+      <workItem from="1767330231069" duration="647000" />
+      <workItem from="1767333533441" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="set">
       <option name="closed" value="true" />
@@ -209,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766981934469</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="edit react design">
+      <option name="closed" value="true" />
+      <created>1767330730158</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1767330730158</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +223,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/test" />
                       </list>
                     </value>
                   </entry>
@@ -247,6 +244,7 @@
     <MESSAGE value="set1" />
     <MESSAGE value="react set" />
     <MESSAGE value="remove Spring Security" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove Spring Security" />
+    <MESSAGE value="edit react design" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit react design" />
   </component>
 </project>
