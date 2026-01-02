@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4f4e6-f657-4c45-aa61-36dbcfb2d24c" name="변경" comment="edit react design">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="caa4f4e6-f657-4c45-aa61-36dbcfb2d24c" name="변경" comment="edit react design 01">
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.LostArkApplication.executor": "Run",
-    "git-widget-placeholder": "test",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/me/Desktop/노트북 코딩파일/로아전정/LostArk",
@@ -165,6 +165,7 @@
       <workItem from="1767329902622" duration="6000" />
       <workItem from="1767330231069" duration="647000" />
       <workItem from="1767333533441" duration="51000" />
+      <workItem from="1767333997834" duration="115000" />
     </task>
     <task id="LOCAL-00001" summary="set">
       <option name="closed" value="true" />
@@ -206,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767330730158</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="edit react design 01">
+      <option name="closed" value="true" />
+      <created>1767334048881</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767334048881</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +232,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/test" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -245,6 +254,7 @@
     <MESSAGE value="react set" />
     <MESSAGE value="remove Spring Security" />
     <MESSAGE value="edit react design" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit react design" />
+    <MESSAGE value="edit react design 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit react design 01" />
   </component>
 </project>
