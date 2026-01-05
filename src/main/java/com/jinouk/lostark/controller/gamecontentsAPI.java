@@ -1,6 +1,6 @@
 package com.jinouk.lostark.controller;
 
-import com.jinouk.lostark.service.charactersAPIService;
+import com.jinouk.lostark.service.gamecontentsAPIService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,10 +8,10 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequiredArgsConstructor
-public class charactersAPI {
+public class gamecontentsAPI {
 
-    private final charactersAPIService service;
+    private final gamecontentsAPIService service;
 
-    @GetMapping("/siblings")
-    public Mono<String> siblings() { return service.getCharacterSiblings(); }
+    @GetMapping("/calendar")
+    public Mono<String> calendar() { return service.getGamecontentsCalendar(); }
 }
