@@ -3,6 +3,7 @@ package com.jinouk.lostark.controller;
 import com.jinouk.lostark.service.armoriesAPIService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
@@ -12,40 +13,40 @@ public class armoriesAPI {
     private final armoriesAPIService service;
 
     @GetMapping("/stat")
-    public Mono<String> stat() {
-        return service.getArmoriesCharacterProfile();
+    public Mono<String> stat(@RequestParam String name) {
+        return service.getArmoriesCharacterProfile(name);
     }
 
     @GetMapping("/equipment")
-    public Mono<String> equipment() {
-        return service.getArmoriesCharacterEquipment();
+    public Mono<String> equipment(@RequestParam String name) {
+        return service.getArmoriesCharacterEquipment(name);
     }
 
     @GetMapping("/avatars")
-    public Mono<String> avatars() { return service.getArmoriesCharacterAvatars();}
+    public Mono<String> avatars(@RequestParam String name) { return service.getArmoriesCharacterAvatars(name);}
 
     @GetMapping("/combat-skills")
-    public Mono<String> combat_skills() { return service.getArmoriesCharacterCombatSkills();}
+    public Mono<String> combat_skills(@RequestParam String name) { return service.getArmoriesCharacterCombatSkills(name);}
 
     @GetMapping("/engravings")
-    public Mono<String> engravings() { return service.getArmoriesCharacterEngravings();}
+    public Mono<String> engravings(@RequestParam String name) { return service.getArmoriesCharacterEngravings(name);}
 
     @GetMapping("/cards")
-    public Mono<String> cards() { return service.getArmoriesCharacterCards();}
+    public Mono<String> cards(@RequestParam String name) { return service.getArmoriesCharacterCards(name);}
 
     @GetMapping("/gems")
-    public Mono<String> gems() { return service.getArmoriesCharacterGems();}
+    public Mono<String> gems(@RequestParam String name) { return service.getArmoriesCharacterGems(name);}
 
     @GetMapping("/colosseums")
-    public Mono<String> colosseums() { return service.getArmoriesCharacterColosseums();}
+    public Mono<String> colosseums(@RequestParam String name) { return service.getArmoriesCharacterColosseums(name);}
 
     @GetMapping("/collectibles")
-    public Mono<String> collectibles() { return service.getArmoriesCharacterCollectibles();}
+    public Mono<String> collectibles(@RequestParam String name) { return service.getArmoriesCharacterCollectibles(name);}
 
     @GetMapping("/arkpassive")
-    public Mono<String> arkpassive() { return service.getArmoriesCharacterArkpassive();}
+    public Mono<String> arkpassive(@RequestParam String name) { return service.getArmoriesCharacterArkpassive(name);}
 
     @GetMapping("/arkgrid")
-    public Mono<String> arkgrid() { return service.getArmoriesCharacterArkgrid();}
+    public Mono<String> arkgrid(@RequestParam String name) { return service.getArmoriesCharacterArkgrid(name);}
 
 }
