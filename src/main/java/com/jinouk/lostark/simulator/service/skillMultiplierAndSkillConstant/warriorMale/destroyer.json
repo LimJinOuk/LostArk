@@ -1,0 +1,82 @@
+[
+  {
+    "skillName": "테라 브레이크",
+    "skillMultiplier": 516.2,
+    "skillConstant": 64919
+  },
+  {
+    "skillName": "빅뱅",
+    "skillMultiplier": 797.5,
+    "skillConstant": 111091
+  },
+  {
+    "skillName": "중수",
+    "skillMultiplier": 57.2,
+    "skillConstant": 8630
+  },
+  {
+    "skillName": "볼텍스 그라비티",
+    "skillMultiplier": 33.8,
+    "skillConstant": 5082
+  },
+  {
+    "skillName": "슈퍼 노바",
+    "skillMultiplier": 312.3,
+    "skillConstant": 46506
+  },
+  {
+    "skillName": "헤비 크러쉬",
+    "skillMultiplier": 9.4,
+    "skillConstant": 1589
+  },
+  {
+    "skillName": "파워 스트라이크",
+    "skillMultiplier": 10.0,
+    "skillConstant": 1492
+  },
+  {
+    "skillName": "파워 숄더",
+    "skillMultiplier": 6.9,
+    "skillConstant": 1163
+  },
+  {
+    "skillName": "인듀어 페인",
+    "skillMultiplier": 11.1,
+    "skillConstant": 2037
+  },
+  {
+    "skillName": "어스 이터",
+    "skillMultiplier": 27.4,
+    "skillConstant": 3115
+  },
+  {
+    "skillName": "풀 스윙",
+    "skillMultiplier": 49.3,
+    "skillConstant": 7599
+  },
+  {
+    "skillName": "퍼펙트 스윙",
+    "skillMultiplier": 33.4,
+    "skillConstant": 5031
+  },
+  {
+    "skillName": "사이즈믹 해머",
+    "skillMultiplier": 30.8,
+    "skillConstant": 4628
+  },
+  {
+    "skillName": "드레드노트",
+    "skillMultiplier": 10.2,
+    "skillConstant": 1876
+  },
+  {
+    "skillName": "어스 스매셔",
+    "skillMultiplier": 16.0,
+    "skillConstant": 2667
+  },
+  {
+    "skillName": "어스 웨이브",
+    "skillMultiplier": 22.3,
+    "skillConstant": 3351
+  }
+]

@@ -1,0 +1,21 @@
+[
+  { "skillName": "가디언의 수호", "skillCoefficient": 290.7, "skillConstant": 40496 },
+  { "skillName": "심판의 창", "skillCoefficient": 446.5, "skillConstant": 62195 },
+  { "skillName": "전장의 방패", "skillCoefficient": 122.0, "skillConstant": 18385 },
+  { "skillName": "실드 대시", "skillCoefficient": 99.4, "skillConstant": 14694 },
+  { "skillName": "스피어 대시", "skillCoefficient": 243.9, "skillConstant": 36078 },
+  { "skillName": "라이징 스피어", "skillCoefficient": 10.7, "skillConstant": 1680 },
+  { "skillName": "대쉬 어퍼 파이어", "skillCoefficient": 46.7, "skillConstant": 7739 },
+  { "skillName": "차지 스팅거", "skillCoefficient": 54.1, "skillConstant": 8169 },
+  { "skillName": "카운터 스피어", "skillCoefficient": 21.0, "skillConstant": 3171 },
+  { "skillName": "스피어 샷", "skillCoefficient": 15.8, "skillConstant": 2380 },
+  { "skillName": "버스트 캐넌", "skillCoefficient": 29.8, "skillConstant": 4492 },
+  { "skillName": "배쉬", "skillCoefficient": 5.3, "skillConstant": 806 },
+  { "skillName": "방패 격동", "skillCoefficient": 7.7, "skillConstant": 1274 },
+  { "skillName": "파이어 불릿", "skillCoefficient": 5.0, "skillConstant": 783 },
+  { "skillName": "방패 밀치기", "skillCoefficient": 3.7, "skillConstant": 554 },
+  { "skillName": "리프 어택", "skillCoefficient": 41.5, "skillConstant": 6247 },
+  { "skillName": "가디언의 낙뢰", "skillCoefficient": 21.8, "skillConstant": 3295 },
+  { "skillName": "방패 돌진", "skillCoefficient": 11.1, "skillConstant": 1685 },
+  { "skillName": "증오의 함성", "skillCoefficient": 10.7, "skillConstant": 1888 }
+]

@@ -1,0 +1,22 @@
+[
+  { "skillName": "연가창식: 은하유성탄", "skillCoefficient": 708.3, "skillConstant": 76039 },
+  { "skillName": "연가창식: 적룡질풍격", "skillCoefficient": 742.1, "skillConstant": 79647 },
+  { "skillName": "적룡필살", "skillCoefficient": 163.6, "skillConstant": 19159 },
+  { "skillName": "연환섬", "skillCoefficient": 17.7, "skillConstant": 2560 },
+  { "skillName": "선풍참혼", "skillCoefficient": 35.7, "skillConstant": 5161 },
+  { "skillName": "일섬각", "skillCoefficient": 13.1, "skillConstant": 2049 },
+  { "skillName": "철량추", "skillCoefficient": 11.3, "skillConstant": 1717 },
+  { "skillName": "반월섬", "skillCoefficient": 71.1, "skillConstant": 10785 },
+  { "skillName": "맹룡열파", "skillCoefficient": 64.4, "skillConstant": 9721 },
+  { "skillName": "회선창", "skillCoefficient": 10.3, "skillConstant": 1401 },
+  { "skillName": "청룡진", "skillCoefficient": 15.4, "skillConstant": 2842 },
+  { "skillName": "나선창", "skillCoefficient": 3.0, "skillConstant": 413 },
+  { "skillName": "사두룡격", "skillCoefficient": 11.9, "skillConstant": 1819 },
+  { "skillName": "굉열파", "skillCoefficient": 24.4, "skillConstant": 3674 },
+  { "skillName": "유성강천", "skillCoefficient": 24.0, "skillConstant": 3619 },
+  { "skillName": "적룡포", "skillCoefficient": 29.9, "skillConstant": 4507 },
+  { "skillName": "맹룡난무", "skillCoefficient": 275.6, "skillConstant": 32319 },
+  { "skillName": "열공참", "skillCoefficient": 19.7, "skillConstant": 2965 },
+  { "skillName": "청룡출수", "skillCoefficient": 20.8, "skillConstant": 3116 },
+  { "skillName": "연가비기", "skillCoefficient": 78.6, "skillConstant": 6334 }
+]

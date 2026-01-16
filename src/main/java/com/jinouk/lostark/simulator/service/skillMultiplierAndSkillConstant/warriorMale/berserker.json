@@ -1,0 +1,72 @@
+[
+  {
+    "skillName": "체인 오브 벤전스",
+    "skillCoefficient": 416.5,
+    "skillConstant": 58124
+  },
+  {
+    "skillName": "버서크 퓨리",
+    "skillCoefficient": 483.2,
+    "skillConstant": 67317
+  },
+  {
+    "skillName": "블러디 러쉬",
+    "skillCoefficient": 170.4,
+    "skillConstant": 27711
+  },
+  {
+    "skillName": "블러드 슬래시",
+    "skillCoefficient": 314.8,
+    "skillConstant": 47173
+  },
+  {
+    "skillName": "피니쉬 스트라이크",
+    "skillCoefficient": 53.5,
+    "skillConstant": 8056
+  },
+  {
+    "skillName": "숄더 차지",
+    "skillCoefficient": 3.2,
+    "skillConstant": 528
+  },
+  {
+    "skillName": "파워 브레이크",
+    "skillCoefficient": 18.2,
+    "skillConstant": 2739
+  },
+  {
+    "skillName": "템페스트 슬래쉬",
+    "skillCoefficient": 35.4,
+    "skillConstant": 5730
+  },
+  {
+    "skillName": "마운틴 크래쉬",
+    "skillCoefficient": 58.2,
+    "skillConstant": 10251
+  },
+  {
+    "skillName": "윈드 블레이드",
+    "skillCoefficient": 9.0,
+    "skillConstant": 1658
+  },
+  {
+    "skillName": "레드 더스트",
+    "skillCoefficient": 22.8,
+    "skillConstant": 3787
+  },
+  {
+    "skillName": "오버드라이브",
+    "skillCoefficient": 40.6,
+    "skillConstant": 6124
+  },
+  {
+    "skillName": "퓨리 메소드",
+    "skillCoefficient": 323.3,
+    "skillConstant": 48440
+  },
+  {
+    "skillName": "헬 블레이드",
+    "skillCoefficient": 29.6,
+    "skillConstant": 4461
+  }
+]

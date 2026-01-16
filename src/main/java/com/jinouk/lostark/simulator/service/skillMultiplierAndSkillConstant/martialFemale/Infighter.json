@@ -1,0 +1,22 @@
+[
+  { "skillName": "용왕불패", "skillCoefficient": 590.1, "skillConstant": 82174 },
+  { "skillName": "진 : 극멸권", "skillCoefficient": 732.5, "skillConstant": 101998 },
+  { "skillName": "투지발산", "skillCoefficient": 6.6, "skillConstant": 1494 },
+  { "skillName": "천지파권", "skillCoefficient": 131.9, "skillConstant": 19743 },
+  { "skillName": "전진의 일격", "skillCoefficient": 7.4, "skillConstant": 1365 },
+  { "skillName": "파쇄의 강타", "skillCoefficient": 6.8, "skillConstant": 1015 },
+  { "skillName": "일망 타진", "skillCoefficient": 21.7, "skillConstant": 3339 },
+  { "skillName": "순간 타격", "skillCoefficient": 8.5, "skillConstant": 1335 },
+  { "skillName": "죽음의 선고", "skillCoefficient": 23.7, "skillConstant": 3571 },
+  { "skillName": "풍신권", "skillCoefficient": 32.9, "skillConstant": 4981 },
+  { "skillName": "파쇄격", "skillCoefficient": 26.1, "skillConstant": 3933 },
+  { "skillName": "초신성 폭발", "skillCoefficient": 32.3, "skillConstant": 4878 },
+  { "skillName": "열혈폭격", "skillCoefficient": 567.7, "skillConstant": 85025 },
+  { "skillName": "용의 강림", "skillCoefficient": 17.1, "skillConstant": 2583 },
+  { "skillName": "난타연권", "skillCoefficient": 19.2, "skillConstant": 2902 },
+  { "skillName": "철포난격", "skillCoefficient": 17.1, "skillConstant": 2584 },
+  { "skillName": "폭렬권", "skillCoefficient": 21.2, "skillConstant": 3200 },
+  { "skillName": "심판", "skillCoefficient": 8.2, "skillConstant": 1221 },
+  { "skillName": "회심의 일격", "skillCoefficient": 16.6, "skillConstant": 2505 },
+  { "skillName": "대지 가르기", "skillCoefficient": 139.7, "skillConstant": 20929 }
+]

@@ -1,0 +1,18 @@
+[
+  { "skillName": "절기 : 진경산수", "skillMultiplier": 552.1, "skillConstant": 76859 },
+  { "skillName": "절기 : 몽유도원", "skillMultiplier": 162.4, "skillConstant": 22631 },
+  { "skillName": "묵법 : 미르 새김", "skillMultiplier": 47.6, "skillConstant": 7134 },
+  { "skillName": "필법 : 콩콩이", "skillMultiplier": 15.7, "skillConstant": 4362 },
+  { "skillName": "묵법 : 난치기", "skillMultiplier": 47.5, "skillConstant": 14055 },
+  { "skillName": "묵법 : 범가르기", "skillMultiplier": 43.3, "skillConstant": 12611 },
+  { "skillName": "묵법 : 미리내", "skillMultiplier": 26.2, "skillConstant": 7268 },
+  { "skillName": "묵법 : 환영의 문", "skillMultiplier": 0.0, "skillConstant": 0 },
+  { "skillName": "묵법 : 해우물", "skillMultiplier": 15.3, "skillConstant": 4229 },
+  { "skillName": "필법 : 올려치기", "skillMultiplier": 11.9, "skillConstant": 3659 },
+  { "skillName": "묵법 : 해그리기", "skillMultiplier": 18.9, "skillConstant": 5751 },
+  { "skillName": "묵법 : 소떼몰이", "skillMultiplier": 198.7, "skillConstant": 29682 },
+  { "skillName": "묵법 : 먹오름", "skillMultiplier": 39.8, "skillConstant": 10927 },
+  { "skillName": "필법 : 한획긋기", "skillMultiplier": 27.9, "skillConstant": 7775 },
+  { "skillName": "묵법 : 옹달샘", "skillMultiplier": 24.2, "skillConstant": 6702 },
+  { "skillName": "묵법 : 두루미나래", "skillMultiplier": 28.0, "skillConstant": 7788 }
+]

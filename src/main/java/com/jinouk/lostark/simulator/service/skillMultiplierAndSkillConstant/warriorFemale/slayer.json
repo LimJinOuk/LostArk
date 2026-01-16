@@ -1,0 +1,18 @@
+[
+  { "skillName": "길로틴", "skillCoefficient": 29.5, "skillConstant": 4422 },
+  { "skillName": "익스큐션", "skillCoefficient": 385.0, "skillConstant": 54479 },
+  { "skillName": "와일드 러시", "skillCoefficient": 7.7, "skillConstant": 1288 },
+  { "skillName": "퍼니싱 드로", "skillCoefficient": 17.6, "skillConstant": 2960 },
+  { "skillName": "페이탈 소드", "skillCoefficient": 34.0, "skillConstant": 5100 },
+  { "skillName": "블러드러스트", "skillCoefficient": 71.1, "skillConstant": 11560 },
+  { "skillName": "브루탈 임팩트", "skillCoefficient": 52.0, "skillConstant": 7786 },
+  { "skillName": "와일드 스톰프", "skillCoefficient": 24.7, "skillConstant": 4516 },
+  { "skillName": "허리케인 소드", "skillCoefficient": 25.8, "skillConstant": 3940 },
+  { "skillName": "라그나 브레이크", "skillCoefficient": 539.1, "skillConstant": 75097 },
+  { "skillName": "볼케이노 이럽션", "skillCoefficient": 40.1, "skillConstant": 6013 },
+  { "skillName": "스파이럴 블레이드", "skillCoefficient": 240.0, "skillConstant": 35960 },
+  { "skillName": "플레임 블레이드", "skillCoefficient": 328.0, "skillConstant": 49143 },
+  { "skillName": "퓨리어스 클로", "skillCoefficient": 32.0, "skillConstant": 4788 },
+  { "skillName": "플래시 블레이드", "skillCoefficient": 7.6, "skillConstant": 1144 },
+  { "skillName": "스피닝 소드", "skillCoefficient": 13.3, "skillConstant": 2252 }
+]

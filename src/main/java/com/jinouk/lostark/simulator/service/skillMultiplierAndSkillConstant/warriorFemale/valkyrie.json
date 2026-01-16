@@ -1,0 +1,21 @@
+[
+  { "skillName": "브뢴디아의 의식", "skillCoefficient": 257.1, "skillConstant": 24865 },
+  { "skillName": "브뢴디아의 계시", "skillCoefficient": 542.7, "skillConstant": 52487 },
+  { "skillName": "신의 증명", "skillCoefficient": 19.1, "skillConstant": 2873 },
+  { "skillName": "계시의 검", "skillCoefficient": 4.4, "skillConstant": 787 },
+  { "skillName": "안식의 비", "skillCoefficient": 106.4, "skillConstant": 17555 },
+  { "skillName": "안식의 재", "skillCoefficient": 60.4, "skillConstant": 9915 },
+  { "skillName": "진리의 선고", "skillCoefficient": 1.2, "skillConstant": 214 },
+  { "skillName": "구원의 터", "skillCoefficient": 2.7, "skillConstant": 402 },
+  { "skillName": "숭고한 맹세", "skillCoefficient": 4.3, "skillConstant": 644 },
+  { "skillName": "구원의 은총", "skillCoefficient": 3.6, "skillConstant": 544 },
+  { "skillName": "숭고한 도약", "skillCoefficient": 10.4, "skillConstant": 1555 },
+  { "skillName": "개벽", "skillCoefficient": 224.4, "skillConstant": 33622 },
+  { "skillName": "간파 베기", "skillCoefficient": 1.5, "skillConstant": 258 },
+  { "skillName": "유성 찌르기", "skillCoefficient": 1.4, "skillConstant": 243 },
+  { "skillName": "전진 찌르기", "skillCoefficient": 3.6, "skillConstant": 668 },
+  { "skillName": "단죄의 성흔", "skillCoefficient": 16.0, "skillConstant": 2400 },
+  { "skillName": "단죄의 속삭임", "skillCoefficient": 16.8, "skillConstant": 2521 },
+  { "skillName": "구원의 은총", "skillCoefficient": 3.6, "skillConstant": 544 },
+  { "skillName": "종언의 빛", "skillCoefficient": 263.5, "skillConstant": 39472 }
+]

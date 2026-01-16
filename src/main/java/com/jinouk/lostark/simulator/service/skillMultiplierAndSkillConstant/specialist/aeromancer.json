@@ -1,0 +1,22 @@
+[
+  { "skillName": "풍랑주의보", "skillMultiplier": 480.9, "skillConstant": 66911 },
+  { "skillName": "나르가의 칼날", "skillMultiplier": 580.9, "skillConstant": 80957 },
+  { "skillName": "여우비", "skillMultiplier": 117.8, "skillConstant": 17715 },
+  { "skillName": "우뢰바람", "skillMultiplier": 351.3, "skillConstant": 52580 },
+  { "skillName": "회오리 걸음", "skillMultiplier": 34.2, "skillConstant": 5142 },
+  { "skillName": "몰아치기", "skillMultiplier": 66.4, "skillConstant": 10008 },
+  { "skillName": "돌개바람", "skillMultiplier": 37.5, "skillConstant": 6824 },
+  { "skillName": "바람송곳", "skillMultiplier": 87.7, "skillConstant": 13213 },
+  { "skillName": "마주바람", "skillMultiplier": 54.8, "skillConstant": 8263 },
+  { "skillName": "칼바람", "skillMultiplier": 51.6, "skillConstant": 7775 },
+  { "skillName": "싹쓸바람", "skillMultiplier": 23.6, "skillConstant": 3596 },
+  { "skillName": "공간가르기", "skillMultiplier": 148.7, "skillConstant": 22192 },
+  { "skillName": "여름 햇살", "skillMultiplier": 271.4, "skillConstant": 40641 },
+  { "skillName": "펼치기", "skillMultiplier": 7.2, "skillConstant": 1204 },
+  { "skillName": "소용돌이", "skillMultiplier": 21.6, "skillConstant": 3249 },
+  { "skillName": "소나기", "skillMultiplier": 23.7, "skillConstant": 3573 },
+  { "skillName": "센바람", "skillMultiplier": 24.6, "skillConstant": 4140 },
+  { "skillName": "날아가기", "skillMultiplier": 19.2, "skillConstant": 2887 },
+  { "skillName": "뙤약볕", "skillMultiplier": 20.3, "skillConstant": 3104 },
+  { "skillName": "눈부신 나날들", "skillMultiplier": 83.8, "skillConstant": 12518 }
+]

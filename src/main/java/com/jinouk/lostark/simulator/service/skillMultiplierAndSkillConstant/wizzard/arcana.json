@@ -1,0 +1,22 @@
+[
+  { "skillName": "프리즈매틱 미러", "skillMultiplier": 385.7, "skillConstant": 38698 },
+  { "skillName": "죽음의 운명", "skillMultiplier": 452.1, "skillConstant": 45339 },
+  { "skillName": "더 데빌", "skillMultiplier": 112.9, "skillConstant": 16917 },
+  { "skillName": "운명의 부름", "skillMultiplier": 10.0, "skillConstant": 1660 },
+  { "skillName": "스크래치 딜러", "skillMultiplier": 4.0, "skillConstant": 748 },
+  { "skillName": "스파이럴 엣지", "skillMultiplier": 8.3, "skillConstant": 1517 },
+  { "skillName": "스트림 오브 엣지", "skillMultiplier": 10.4, "skillConstant": 1981 },
+  { "skillName": "셀레스티얼 레인", "skillMultiplier": 20.7, "skillConstant": 3103 },
+  { "skillName": "포 카드", "skillMultiplier": 20.2, "skillConstant": 3037 },
+  { "skillName": "세렌디피티", "skillMultiplier": 20.8, "skillConstant": 3128 },
+  { "skillName": "시크릿 가든", "skillMultiplier": 17.6, "skillConstant": 2684 },
+  { "skillName": "더 썬", "skillMultiplier": 237.8, "skillConstant": 35648 },
+  { "skillName": "언리미티드 셔플", "skillMultiplier": 35.0, "skillConstant": 5291 },
+  { "skillName": "리턴", "skillMultiplier": 5.5, "skillConstant": 1002 },
+  { "skillName": "신비한 쇄도", "skillMultiplier": 5.7, "skillConstant": 1049 },
+  { "skillName": "다크 리저렉션", "skillMultiplier": 31.4, "skillConstant": 4729 },
+  { "skillName": "이보크", "skillMultiplier": 48.5, "skillConstant": 7307 },
+  { "skillName": "댄싱 오브 스파인플라워", "skillMultiplier": 23.5, "skillConstant": 3539 },
+  { "skillName": "황제", "skillMultiplier": 69.0, "skillConstant": 7480 },
+  { "skillName": "황후의 기사", "skillMultiplier": 120.7, "skillConstant": 12988 }
+]

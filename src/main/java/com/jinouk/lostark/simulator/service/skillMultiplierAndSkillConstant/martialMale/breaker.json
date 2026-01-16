@@ -1,0 +1,22 @@
+[
+  { "skillName": "환무월명권", "skillCoefficient": 379.6, "skillConstant": 52876 },
+  { "skillName": "천문격파", "skillCoefficient": 679.6, "skillConstant": 94687 },
+  { "skillName": "천왕지무", "skillCoefficient": 251.0, "skillConstant": 37783 },
+  { "skillName": "권왕의 진격", "skillCoefficient": 6.1, "skillConstant": 1215 },
+  { "skillName": "비뢰격", "skillCoefficient": 2.4, "skillConstant": 435 },
+  { "skillName": "징벌의 파도", "skillCoefficient": 40.8, "skillConstant": 6117 },
+  { "skillName": "척결", "skillCoefficient": 3.5, "skillConstant": 521 },
+  { "skillName": "휩쓸기", "skillCoefficient": 3.3, "skillConstant": 550 },
+  { "skillName": "비상격", "skillCoefficient": 11.5, "skillConstant": 1740 },
+  { "skillName": "진 파공권", "skillCoefficient": 8.1, "skillConstant": 1221 },
+  { "skillName": "파천섬광", "skillCoefficient": 41.2, "skillConstant": 6220 },
+  { "skillName": "수라결 기본 공격", "skillCoefficient": 30.2, "skillConstant": 4523 },
+  { "skillName": "성운멸쇄권", "skillCoefficient": 311.0, "skillConstant": 46586 },
+  { "skillName": "백렬권", "skillCoefficient": 12.6, "skillConstant": 2317 },
+  { "skillName": "금강난격", "skillCoefficient": 6.0, "skillConstant": 1375 },
+  { "skillName": "대지파쇄권", "skillCoefficient": 21.6, "skillConstant": 3248 },
+  { "skillName": "연의붕권", "skillCoefficient": 15.6, "skillConstant": 2350 },
+  { "skillName": "천기심권", "skillCoefficient": 21.1, "skillConstant": 3177 },
+  { "skillName": "권왕십이식 : 낙화", "skillCoefficient": 26.3, "skillConstant": 3963 },
+  { "skillName": "권왕십이식 : 풍랑", "skillCoefficient": 12.5, "skillConstant": 1887 }
+]

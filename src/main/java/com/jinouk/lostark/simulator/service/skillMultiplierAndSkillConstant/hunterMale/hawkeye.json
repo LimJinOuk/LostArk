@@ -1,0 +1,19 @@
+[
+  { "skillName": "펜리르의 전령", "skillMultiplier": 407.0, "skillConstant": 56703 },
+  { "skillName": "골든 아이", "skillMultiplier": 432.4, "skillConstant": 60239 },
+  { "skillName": "실버호크 소환", "skillMultiplier": 6.6, "skillConstant": 997 },
+  { "skillName": "폭풍의 날개", "skillMultiplier": 15.5, "skillConstant": 2333 },
+  { "skillName": "최후의 습격", "skillMultiplier": 44.9, "skillConstant": 6769 },
+  { "skillName": "락온", "skillMultiplier": 306.9, "skillConstant": 45972 },
+  { "skillName": "아토믹 애로우", "skillMultiplier": 14.2, "skillConstant": 2462 },
+  { "skillName": "이동 베기", "skillMultiplier": 7.7, "skillConstant": 1344 },
+  { "skillName": "블레이드 스톰", "skillMultiplier": 13.0, "skillConstant": 2464 },
+  { "skillName": "차징 샷", "skillMultiplier": 58.8, "skillConstant": 8860 },
+  { "skillName": "샤프 슈터", "skillMultiplier": 31.0, "skillConstant": 4683 },
+  { "skillName": "급소 베기", "skillMultiplier": 7.5, "skillConstant": 1454 },
+  { "skillName": "호크 샷", "skillMultiplier": 34.1, "skillConstant": 5147 },
+  { "skillName": "스나이프", "skillMultiplier": 35.0, "skillConstant": 5276 },
+  { "skillName": "실버호크 강습", "skillMultiplier": 54.4, "skillConstant": 8419 },
+  { "skillName": "스파이럴 애로우", "skillMultiplier": 420.9, "skillConstant": 63035 },
+  { "skillName": "크레모아 지뢰", "skillMultiplier": 12.9, "skillConstant": 1954 }
+]

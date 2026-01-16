@@ -1,0 +1,21 @@
+[
+  { "skillName": "지진 방아", "skillMultiplier": 728.4, "skillConstant": 70434 },
+  { "skillName": "우당탕탕 대난투", "skillMultiplier": 832.9, "skillConstant": 91099 },
+  { "skillName": "금술 : 찢 곰", "skillMultiplier": 217.7, "skillConstant": 32614 },
+  { "skillName": "금술 : 여우 별 소나기", "skillMultiplier": 210.8, "skillConstant": 31587 },
+  { "skillName": "한방 곰", "skillMultiplier": 177.8, "skillConstant": 26637 },
+  { "skillName": "얍!", "skillMultiplier": 2.4, "skillConstant": 397 },
+  { "skillName": "꼬리 바람", "skillMultiplier": 9.5, "skillConstant": 1570 },
+  { "skillName": "까마귀 대소동", "skillMultiplier": 5.1, "skillConstant": 937 },
+  { "skillName": "여우 꼬리물기", "skillMultiplier": 44.9, "skillConstant": 6755 },
+  { "skillName": "여우 불꽃", "skillMultiplier": 40.3, "skillConstant": 6024 },
+  { "skillName": "여우 구슬", "skillMultiplier": 21.2, "skillConstant": 3186 },
+  { "skillName": "여우 폴짝", "skillMultiplier": 76.1, "skillConstant": 11519 },
+  { "skillName": "바위 곰", "skillMultiplier": 38.2, "skillConstant": 5732 },
+  { "skillName": "두둥실 여우곰", "skillMultiplier": 386.6, "skillConstant": 57909 },
+  { "skillName": "할퀴기", "skillMultiplier": 6.4, "skillConstant": 881 },
+  { "skillName": "데굴방아", "skillMultiplier": 9.7, "skillConstant": 1781 },
+  { "skillName": "마구 쪼기", "skillMultiplier": 10.4, "skillConstant": 1539 },
+  { "skillName": "빙글빙글 꽝", "skillMultiplier": 62.1, "skillConstant": 9305 },
+  { "skillName": "슈웅 곰", "skillMultiplier": 24.6, "skillConstant": 3682 }
+]

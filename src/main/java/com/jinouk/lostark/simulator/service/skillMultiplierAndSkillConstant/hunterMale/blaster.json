@@ -1,0 +1,23 @@
+[
+  { "skillName": "미사일 포화", "skillCoefficient": 488.0, "skillConstant": 67995 },
+  { "skillName": "헤비 터렛", "skillCoefficient": 753.4, "skillConstant": 93650 },
+  { "skillName": "포격 : 곡사포", "skillCoefficient": 39.3, "skillConstant": 5930 },
+  { "skillName": "포격 : 집중포화", "skillCoefficient": 85.3, "skillConstant": 12853 },
+  { "skillName": "포격 : 에너지 포", "skillCoefficient": 87.3, "skillConstant": 13178 },
+  { "skillName": "포격 : 절대 영역", "skillCoefficient": 0.0, "skillConstant": 3 },
+  { "skillName": "포격 : 스틸 레인", "skillCoefficient": 285.4, "skillConstant": 49083 },
+  { "skillName": "강화탄", "skillCoefficient": 10.8, "skillConstant": 1973 },
+  { "skillName": "고압열탄", "skillCoefficient": 41.7, "skillConstant": 6970 },
+  { "skillName": "화염방사기", "skillCoefficient": 62.7, "skillConstant": 10534 },
+  { "skillName": "공중 폭격", "skillCoefficient": 21.6, "skillConstant": 3291 },
+  { "skillName": "중력 폭발", "skillCoefficient": 41.2, "skillConstant": 6187 },
+  { "skillName": "전방 포격", "skillCoefficient": 10.8, "skillConstant": 1992 },
+  { "skillName": "미사일 폭격", "skillCoefficient": 27.7, "skillConstant": 4162 },
+  { "skillName": "에너지 필드", "skillCoefficient": 0.0, "skillConstant": -3 },
+  { "skillName": "A.C.T 호출", "skillCoefficient": 22.3, "skillConstant": 3120 },
+  { "skillName": "미사일 런처", "skillCoefficient": 319.4, "skillConstant": 47373 },
+  { "skillName": "네이팜탄", "skillCoefficient": 18.4, "skillConstant": 3383 },
+  { "skillName": "다연장로켓포", "skillCoefficient": 30.5, "skillConstant": 4588 },
+  { "skillName": "점프 포격", "skillCoefficient": 6.7, "skillConstant": 1230 },
+  { "skillName": "포화 공격", "skillCoefficient": 300.8, "skillConstant": 45067 }
+]

@@ -1,0 +1,16 @@
+[
+  { "skillName": "극의 : 폭열각", "skillCoefficient": 603.6, "skillConstant": 84085 },
+  { "skillName": "극의 : 진천각", "skillCoefficient": 553.0, "skillConstant": 77042 },
+  { "skillName": "전진패도격", "skillCoefficient": 328.9, "skillConstant": 49272 },
+  { "skillName": "붕천퇴", "skillCoefficient": 3.9, "skillConstant": 718 },
+  { "skillName": "운룡각", "skillCoefficient": 14.8, "skillConstant": 2628 },
+  { "skillName": "번개의 속삭임", "skillCoefficient": 30.5, "skillConstant": 5374 },
+  { "skillName": "방천격", "skillCoefficient": 44.6, "skillConstant": 6536 },
+  { "skillName": "오의 : 호왕출현", "skillCoefficient": 32.7, "skillConstant": 4923 },
+  { "skillName": "오의 : 풍신초래", "skillCoefficient": 31.5, "skillConstant": 4761 },
+  { "skillName": "오의 : 폭쇄진", "skillCoefficient": 46.1, "skillConstant": 6944 },
+  { "skillName": "오의 : 뇌호격", "skillCoefficient": 25.3, "skillConstant": 3806 },
+  { "skillName": "오의 : 청염각", "skillCoefficient": 275.2, "skillConstant": 41227 },
+  { "skillName": "월섬각", "skillCoefficient": 10.2, "skillConstant": 1597 },
+  { "skillName": "격호각", "skillCoefficient": 11.0, "skillConstant": 2617 }
+]

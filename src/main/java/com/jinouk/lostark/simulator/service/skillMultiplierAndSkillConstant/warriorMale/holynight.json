@@ -1,0 +1,20 @@
+[
+  { "skillName": "알리사노스의 빛", "skillCoefficient": 708.1, "skillConstant": 98648 },
+  { "skillName": "알리사노스의 심판", "skillCoefficient": 291.0, "skillConstant": 40541 },
+  { "skillName": "신성한 정의", "skillCoefficient": 73.5, "skillConstant": 20387 },
+  { "skillName": "집행자의 검", "skillCoefficient": 59.6, "skillConstant": 17757 },
+  { "skillName": "신성검", "skillCoefficient": 54.3, "skillConstant": 16592 },
+  { "skillName": "빛의 충격", "skillCoefficient": 3.3, "skillConstant": 1130 },
+  { "skillName": "심판의 빛", "skillCoefficient": 7.5, "skillConstant": 2537 },
+  { "skillName": "신의 율법", "skillCoefficient": 11.6, "skillConstant": 3923 },
+  { "skillName": "신의 분노", "skillCoefficient": 14.3, "skillConstant": 3994 },
+  { "skillName": "신성한 보호", "skillCoefficient": 0.0, "skillConstant": 3 },
+  { "skillName": "천상의 축복", "skillCoefficient": 13.8, "skillConstant": 3831 },
+  { "skillName": "판결 집행", "skillCoefficient": 215.7, "skillConstant": 59790 },
+  { "skillName": "섬광 찌르기", "skillCoefficient": 6.7, "skillConstant": 2277 },
+  { "skillName": "섬광 베기", "skillCoefficient": 12.5, "skillConstant": 3489 },
+  { "skillName": "처단", "skillCoefficient": 16.2, "skillConstant": 4665 },
+  { "skillName": "돌진", "skillCoefficient": 5.9, "skillConstant": 1490 },
+  { "skillName": "질주 베기", "skillCoefficient": 11.9, "skillConstant": 3301 },
+  { "skillName": "정의 집행", "skillCoefficient": 17.8, "skillConstant": 4943 }
+]

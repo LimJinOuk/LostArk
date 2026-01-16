@@ -1,0 +1,21 @@
+[
+  { "skillName": "엔비스카의 권능", "skillMultiplier": 380.1, "skillConstant": 52959 },
+  { "skillName": "종말의 부름", "skillMultiplier": 35.7, "skillConstant": 4969 },
+  { "skillName": "마력 방출", "skillMultiplier": 4.8, "skillConstant": 275 },
+  { "skillName": "라바 블래스트", "skillMultiplier": 294.9, "skillConstant": 43886 },
+  { "skillName": "블레이즈", "skillMultiplier": 13.7, "skillConstant": 2064 },
+  { "skillName": "혹한의 부름", "skillMultiplier": 26.2, "skillConstant": 4568 },
+  { "skillName": "인페르노", "skillMultiplier": 22.4, "skillConstant": 3380 },
+  { "skillName": "천벌", "skillMultiplier": 56.3, "skillConstant": 8496 },
+  { "skillName": "서릿발", "skillMultiplier": 10.0, "skillConstant": 1672 },
+  { "skillName": "아이스 애로우", "skillMultiplier": 27.4, "skillConstant": 4132 },
+  { "skillName": "익스플로전", "skillMultiplier": 45.1, "skillConstant": 6824 },
+  { "skillName": "종말의 날", "skillMultiplier": 53.5, "skillConstant": 8080 },
+  { "skillName": "러닝 글레이셔", "skillMultiplier": 220.6, "skillConstant": 32821 },
+  { "skillName": "에너지 방출", "skillMultiplier": 11.4, "skillConstant": 1704 },
+  { "skillName": "혹한의 부름", "skillMultiplier": 26.7, "skillConstant": 4946 },
+  { "skillName": "돌풍", "skillMultiplier": 10.5, "skillConstant": 1437 },
+  { "skillName": "숭고한 해일", "skillMultiplier": 18.6, "skillConstant": 2899 },
+  { "skillName": "리버스 그래비티", "skillMultiplier": 31.2, "skillConstant": 4700 },
+  { "skillName": "엘리멘탈 리액트", "skillMultiplier": 28.5, "skillConstant": 4302 }
+]

@@ -1,0 +1,23 @@
+[
+  { "skillName": "황혼의 눈", "skillCoefficient": 530.5, "skillConstant": 67235 },
+  { "skillName": "대구경 폭발 탄환", "skillCoefficient": 442.6, "skillConstant": 56094 },
+  { "skillName": "세븐 샷건", "skillCoefficient": 430.9, "skillConstant": 45130 },
+  { "skillName": "AT02 유탄", "skillCoefficient": 13.8, "skillConstant": 2166 },
+  { "skillName": "퀵 스텝", "skillCoefficient": 3.7, "skillConstant": 459 },
+  { "skillName": "플라즈마 불릿", "skillCoefficient": 4.6, "skillConstant": 605 },
+  { "skillName": "민첩한 사격", "skillCoefficient": 3.8, "skillConstant": 465 },
+  { "skillName": "피스키퍼", "skillCoefficient": 7.3, "skillConstant": 912 },
+  { "skillName": "레인 오브 불릿", "skillCoefficient": 45.0, "skillConstant": 6630 },
+  { "skillName": "샷건 연사", "skillCoefficient": 32.0, "skillConstant": 4385 },
+  { "skillName": "절멸의 탄환", "skillCoefficient": 38.4, "skillConstant": 5267 },
+  { "skillName": "마탄의 사수", "skillCoefficient": 101.4, "skillConstant": 13945 },
+  { "skillName": "대재앙", "skillCoefficient": 134.2, "skillConstant": 20243 },
+  { "skillName": "포커스 샷", "skillCoefficient": 38.2, "skillConstant": 5235 },
+  { "skillName": "타겟 다운", "skillCoefficient": 44.2, "skillConstant": 6057 },
+  { "skillName": "불스 아이", "skillCoefficient": 294.1, "skillConstant": 30802 },
+  { "skillName": "나선의 추적자", "skillCoefficient": 5.4, "skillConstant": 663 },
+  { "skillName": "데스파이어", "skillCoefficient": 15.6, "skillConstant": 1931 },
+  { "skillName": "스파이럴 플레임", "skillCoefficient": 36.5, "skillConstant": 5345 },
+  { "skillName": "퍼펙트 샷", "skillCoefficient": 33.6, "skillConstant": 4758 },
+  { "skillName": "로즈 블로섬", "skillCoefficient": 422.9, "skillConstant": 44402 }
+]

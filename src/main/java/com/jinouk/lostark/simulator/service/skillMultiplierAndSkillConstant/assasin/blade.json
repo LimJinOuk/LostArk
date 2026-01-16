@@ -1,0 +1,19 @@
+[
+  { "skillName": "버스트", "skillMultiplier": 47.1, "skillConstant": 7108 },
+  { "skillName": "플래시 블링크", "skillMultiplier": 389.5, "skillConstant": 54268 },
+  { "skillName": "블레이드 어설트", "skillMultiplier": 650.8, "skillConstant": 90620 },
+  { "skillName": "데스 슬래쉬", "skillMultiplier": 147.8, "skillConstant": 22126 },
+  { "skillName": "소울 앱소버", "skillMultiplier": 42.8, "skillConstant": 6457 },
+  { "skillName": "데스 센텐스", "skillMultiplier": 18.7, "skillConstant": 2821 },
+  { "skillName": "트윈 쉐도우", "skillMultiplier": 13.7, "skillConstant": 2065 },
+  { "skillName": "헤드 헌트", "skillMultiplier": 6.2, "skillConstant": 1039 },
+  { "skillName": "터닝 슬래쉬", "skillMultiplier": 33.9, "skillConstant": 5193 },
+  { "skillName": "마엘스톰", "skillMultiplier": 6.4, "skillConstant": 1178 },
+  { "skillName": "블리츠 러시", "skillMultiplier": 28.5, "skillConstant": 4302 },
+  { "skillName": "보이드 스트라이크", "skillMultiplier": 36.2, "skillConstant": 6125 },
+  { "skillName": "서프라이즈 어택", "skillMultiplier": 8.0, "skillConstant": 1473 },
+  { "skillName": "윈드 컷", "skillMultiplier": 10.9, "skillConstant": 1633 },
+  { "skillName": "스핀 커터", "skillMultiplier": 10.6, "skillConstant": 1941 },
+  { "skillName": "블레이드 댄스", "skillMultiplier": 11.6, "skillConstant": 1751 },
+  { "skillName": "어스 슬래쉬", "skillMultiplier": 28.3, "skillConstant": 5221 }
+]

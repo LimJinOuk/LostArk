@@ -1,0 +1,19 @@
+[
+  { "skillName": "심포니아", "skillMultiplier": 159.9, "skillConstant": 16046 },
+  { "skillName": "오라토리오", "skillMultiplier": 574.1, "skillConstant": 57505 },
+  { "skillName": "아리아", "skillMultiplier": 89.3, "skillConstant": 24747 },
+  { "skillName": "소나티네", "skillMultiplier": 9.3, "skillConstant": 3173 },
+  { "skillName": "빛의 광시곡", "skillMultiplier": 10.7, "skillConstant": 3627 },
+  { "skillName": "윈드 오브 뮤직", "skillMultiplier": 4.3, "skillConstant": 1462 },
+  { "skillName": "음파 진동", "skillMultiplier": 19.4, "skillConstant": 5384 },
+  { "skillName": "리듬 벅샷", "skillMultiplier": 5.0, "skillConstant": 1700 },
+  { "skillName": "사운드 홀릭", "skillMultiplier": 9.2, "skillConstant": 3039 },
+  { "skillName": "천상의 연주", "skillMultiplier": 4.6, "skillConstant": 1270 },
+  { "skillName": "수호의 연주", "skillMultiplier": 0.0, "skillConstant": 3 },
+  { "skillName": "비바체", "skillMultiplier": 143.0, "skillConstant": 39628 },
+  { "skillName": "불협화음", "skillMultiplier": 5.1, "skillConstant": 1763 },
+  { "skillName": "스티그마", "skillMultiplier": 15.2, "skillConstant": 5141 },
+  { "skillName": "폭풍의 서곡", "skillMultiplier": 11.9, "skillConstant": 3556 },
+  { "skillName": "죽음의 전주곡", "skillMultiplier": 14.2, "skillConstant": 4840 },
+  { "skillName": "전투의 찬가 3", "skillMultiplier": 72.1, "skillConstant": 19990 }
+]

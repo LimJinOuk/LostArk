@@ -1,0 +1,18 @@
+[
+  { "skillName": "월식 : 카덴차", "skillMultiplier": 476.4, "skillConstant": 66405 },
+  { "skillName": "일식 : 레퀴엠", "skillMultiplier": 435.4, "skillConstant": 60650 },
+  { "skillName": "나이트메어", "skillMultiplier": 14.4, "skillConstant": 2175 },
+  { "skillName": "쉐도우 나이프", "skillMultiplier": 238.2, "skillConstant": 35680 },
+  { "skillName": "쉐도우 닷", "skillMultiplier": 13.4, "skillConstant": 2259 },
+  { "skillName": "디스토션", "skillMultiplier": 7.5, "skillConstant": 1121 },
+  { "skillName": "쉐도우 스톰", "skillMultiplier": 20.9, "skillConstant": 3122 },
+  { "skillName": "쉐도우 트랩", "skillMultiplier": 5.7, "skillConstant": 1060 },
+  { "skillName": "라스트 그래피티", "skillMultiplier": 36.5, "skillConstant": 5513 },
+  { "skillName": "레이지 스피어", "skillMultiplier": 24.1, "skillConstant": 3635 },
+  { "skillName": "댄싱 오브 퓨리", "skillMultiplier": 42.6, "skillConstant": 6421 },
+  { "skillName": "사일런트 스매셔", "skillMultiplier": 20.4, "skillConstant": 3076 },
+  { "skillName": "페이탈 스텝", "skillMultiplier": 13.3, "skillConstant": 2005 },
+  { "skillName": "피니쉬 스텝", "skillMultiplier": 178.7, "skillConstant": 26771 },
+  { "skillName": "콜 오브 나이프", "skillMultiplier": 9.9, "skillConstant": 1828 },
+  { "skillName": "블랙 미스트", "skillMultiplier": 43.7, "skillConstant": 7960 }
+]

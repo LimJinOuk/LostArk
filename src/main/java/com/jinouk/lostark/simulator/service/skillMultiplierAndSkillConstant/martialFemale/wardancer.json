@@ -1,0 +1,18 @@
+[
+  { "skillName": "극의 : 일순난격", "skillCoefficient": 514.5, "skillConstant": 71686 },
+  { "skillName": "극의 : 무극권", "skillCoefficient": 423.4, "skillConstant": 58969 },
+  { "skillName": "창천각", "skillCoefficient": 215.4, "skillConstant": 32287 },
+  { "skillName": "붕천퇴", "skillCoefficient": 8.0, "skillConstant": 1413 },
+  { "skillName": "뇌명각", "skillCoefficient": 29.9, "skillConstant": 4979 },
+  { "skillName": "섬열란아", "skillCoefficient": 15.5, "skillConstant": 2329 },
+  { "skillName": "선풍용류각", "skillCoefficient": 24.5, "skillConstant": 3688 },
+  { "skillName": "바람의 속삭임", "skillCoefficient": 0.0, "skillConstant": 3 },
+  { "skillName": "용맹의 포효", "skillCoefficient": 12.9, "skillConstant": 2276 },
+  { "skillName": "방천격", "skillCoefficient": 32.9, "skillConstant": 4971 },
+  { "skillName": "내공연소", "skillCoefficient": 107.9, "skillConstant": 16426 },
+  { "skillName": "오의 : 금뢰각", "skillCoefficient": 147.4, "skillConstant": 22089 },
+  { "skillName": "오의 : 나선경", "skillCoefficient": 19.1, "skillConstant": 2882 },
+  { "skillName": "오의 : 화룡천상", "skillCoefficient": 27.6, "skillConstant": 4155 },
+  { "skillName": "오의 : 풍신초래", "skillCoefficient": 19.8, "skillConstant": 2980 },
+  { "skillName": "오의 : 창룡패황권", "skillCoefficient": 36.6, "skillConstant": 5517 }
+]

@@ -1,0 +1,18 @@
+[
+  { "skillName": "데스 브링어", "skillMultiplier": 499.9, "skillConstant": 69615 },
+  { "skillName": "디 엔드", "skillMultiplier": 612.4, "skillConstant": 85289 },
+  { "skillName": "데스 피날레", "skillMultiplier": 754.9, "skillConstant": 59113 },
+  { "skillName": "루나틱 엣지", "skillMultiplier": 34.8, "skillConstant": 6073 },
+  { "skillName": "스펙트럴 코핀", "skillMultiplier": 30.3, "skillConstant": 4849 },
+  { "skillName": "데스 오더", "skillMultiplier": 19.3, "skillConstant": 3200 },
+  { "skillName": "아스타로스", "skillMultiplier": 30.6, "skillConstant": 4585 },
+  { "skillName": "소울 드레인", "skillMultiplier": 14.7, "skillConstant": 2268 },
+  { "skillName": "베스티지", "skillMultiplier": 23.9, "skillConstant": 3577 },
+  { "skillName": "소울 시너스", "skillMultiplier": 27.8, "skillConstant": 4157 },
+  { "skillName": "길로틴 스윙", "skillMultiplier": 36.0, "skillConstant": 5405 },
+  { "skillName": "하베스트", "skillMultiplier": 24.3, "skillConstant": 3625 },
+  { "skillName": "러스트 네일", "skillMultiplier": 4.8, "skillConstant": 798 },
+  { "skillName": "리탈 스피닝", "skillMultiplier": 30.5, "skillConstant": 4555 },
+  { "skillName": "스레싱", "skillMultiplier": 11.3, "skillConstant": 2045 },
+  { "skillName": "영혼 참수", "skillMultiplier": 123.7, "skillConstant": 18559 }
+]
