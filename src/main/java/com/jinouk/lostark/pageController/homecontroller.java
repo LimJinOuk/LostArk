@@ -29,4 +29,8 @@ public class homecontroller {
     public String auction(){
         return "forward:/index.html";
     }
+    @GetMapping("/rankingPage")
+    public String ranking(){
+        return "forward:/index.html";
+    }
 }
