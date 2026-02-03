@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jinouk.lostark.dto.response.ArkPassiveResponse;
 import com.jinouk.lostark.dto.response.EquipmentResponse;
 import com.jinouk.lostark.dto.response.StatResponse;
-import com.jinouk.lostark.dto.updateRankingDto;
+import com.jinouk.lostark.dto.rankingDto;
 
 import com.jinouk.lostark.entity.characterEntity;
 import com.jinouk.lostark.repository.rankingRepository;
@@ -31,14 +31,14 @@ public class rankingUpdateService {
 
 
     //메인 메서드: API에서 데이터를 가져와 가공한 후 DB에 저장합니다.
-    public Mono<updateRankingDto> processCharacterUpdate(String name) {
+    public Mono<rankingDto> processCharacterUpdate(String name) {
         return getUpdatedRanking(name) // 1. 아래 정의된 API 호출 및 DTO 변환 로직 실행
                 .flatMap(this::updateOrInsertToDb); // 2. 가공된 DTO를 DB에 반영
     }
 
 
     //[DB 저장 로직] DTO를 엔티티로 변환하여 Upsert 및 1,000명 제한 적용
-    private Mono<updateRankingDto> updateOrInsertToDb(updateRankingDto dto) {
+    private Mono<rankingDto> updateOrInsertToDb(rankingDto dto) {
         return Mono.fromCallable(() -> {
             // 1. 기존 유저 확인 (Update)
             characterEntity existingUser = rankingRepository.findByName(dto.getName()).orElse(null);
@@ -69,7 +69,7 @@ public class rankingUpdateService {
     }
 
     //기존 API 호출 및 DTO 가공 로직 (유지)
-    public Mono<updateRankingDto> getUpdatedRanking(String name) {
+    public Mono<rankingDto> getUpdatedRanking(String name) {
         return Mono.zip(
                 otherService.getArmoriesCharacterProfile(name),
                 otherService.getArmoriesCharacterArkpassive(name),
@@ -90,7 +90,7 @@ public class rankingUpdateService {
         });
     }
 
-    private updateRankingDto convertToDto(int rank, StatResponse stat, ArkPassiveResponse passive, List<EquipmentResponse> equipments) {
+    private rankingDto convertToDto(int rank, StatResponse stat, ArkPassiveResponse passive, List<EquipmentResponse> equipments) {
 
         // 1. [가공] 스탯 추출 (치명/특화/신속 순서 고정 + 500 이상)
         List<String> priorityOrder = List.of("치명", "특화", "신속");
@@ -157,7 +157,7 @@ public class rankingUpdateService {
         Double itemLevel = parseDoubleSafely(stat.ItemAvgLevel());
         Integer combatPower = (int) Math.floor(parseDoubleSafely(stat.CombatPower()));
 
-        return new updateRankingDto(
+        return new rankingDto(
                 rank,
                 stat.CharacterName(),
                 stat.ServerName(),

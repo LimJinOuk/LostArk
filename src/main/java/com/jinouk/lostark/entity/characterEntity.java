@@ -1,6 +1,6 @@
 package com.jinouk.lostark.entity;
 
-import com.jinouk.lostark.dto.updateRankingDto;
+import com.jinouk.lostark.dto.rankingDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -62,7 +62,7 @@ public class characterEntity {
     /**
      * DTO 데이터를 엔티티에 반영 (Update 시 사용)
      */
-    public void updateFromDto(updateRankingDto dto) {
+    public void updateFromDto(rankingDto dto) {
         this.server = dto.getServer();
         this.characterClass = dto.getCharacterClass();
         this.itemLevel = dto.getItemLevel();
@@ -79,7 +79,7 @@ public class characterEntity {
     /**
      * DTO를 엔티티 객체로 변환 (Insert 시 사용)
      */
-    public static characterEntity fromDto(updateRankingDto dto) {
+    public static characterEntity fromDto(rankingDto dto) {
         return characterEntity.builder()
                 .name(dto.getName())
                 .server(dto.getServer())

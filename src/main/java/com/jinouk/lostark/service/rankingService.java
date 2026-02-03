@@ -1,12 +1,10 @@
 package com.jinouk.lostark.service;
 
-import com.jinouk.lostark.dto.updateRankingDto;
-import com.jinouk.lostark.entity.characterEntity;
+import com.jinouk.lostark.dto.rankingDto;
 import com.jinouk.lostark.repository.rankingRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
@@ -23,39 +21,39 @@ public class rankingService {
     /**
      * 1. 아이템 레벨 기준 랭킹 조회
      */
-    public Flux<updateRankingDto> getItemLevelRankings(int page, int size) {
+    public Flux<rankingDto> getItemLevelRankings(int page, int size) {
         int offset = (page - 1) * size;
         return Mono.fromCallable(() ->
                         rankingRepository.findAllByOrderByItemLevelDesc(PageRequest.of(page - 1, size)))
                 .subscribeOn(Schedulers.boundedElastic())
                 .flatMapMany(Flux::fromIterable) // List를 Flux로 바로 변환
                 .index()
-                .map(tuple -> updateRankingDto.fromEntity(tuple.getT2(), (int) (offset + tuple.getT1() + 1)));
+                .map(tuple -> rankingDto.fromEntity(tuple.getT2(), (int) (offset + tuple.getT1() + 1)));
     }
 
     /**
      * 2. 전투력 기준 랭킹 조회
      */
-    public Flux<updateRankingDto> getCombatPowerRankings(int page, int size) {
+    public Flux<rankingDto> getCombatPowerRankings(int page, int size) {
         int offset = (page - 1) * size;
         return Mono.fromCallable(() ->
                         rankingRepository.findAllByOrderByCombatPowerDesc(PageRequest.of(page - 1, size)))
                 .subscribeOn(Schedulers.boundedElastic())
                 .flatMapMany(Flux::fromIterable)
                 .index()
-                .map(tuple -> updateRankingDto.fromEntity(tuple.getT2(), (int) (offset + tuple.getT1() + 1)));
+                .map(tuple -> rankingDto.fromEntity(tuple.getT2(), (int) (offset + tuple.getT1() + 1)));
     }
 
     /**
      * 3. 직업별 전투력 순위 조회
      */
-    public Flux<updateRankingDto> getClassRankings(String characterClass, int page, int size) {
+    public Flux<rankingDto> getClassRankings(String characterClass, int page, int size) {
         int offset = (page - 1) * size;
         return Mono.fromCallable(() ->
                         rankingRepository.findAllByCharacterClassOrderByCombatPowerDesc(characterClass, PageRequest.of(page - 1, size)))
                 .subscribeOn(Schedulers.boundedElastic())
                 .flatMapMany(Flux::fromIterable)
                 .index()
-                .map(tuple -> updateRankingDto.fromEntity(tuple.getT2(), (int) (offset + tuple.getT1() + 1)));
+                .map(tuple -> rankingDto.fromEntity(tuple.getT2(), (int) (offset + tuple.getT1() + 1)));
     }
 }
