@@ -6,13 +6,12 @@ import com.jinouk.lostark.simulator.service.simulatorService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RestController
@@ -30,4 +29,9 @@ public class simulatorController {
         return service.doProcess(characterName);
     }
 
+    @PostMapping("/simulatorJewels")
+    public ResponseEntity<Map<String, String>> jewels (@RequestBody Map<String, Object> payload) {
+        Map<String, String> res = new HashMap<>();
+        return ResponseEntity.status(200).body(res);
+    }
 }
