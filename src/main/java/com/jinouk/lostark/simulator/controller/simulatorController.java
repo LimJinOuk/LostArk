@@ -2,6 +2,7 @@ package com.jinouk.lostark.simulator.controller;
 
 
 import com.jinouk.lostark.simulator.dto.JewelDto;
+import com.jinouk.lostark.simulator.dto.gemEffectDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import com.jinouk.lostark.simulator.service.simulatorService;
 import lombok.RequiredArgsConstructor;
@@ -34,6 +35,13 @@ public class simulatorController {
     public ResponseEntity<Map<String, JewelDto>> jewels (@RequestBody JewelDto jewelDto) {
         Map<String, JewelDto> res = new HashMap<>();
         res.put("jewelDto", jewelDto);
+        return ResponseEntity.status(200).body(res);
+    }
+
+    @PostMapping("/simulatorGemEffect")
+    public ResponseEntity<Map<String, gemEffectDto>> gemEffect (@RequestBody gemEffectDto gemEffectDto) {
+        Map<String, gemEffectDto> res = new HashMap<>();
+        res.put("gemEffectDto", gemEffectDto);
         return ResponseEntity.status(200).body(res);
     }
 }
