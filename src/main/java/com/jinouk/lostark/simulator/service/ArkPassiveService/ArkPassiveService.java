@@ -1,6 +1,7 @@
 package com.jinouk.lostark.simulator.service.ArkPassiveService;
 
 import com.jinouk.lostark.simulator.dto.ArkPassiveDTO;
+import com.jinouk.lostark.simulator.service.ArkPassiveService.job.warlord;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -12,13 +13,19 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class ArkPassiveService {
 
+    private final warlord warlord;
+
     public ResponseEntity<Map<String , ?>> getClass(ArkPassiveDTO dto){
         HashMap<String , String> map = new HashMap<>();
         String title = dto.getTitle();
 
+        double 치적;
+        double 진피;
+
         switch(title){
             case "고독한 기사":
             case "전투 태세":
+                warlord.warlord(title , dto);
 
             case "광기":
             case "광전사의 비기":
