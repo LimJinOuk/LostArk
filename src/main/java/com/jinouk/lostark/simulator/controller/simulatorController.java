@@ -1,6 +1,7 @@
 package com.jinouk.lostark.simulator.controller;
 
 
+import com.jinouk.lostark.simulator.dto.JewelDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import com.jinouk.lostark.simulator.service.simulatorService;
 import lombok.RequiredArgsConstructor;
@@ -30,8 +31,9 @@ public class simulatorController {
     }
 
     @PostMapping("/simulatorJewels")
-    public ResponseEntity<Map<String, String>> jewels (@RequestBody Map<String, Object> payload) {
-        Map<String, String> res = new HashMap<>();
+    public ResponseEntity<Map<String, JewelDto>> jewels (@RequestBody JewelDto jewelDto) {
+        Map<String, JewelDto> res = new HashMap<>();
+        res.put("jewelDto", jewelDto);
         return ResponseEntity.status(200).body(res);
     }
 }
