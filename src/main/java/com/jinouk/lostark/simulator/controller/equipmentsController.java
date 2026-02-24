@@ -1,5 +1,6 @@
 package com.jinouk.lostark.simulator.controller;
 
+import com.jinouk.lostark.simulator.dto.accessoriesDto;
 import com.jinouk.lostark.simulator.dto.ariGridDto;
 import com.jinouk.lostark.simulator.dto.equipmentsDto;
 import lombok.RequiredArgsConstructor;
@@ -22,16 +23,13 @@ public class equipmentsController {
 
     @PostMapping("/simulatorEquipments")
     public String equipments (@RequestBody equipmentsDto weaponDto) {
-        // 성공적으로 매핑되면 DTO에 값이 들어옵니다.
         System.out.println("수신된 무기 정보: " + weaponDto.toString());
         return "무기 데이터 수신 성공!";
     }
     @PostMapping("/simulatorAccessories")
-    public String accessories (@RequestBody Map<String, equipmentsDto> accessoriesMap) {
-        accessoriesMap.forEach((key, value) -> {
-            System.out.println(key + " -> " + value);
-        });
-        return "데이터 수신 성공!";
+    public String accessories (@RequestBody accessoriesDto accDto) {
+        System.out.println("수신된 무기 정보: " + accDto.toString());
+        return "무기 데이터 수신 성공!";
     }
     @PostMapping("/simulatorArkGrid")
     public String arkGrids (@RequestBody ariGridDto arkGridDto ) {
