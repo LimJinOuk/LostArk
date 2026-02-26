@@ -1,8 +1,7 @@
 package com.jinouk.lostark.simulator.controller;
 
 
-import com.jinouk.lostark.simulator.dto.JewelDto;
-import com.jinouk.lostark.simulator.dto.gemEffectDto;
+import com.jinouk.lostark.simulator.dto.*;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import com.jinouk.lostark.simulator.service.simulatorService;
 import lombok.RequiredArgsConstructor;
@@ -15,7 +14,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Controller
 @RestController
 @RequiredArgsConstructor
 @CrossOrigin(
@@ -43,5 +41,25 @@ public class simulatorController {
         Map<String, gemEffectDto> res = new HashMap<>();
         res.put("gemEffectDto", gemEffectDto);
         return ResponseEntity.status(200).body(res);
+    }
+    @PostMapping("/simulatorEquipments")
+    public String equipments (@RequestBody equipmentsDto weaponDto) {
+        System.out.println("수신된 무기 정보: " + weaponDto.toString());
+        return "무기 데이터 수신 성공!";
+    }
+    @PostMapping("/simulatorAccessories")
+    public String accessories (@RequestBody accessoriesDto accDto) {
+        System.out.println("수신된 무기 정보: " + accDto.toString());
+        return "악세사리 데이터 수신 성공!";
+    }
+    @PostMapping("/simulatorArkGrid")
+    public String arkGrids (@RequestBody ariGridDto arkGridDto ) {
+        System.out.println("수신된 아크 그리드 정보: " + arkGridDto.toString());
+        return "아크 그리드 데이터 수신 성공!";
+    }
+    @PostMapping("/simulatorEngravings")
+    public String engravings (@RequestBody engravingDto engravingDto ) {
+        System.out.println("수신된 각인 정보: " + engravingDto.toString());
+        return "각인 데이터 수신 성공!";
     }
 }
