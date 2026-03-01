@@ -3,6 +3,8 @@ package com.jinouk.lostark.repository;
 import com.jinouk.lostark.entity.characterEntity;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -31,4 +33,7 @@ public interface rankingRepository extends JpaRepository<characterEntity, String
     // 3. [관리] Top 1000 유지를 위한 최하위 유저 찾기
     // 아이템 레벨이 가장 낮은(Asc) 유저를 찾아 신규 진입자와 교체하기 위함입니다.
     characterEntity findFirstByOrderByItemLevelAsc();
+
+    @Query("SELECT c.name FROM characterEntity c")
+    List<String> findAllNames();
 }
