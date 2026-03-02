@@ -33,4 +33,12 @@ public class homecontroller {
     public String ranking(){
         return "forward:/index.html";
     }
+    @GetMapping("/termsOfUsePage")
+    public String TermsOfUse(){
+        return "forward:/index.html";
+    }
+    @GetMapping("/guidePage")
+    public String Guide(){
+        return "forward:/index.html";
+    }
 }
