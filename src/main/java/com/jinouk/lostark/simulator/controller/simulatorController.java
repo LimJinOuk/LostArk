@@ -2,11 +2,13 @@ package com.jinouk.lostark.simulator.controller;
 
 
 import com.jinouk.lostark.simulator.dto.*;
+import com.jinouk.lostark.simulator.dto.arkgrid.arkGridRequestDto;
+import com.jinouk.lostark.simulator.dto.arkgrid.arkGridResponseDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
+import com.jinouk.lostark.simulator.service.arkCoreCalc.ArkGridService;
 import com.jinouk.lostark.simulator.service.simulatorService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
@@ -23,6 +25,7 @@ import java.util.Map;
 public class simulatorController {
 
     private final simulatorService service;
+    private final ArkGridService arkGridService;
 
     @GetMapping("/do")
     public Mono<List<skillPostProcess>> doProcess(@RequestParam String characterName) {
@@ -53,9 +56,9 @@ public class simulatorController {
         return "악세사리 데이터 수신 성공!";
     }
     @PostMapping("/simulatorArkGrid")
-    public String arkGrids (@RequestBody ariGridDto arkGridDto ) {
+    public arkGridResponseDto arkGrids (@RequestBody arkGridRequestDto arkGridDto ) {
         System.out.println("수신된 아크 그리드 정보: " + arkGridDto.toString());
-        return "아크 그리드 데이터 수신 성공!";
+        return arkGridService.getArkGrid(arkGridDto);
     }
     @PostMapping("/simulatorEngravings")
     public String engravings (@RequestBody engravingDto engravingDto ) {
