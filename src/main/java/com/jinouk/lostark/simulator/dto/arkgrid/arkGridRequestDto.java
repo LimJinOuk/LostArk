@@ -1,16 +1,16 @@
-package com.jinouk.lostark.simulator.dto;
+package com.jinouk.lostark.simulator.dto.arkgrid;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Map;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ariGridDto {
+public class arkGridRequestDto {
     private String characterName;
     private String className;
     private List<GridItem> ariGridItems;
