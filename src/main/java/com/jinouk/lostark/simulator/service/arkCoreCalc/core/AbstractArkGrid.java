@@ -2,11 +2,10 @@ package com.jinouk.lostark.simulator.service.arkCoreCalc.core;
 
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
 import lombok.extern.slf4j.Slf4j;
-
 import java.util.Map;
 
 @Slf4j
-public abstract class AbstractArkGrid implements IArkGrid{
+public abstract class AbstractArkGrid implements IArkGrid {
 
     // 공통적으로 사용하는 효과 합산 로직
     protected void mergeEffect(Map<String, Double> effectsMap, String key, Double value) {

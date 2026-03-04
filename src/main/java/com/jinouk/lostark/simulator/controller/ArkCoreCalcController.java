@@ -16,10 +16,6 @@ import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(
-        origins = {"http://localhost:3000", "http://localhost:5173" , "http://localhost:8080"},
-        allowCredentials = "true"
-)
 public class ArkCoreCalcController {
     private final ChaosSunArkCoreCalcService sunservice;
     private final ChaosMoonArkCoreCalcService moonservice;
