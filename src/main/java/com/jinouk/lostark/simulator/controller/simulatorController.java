@@ -2,8 +2,8 @@ package com.jinouk.lostark.simulator.controller;
 
 
 import com.jinouk.lostark.simulator.dto.*;
-import com.jinouk.lostark.simulator.dto.arkgrid.arkGridRequestDto;
-import com.jinouk.lostark.simulator.dto.arkgrid.arkGridResponseDto;
+import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
+import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.ArkGridService;
 import com.jinouk.lostark.simulator.service.simulatorService;
@@ -56,7 +56,7 @@ public class simulatorController {
         return "악세사리 데이터 수신 성공!";
     }
     @PostMapping("/simulatorArkGrid")
-    public arkGridResponseDto arkGrids (@RequestBody arkGridRequestDto arkGridDto ) {
+    public ArkGridResponseDto arkGrids (@RequestBody ArkGridRequestDto arkGridDto ) {
         System.out.println("수신된 아크 그리드 정보: " + arkGridDto.toString());
         return arkGridService.getArkGrid(arkGridDto);
     }

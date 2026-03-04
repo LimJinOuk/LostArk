@@ -1,8 +1,8 @@
 package com.jinouk.lostark.simulator.service.arkCoreCalc;
 
-import com.jinouk.lostark.simulator.dto.arkgrid.arkGridRequestDto;
-import com.jinouk.lostark.simulator.dto.arkgrid.arkGridResponseDto;
-import com.jinouk.lostark.simulator.service.arkCoreCalc.arkGridInterface.IArkGrid;
+import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
+import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
+import com.jinouk.lostark.simulator.service.arkCoreCalc.core.IArkGrid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +16,7 @@ public class ArkGridService {
 
     private final List<IArkGrid> arkGrids;
 
-    public arkGridResponseDto getArkGrid(arkGridRequestDto requestDto) {
+    public ArkGridResponseDto getArkGrid(ArkGridRequestDto requestDto) {
         Map<String, Double> combinedEffects = new HashMap<>();
 
         List<IArkGrid> matchedServices = arkGrids.stream()
@@ -29,20 +29,20 @@ public class ArkGridService {
         }
 
         for (IArkGrid service : matchedServices) {
-            arkGridResponseDto response = service.getArkGrid(requestDto);
+            ArkGridResponseDto response = service.getArkGrid(requestDto);
             response.getEffects().forEach((key, value) ->
                     combinedEffects.merge(key, value, Double::sum));
         }
-        return new arkGridResponseDto(combinedEffects);
+        return new ArkGridResponseDto(combinedEffects);
     }
 
     private boolean isSupportedClass(IArkGrid service, String className) {
         return "공용".equals(service.getClassName()) || service.getClassName().equals(className);
     }
 
-    private boolean hasMatchingCoreName(IArkGrid service, arkGridRequestDto requestDto) {
-        if (requestDto.getAriGridItems() == null) return false;
-        return requestDto.getAriGridItems().stream()
+    private boolean hasMatchingCoreName(IArkGrid service, ArkGridRequestDto requestDto) {
+        if (requestDto.getArkGridItems() == null) return false;
+        return requestDto.getArkGridItems().stream()
                 .anyMatch(item -> item.getArkGridCoreName().equals(service.getArkGridCoreName()));
     }
 }
