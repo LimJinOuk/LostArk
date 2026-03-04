@@ -5,6 +5,7 @@ import com.jinouk.lostark.apiParse.apiParseService.equipmentWeaponParseService;
 import com.jinouk.lostark.service.armoriesAPIService;
 import com.jinouk.lostark.simulator.dto.skillsResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:3000")
 public class armoriesAPI {
     private final armoriesAPIService service;
     private final characterProfileParseService parseProfile;
