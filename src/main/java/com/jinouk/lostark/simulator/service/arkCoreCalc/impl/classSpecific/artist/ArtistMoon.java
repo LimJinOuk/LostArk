@@ -2,6 +2,7 @@ package com.jinouk.lostark.simulator.service.arkCoreCalc.impl.classSpecific.arti
 
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
+import com.jinouk.lostark.simulator.service.arkCoreCalc.core.AbstractArkGrid;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.core.IArkGrid;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class ArtistMoon implements IArkGrid {
+public class ArtistMoon extends AbstractArkGrid{
     @Override
     public String getClassName() {
         return "도화가";
@@ -22,6 +23,8 @@ public class ArtistMoon implements IArkGrid {
 
     @Override
     public ArkGridResponseDto getArkGrid(ArkGridRequestDto requestDto) {
+        validateItems(requestDto);
+
         Map<String, Double> effectsMap = new HashMap<>();
 
         requestDto.getArkGridItems().forEach(item -> {
@@ -38,12 +41,8 @@ public class ArtistMoon implements IArkGrid {
 
              */
         });
+        logEffects(getArkGridCoreName(), effectsMap);
 
-        for (Map.Entry<String, Double> entry : effectsMap.entrySet()) {
-            String key = entry.getKey();
-            double value = entry.getValue();
-            System.out.println(key + ": " + value);
-        }
         return new ArkGridResponseDto(effectsMap);
     }
 }
