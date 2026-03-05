@@ -18,6 +18,16 @@ public class warlord {
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
         Map<String , Integer> evolution = nodes.get("진화");
+        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> leap = nodes.get("도약");
+
+        double 치명타_적중률 = 0.0;
+        double 랜스_스킬_피해량 = 0.0;
+        double 랜스_스킬_치피증 = 0.0;
+        double 적주피 = 0.0;
+        double 일반_스킬_피해량 = 0.0;
+        double 일반_스킬_치명타_적중률 = 0.0;
+
         int 치명 = evolution.get("치명");
         int 특화 = evolution.get("특화");
         int 신속 = evolution.get("신속");
@@ -39,8 +49,6 @@ public class warlord {
         int 입식_타격가 = evolution.get("입식타격가");
         int 마나_용광로 = evolution.get("마나 용광로");
 
-        Map<String , Integer> enlightment = nodes.get("깨달음");
-        Map<String , Integer> leap = nodes.get("도약");
 
         int 고독한_기사 = enlightment.get("고독한 기사");
         int 정교함 = enlightment.get("정교함");
@@ -57,13 +65,6 @@ public class warlord {
 
         int 전술_훈련 = enlightment.get("전술 훈련");
         int 전술_이동 = enlightment.get("전술 이동");
-
-        double 치명타_적중률 = 0.0;
-        double 랜스_스킬_피해량 = 0.0;
-        double 랜스_스킬_치피증 = 0.0;
-        double 적주피 = 0.0;
-        double 일반_스킬_피해량 = 0.0;
-        double 일반_스킬_치명타_적중률 = 0.0;
 
         if(정교함 > 0){
             치명타_적중률 += 정교함 * 5.0;
