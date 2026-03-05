@@ -57,6 +57,7 @@ public class ChaosMoon extends AbstractArkGrid {
     private void calcFire(Map<String, Double> effectsMap, int point, String grade) {
         if ("고대".equals(grade)) {
             switch (point) {
+                case 10: break;
                 case 14: mergeEffect(effectsMap, "적주피", 0.5); break;
                 case 17: mergeEffect(effectsMap, "적주피", 2.5); break;
                 case 18: mergeEffect(effectsMap, "적주피", 2.66); break;
@@ -65,6 +66,7 @@ public class ChaosMoon extends AbstractArkGrid {
             }
         } else if ("유물".equals(grade)) {
             switch (point) {
+                case 10: break;
                 case 14: mergeEffect(effectsMap, "적주피", 0.5); break;
                 case 17: mergeEffect(effectsMap, "적주피", 1.5); break;
                 case 18: mergeEffect(effectsMap, "적주피", 1.66); break;
@@ -78,6 +80,7 @@ public class ChaosMoon extends AbstractArkGrid {
     private void calcAbsorb(Map<String, Double> effectsMap, int point, String grade) {
         if ("고대".equals(grade)) {
             switch (point) {
+                case 10: break;
                 case 14: mergeEffect(effectsMap, "적주피", 0.5); break;
                 case 17: mergeEffect(effectsMap, "적주피", 2.5); break;
                 case 18: mergeEffect(effectsMap, "적주피", 2.66); break;
@@ -86,6 +89,7 @@ public class ChaosMoon extends AbstractArkGrid {
             }
         } else if ("유물".equals(grade)) {
             switch (point) {
+                case 10: break;
                 case 14: mergeEffect(effectsMap, "적주피", 0.5); break;
                 case 17: mergeEffect(effectsMap, "적주피", 1.5); break;
                 case 18: mergeEffect(effectsMap, "적주피", 1.66); break;
@@ -99,6 +103,7 @@ public class ChaosMoon extends AbstractArkGrid {
     private void calcBreak(Map<String, Double> effectsMap, int point, String grade) {
         if ("고대".equals(grade)) {
             switch (point) {
+                case 10: break;
                 case 14: mergeEffect(effectsMap, "치적", 0.65); break;
                 case 17: mergeEffect(effectsMap, "치적", 2.5); break;
                 case 18: mergeEffect(effectsMap, "치적", 2.66); break;
@@ -107,6 +112,7 @@ public class ChaosMoon extends AbstractArkGrid {
             }
         } else if ("유물".equals(grade)) {
             switch (point) {
+                case 10: break;
                 case 14: mergeEffect(effectsMap, "치적", 0.65); break;
                 case 17: mergeEffect(effectsMap, "치적", 1.95); break;
                 case 18: mergeEffect(effectsMap, "치적", 2.16); break;
