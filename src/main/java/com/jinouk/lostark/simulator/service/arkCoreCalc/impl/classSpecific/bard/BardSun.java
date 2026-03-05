@@ -2,6 +2,7 @@ package com.jinouk.lostark.simulator.service.arkCoreCalc.impl.classSpecific.bard
 
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
+import com.jinouk.lostark.simulator.service.arkCoreCalc.core.AbstractArkGrid;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.core.IArkGrid;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class BardSun implements IArkGrid {
+public class BardSun extends AbstractArkGrid {
     @Override
     public String getClassName() {
         return "바드";
@@ -22,6 +23,7 @@ public class BardSun implements IArkGrid {
 
     @Override
     public ArkGridResponseDto getArkGrid(ArkGridRequestDto requestDto) {
+        validateItems(requestDto);
         Map<String, Double> effectsMap = new HashMap<>();
 
         requestDto.getArkGridItems().forEach(item -> {
@@ -29,21 +31,167 @@ public class BardSun implements IArkGrid {
             String grade = item.getGrade();
             int point = (item.getArkGridPoint() != null) ? item.getArkGridPoint() : 0;
 
-            /*
-            if ("스트림 오브 엣지".equals(name)) {
-                calcStreamOfEdge(effectsMap, point, grade);
-            } else if ("페이탈 핸드".equals(name)) {
-                calcFatalHand(effectsMap, point, grade);
+            if ("불굴의 세레나데".equals(name)) {
+                calcIndomitableSerenade(effectsMap, point, grade);
+            } else if ("템페스트 리프레인".equals(name)) {
+                calcTempestRefrain(effectsMap, point, grade);
+            } else if ("쇼크 루프".equals(name)) {
+                calcShockLoop(effectsMap,point,grade);
+            } else if ("세라픽 엑센트".equals(name)) {
+                calcSeraphicAccent(effectsMap,point,grade);
+            } else if ("브레이브 엑센트".equals(name)) {
+                calcBraveAccent(effectsMap, point, grade);
+            } else if("아리아 엑센트".equals(name)) {
+                calcAriaAccent(effectsMap,point,grade);
             }
-
-             */
         });
 
-        for (Map.Entry<String, Double> entry : effectsMap.entrySet()) {
-            String key = entry.getKey();
-            double value = entry.getValue();
-            System.out.println(key + ": " + value);
-        }
+
+        logEffects(getArkGridCoreName(), effectsMap);
         return new ArkGridResponseDto(effectsMap);
+    }
+
+    //불굴의 세레나데
+    //진욱쿤 질문(10포 14포 17포)
+    private void calcIndomitableSerenade(Map<String, Double> effectsMap, int point, String grade) {
+        if("유물".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "피증", 1.50); break;
+                case 14: mergeEffect(effectsMap, "피증", 4.00); break; // 1.5 + 2.5
+                case 17: mergeEffect(effectsMap, "피증", 4.50); break; // 1.5 + 4.5
+                case 18: mergeEffect(effectsMap, "피증", 4.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 0.60); break;
+                case 19: mergeEffect(effectsMap, "피증", 4.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 1.20); break;
+                case 20: mergeEffect(effectsMap, "피증", 4.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 1.80); break;
+            }
+        } else if ("고대".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "피증", 1.50); break;
+                case 14: mergeEffect(effectsMap, "피증", 4.00); break; // 1.5 + 2.5
+                case 17: mergeEffect(effectsMap, "피증", 6.00); break; // 1.5 + 4.5
+                case 18: mergeEffect(effectsMap, "피증", 6.00); mergeEffect(effectsMap, "음파 진동 스킬 피증", 0.60); break;
+                case 19: mergeEffect(effectsMap, "피증", 6.00); mergeEffect(effectsMap, "음파 진동 스킬 피증", 1.20); break;
+                case 20: mergeEffect(effectsMap, "피증", 6.00); mergeEffect(effectsMap, "음파 진동 스킬 피증", 1.80); break;
+            }
+        }
+    }
+
+    //템페스트 리프레인
+    //진욱쿤 질문(2 버블? 14포 17포)
+    private void calcTempestRefrain(Map<String, Double> effectsMap, int point, String grade) {
+        if("유물".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "템페스트 스킬 피증", 3.00); break;
+                case 14: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.00); break; // 3.0 + 28.0
+                case 17: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.00); mergeEffect(effectsMap, "피증", 22.00); break;
+                case 18: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.24); mergeEffect(effectsMap, "피증", 22.00); break;
+                case 19: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.48); mergeEffect(effectsMap, "피증", 22.00); break;
+                case 20: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.72); mergeEffect(effectsMap, "피증", 22.00); break;
+            }
+        } else if("고대".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "템페스트 스킬 피증", 3.00); break;
+                case 14: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.00); break; // 3.0 + 28.0
+                case 17: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.00); mergeEffect(effectsMap, "피증", 26.00); break;
+                case 18: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.24); mergeEffect(effectsMap, "피증", 26.00); break;
+                case 19: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.48); mergeEffect(effectsMap, "피증", 26.00); break;
+                case 20: mergeEffect(effectsMap, "템페스트 스킬 피증", 31.72); mergeEffect(effectsMap, "피증", 26.00); break;
+            }
+        }
+    }
+
+    //쇼크 루프
+    //진욱쿤 질문(17포)
+    private void calcShockLoop(Map<String, Double> effectsMap, int point, String grade) {
+        if("유물".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 30.00); break;
+                case 14: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 30.00); break;
+                case 17: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 40.00); break; // 30.0 + 10.0 (쇼크 루프 효과)
+                case 18: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 40.90); break;
+                case 19: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 41.80); break;
+                case 20: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 42.70); break;
+            }
+        } else if("고대".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 30.00); break;
+                case 14: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 30.00); break;
+                case 17: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 50.00); break; // 30.0 + 10.0 (쇼크 루프 효과)
+                case 18: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 50.90); break;
+                case 19: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 51.80); break;
+                case 20: mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 52.70); break;
+            }
+        }
+    }
+
+    //세라픽 엑센트
+    //진욱쿤 질문(14포 17포)
+    private void calcSeraphicAccent(Map<String, Double> effectsMap, int point, String grade) {
+        if("유물".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 14: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 17: mergeEffect(effectsMap, "아공강", 6.90); break; // 1.3 + 5.6
+                case 18: mergeEffect(effectsMap, "아공강", 7.05); break; // 6.9 + 0.15
+                case 19: mergeEffect(effectsMap, "아공강", 7.20); break; // 7.05 + 0.15
+                case 20: mergeEffect(effectsMap, "아공강", 7.35); break; // 7.20 + 0.15
+            }
+        } else if("고대".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 14: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 17: mergeEffect(effectsMap, "아공강", 9.80); break; // 1.3 + 8.5
+                case 18: mergeEffect(effectsMap, "아공강", 9.95); break; // 9.8 + 0.15
+                case 19: mergeEffect(effectsMap, "아공강", 10.10); break; // 9.95 + 0.15
+                case 20: mergeEffect(effectsMap, "아공강", 10.25); break; // 10.10 + 0.15
+            }
+        }
+    }
+
+    //브레이브 엑센트
+    //진욱쿤 질문(17포)
+    private void calcBraveAccent(Map<String, Double> effectsMap, int point, String grade) {
+        if("유물".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 14: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 17: mergeEffect(effectsMap, "아공강", 1.30); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 6.50); break;
+                case 18: mergeEffect(effectsMap, "아공강", 1.45); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 6.50); break;
+                case 19: mergeEffect(effectsMap, "아공강", 1.60); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 6.50); break;
+                case 20: mergeEffect(effectsMap, "아공강", 1.75); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 6.50); break;
+            }
+        } else if("고대".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 14: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 17: mergeEffect(effectsMap, "아공강", 1.30); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 10.00); break;
+                case 18: mergeEffect(effectsMap, "아공강", 1.45); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 10.00); break;
+                case 19: mergeEffect(effectsMap, "아공강", 1.60); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 10.00); break;
+                case 20: mergeEffect(effectsMap, "아공강", 1.75); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 10.00); break;
+            }
+        }
+    }
+
+    //아리아 엑센트
+    //진욱쿤 질문(17포)
+    private void calcAriaAccent(Map<String, Double> effectsMap, int point, String grade) {
+        if("유물".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 14: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 17: mergeEffect(effectsMap, "아공강", 1.30); mergeEffect(effectsMap, "아리아 스킬 피증", 27.00); break;
+                case 18: mergeEffect(effectsMap, "아공강", 1.45); mergeEffect(effectsMap, "아리아 스킬 피증", 27.00); break;
+                case 19: mergeEffect(effectsMap, "아공강", 1.60); mergeEffect(effectsMap, "아리아 스킬 피증", 27.00); break;
+                case 20: mergeEffect(effectsMap, "아공강", 1.75); mergeEffect(effectsMap, "아리아 스킬 피증", 27.00); break;
+            }
+        } else if("고대".equals(grade)) {
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 14: mergeEffect(effectsMap, "아공강", 1.30); break;
+                case 17: mergeEffect(effectsMap, "아공강", 1.30); mergeEffect(effectsMap, "아리아 스킬 피증", 40.00); break;
+                case 18: mergeEffect(effectsMap, "아공강", 1.45); mergeEffect(effectsMap, "아리아 스킬 피증", 40.00); break;
+                case 19: mergeEffect(effectsMap, "아공강", 1.60); mergeEffect(effectsMap, "아리아 스킬 피증", 40.00); break;
+                case 20: mergeEffect(effectsMap, "아공강", 1.75); mergeEffect(effectsMap, "아리아 스킬 피증", 40.00); break;
+            }
+        }
     }
 }
