@@ -55,24 +55,25 @@ public class BladeSun  extends AbstractArkGrid {
     }
 
     //블레이드 버스트
+    //진욱쿤 찬스(블레이드 버스트 피증? 피증?)
     private void calcBladeBurst(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "치피증", 3.00); break;
-                case 14: mergeEffect(effectsMap, "치피증", 3.00); break;
-                case 17: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); break; // 3.0 + 4.0
-                case 18: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.20); break;
-                case 19: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.40); break;
-                case 20: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.60); break;
+                case 10: mergeEffect(effectsMap, "피증", 2.50); break;
+                case 14: mergeEffect(effectsMap, "피증", 2.50); mergeEffect(effectsMap, "적주피", 5.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 8.50); mergeEffect(effectsMap, "적주피", 5.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 8.75); mergeEffect(effectsMap, "적주피", 5.00); break;
+                case 19: mergeEffect(effectsMap, "피증", 9.00); mergeEffect(effectsMap, "적주피", 5.00); break;
+                case 20: mergeEffect(effectsMap, "피증", 9.25); mergeEffect(effectsMap, "적주피", 5.00); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.00); break;
-                case 14: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.00); break;
-                case 17: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.00); break; // 6.0 + 7.0
-                case 18: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.40); break; // 13.0 + 0.4
-                case 19: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.80); break; // 13.4 + 0.4
-                case 20: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 14.20); break; // 13.8 + 0.4
+                case 10: mergeEffect(effectsMap, "피증", 2.50); break;
+                case 14: mergeEffect(effectsMap, "피증", 2.50); mergeEffect(effectsMap, "적주피", 5.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 9.50); mergeEffect(effectsMap, "적주피", 5.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 9.75); mergeEffect(effectsMap, "적주피", 5.00); break;
+                case 19: mergeEffect(effectsMap, "피증", 10.00); mergeEffect(effectsMap, "적주피", 5.00); break;
+                case 20: mergeEffect(effectsMap, "피증", 10.25); mergeEffect(effectsMap, "적주피", 5.00); break;
             }
         }
     }
@@ -81,22 +82,22 @@ public class BladeSun  extends AbstractArkGrid {
     private void calcSwordReset(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 36.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 36.65); break; // 36.0 + 0.65
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 37.30); break; // 36.65 + 0.65
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 37.95); break; // 37.30 + 0.65
+                case 10: mergeEffect(effectsMap, "적주피", 1.50); break;
+                case 14: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "피증", 15.00); break;
+                case 17: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "피증", 15.00); break;
+                case 18: mergeEffect(effectsMap, "적주피", 1.65); mergeEffect(effectsMap, "피증", 15.00); break;
+                case 19: mergeEffect(effectsMap, "적주피", 1.80); mergeEffect(effectsMap, "피증", 15.00); break;
+                case 20: mergeEffect(effectsMap, "적주피", 1.95); mergeEffect(effectsMap, "피증", 15.00); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 39.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 39.65); break; // 36.0 + 0.65
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 40.30); break; // 36.65 + 0.65
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 40.95); break; // 37.30 + 0.65
+                case 10: mergeEffect(effectsMap, "적주피", 1.50); break;
+                case 14: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "피증", 15.00); break;
+                case 17: mergeEffect(effectsMap, "적주피", 2.50); mergeEffect(effectsMap, "피증", 15.00);  mergeEffect(effectsMap, "서프라이즈 어택 스킬 피증", 1.00); mergeEffect(effectsMap, "스핀 커터 스킬 피증", 1.00); mergeEffect(effectsMap, "윈드 컷 스킬 피증", 1.00); mergeEffect(effectsMap, "블레이드 댄스 스킬 피증", 1.00); mergeEffect(effectsMap, "데스 슬래쉬 스킬 피증", 1.00);break;
+                case 18: mergeEffect(effectsMap, "적주피", 2.65); mergeEffect(effectsMap, "피증", 15.00);  mergeEffect(effectsMap, "서프라이즈 어택 스킬 피증", 1.00); mergeEffect(effectsMap, "스핀 커터 스킬 피증", 1.00); mergeEffect(effectsMap, "윈드 컷 스킬 피증", 1.00); mergeEffect(effectsMap, "블레이드 댄스 스킬 피증", 1.00); mergeEffect(effectsMap, "데스 슬래쉬 스킬 피증", 1.00);break;
+                case 19: mergeEffect(effectsMap, "적주피", 2.80); mergeEffect(effectsMap, "피증", 15.00);  mergeEffect(effectsMap, "서프라이즈 어택 스킬 피증", 1.00); mergeEffect(effectsMap, "스핀 커터 스킬 피증", 1.00); mergeEffect(effectsMap, "윈드 컷 스킬 피증", 1.00); mergeEffect(effectsMap, "블레이드 댄스 스킬 피증", 1.00); mergeEffect(effectsMap, "데스 슬래쉬 스킬 피증", 1.00);break;
+                case 20: mergeEffect(effectsMap, "적주피", 2.95); mergeEffect(effectsMap, "피증", 15.00);  mergeEffect(effectsMap, "서프라이즈 어택 스킬 피증", 1.00); mergeEffect(effectsMap, "스핀 커터 스킬 피증", 1.00); mergeEffect(effectsMap, "윈드 컷 스킬 피증", 1.00); mergeEffect(effectsMap, "블레이드 댄스 스킬 피증", 1.00); mergeEffect(effectsMap, "데스 슬래쉬 스킬 피증", 1.00);break;
             }
         }
     }
@@ -105,21 +106,21 @@ public class BladeSun  extends AbstractArkGrid {
     private void calcBladeRush(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 스킬 피증", 3.50); break;
-                case 18: mergeEffect(effectsMap, "묵법 스킬 피증", 3.65); break; // 3.50 + 0.15
-                case 19: mergeEffect(effectsMap, "묵법 스킬 피증", 3.80); break; // 3.65 + 0.15
-                case 20: mergeEffect(effectsMap, "묵법 스킬 피증", 3.95); break; // 3.80 + 0.15
+                case 10: mergeEffect(effectsMap, "적주피", 1.50); break;
+                case 14: mergeEffect(effectsMap, "적주피", 1.50); break;
+                case 17: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "블리츠 러시 스킬 피증", 35.00); break;
+                case 18: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "블리츠 러시 스킬 피증", 35.60); break;
+                case 19: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "블리츠 러시 스킬 피증", 36.20); break;
+                case 20: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "블리츠 러시 스킬 피증", 36.80); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 스킬 피증", 5.50); break;
-                case 18: mergeEffect(effectsMap, "묵법 스킬 피증", 5.65); break; // 3.50 + 0.15
-                case 19: mergeEffect(effectsMap, "묵법 스킬 피증", 5.80); break; // 3.65 + 0.15
-                case 20: mergeEffect(effectsMap, "묵법 스킬 피증", 5.95); break; // 3.80 + 0.15
+                case 10: mergeEffect(effectsMap, "적주피", 1.50); break;
+                case 14: mergeEffect(effectsMap, "적주피", 1.50); break;
+                case 17: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "블리츠 러시 스킬 피증", 45.00); break;
+                case 18: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "블리츠 러시 스킬 피증", 45.60); break;
+                case 19: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "블리츠 러시 스킬 피증", 46.20); break;
+                case 20: mergeEffect(effectsMap, "적주피", 1.50); mergeEffect(effectsMap, "블리츠 러시 스킬 피증", 46.80); break;
             }
         }
     }
@@ -127,46 +128,47 @@ public class BladeSun  extends AbstractArkGrid {
     //아츠 마스터
     private void calcArtsMaster(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
-            switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 5.60); break;
+            switch (point) {
+                case 10: mergeEffect(effectsMap, "적주피", 1.50); break;
+                case 14: mergeEffect(effectsMap, "적주피", 6.50); break;
+                case 17: mergeEffect(effectsMap, "적주피", 6.50); mergeEffect(effectsMap, "트윈 쉐도우 스킬 피증", 12.00); mergeEffect(effectsMap, "터닝 슬래쉬 스킬 피증", 12.00); mergeEffect(effectsMap, "데스 센텐스 스킬 피증", 12.00); break;
+                case 18: mergeEffect(effectsMap, "적주피", 6.65); mergeEffect(effectsMap, "트윈 쉐도우 스킬 피증", 12.00); mergeEffect(effectsMap, "터닝 슬래쉬 스킬 피증", 12.00); mergeEffect(effectsMap, "데스 센텐스 스킬 피증", 12.00); break;
+                case 19: mergeEffect(effectsMap, "적주피", 6.80); mergeEffect(effectsMap, "트윈 쉐도우 스킬 피증", 12.00); mergeEffect(effectsMap, "터닝 슬래쉬 스킬 피증", 12.00); mergeEffect(effectsMap, "데스 센텐스 스킬 피증", 12.00); break;
+                case 20: mergeEffect(effectsMap, "적주피", 6.95); mergeEffect(effectsMap, "트윈 쉐도우 스킬 피증", 12.00); mergeEffect(effectsMap, "터닝 슬래쉬 스킬 피증", 12.00); mergeEffect(effectsMap, "데스 센텐스 스킬 피증", 12.00); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 8.50); break;
+                case 10: mergeEffect(effectsMap, "적주피", 1.50); break;
+                case 14: mergeEffect(effectsMap, "적주피", 6.50); break;
+                case 17: mergeEffect(effectsMap, "적주피", 6.50); mergeEffect(effectsMap, "트윈 쉐도우 스킬 피증", 16.00); mergeEffect(effectsMap, "터닝 슬래쉬 스킬 피증", 16.00); mergeEffect(effectsMap, "데스 센텐스 스킬 피증", 16.00); break;
+                case 18: mergeEffect(effectsMap, "적주피", 6.65); mergeEffect(effectsMap, "트윈 쉐도우 스킬 피증", 16.00); mergeEffect(effectsMap, "터닝 슬래쉬 스킬 피증", 16.00); mergeEffect(effectsMap, "데스 센텐스 스킬 피증", 16.00); break;
+                case 19: mergeEffect(effectsMap, "적주피", 6.80); mergeEffect(effectsMap, "트윈 쉐도우 스킬 피증", 16.00); mergeEffect(effectsMap, "터닝 슬래쉬 스킬 피증", 16.00); mergeEffect(effectsMap, "데스 센텐스 스킬 피증", 16.00); break;
+                case 20: mergeEffect(effectsMap, "적주피", 6.95); mergeEffect(effectsMap, "트윈 쉐도우 스킬 피증", 16.00); mergeEffect(effectsMap, "터닝 슬래쉬 스킬 피증", 16.00); mergeEffect(effectsMap, "데스 센텐스 스킬 피증", 16.00); break;
             }
         }
     }
 
     //집중의 일격
+    //진욱쿤 찬스(차지 타입 스킬)
     private void calcFocusedStrike(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
+                case 10: mergeEffect(effectsMap, "피증", 2.00); break;
+                case 14: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "차지 타입 스킬 피증", 16.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "차지 타입 스킬 피증", 23.50); break;
+                case 18: mergeEffect(effectsMap, "피증", 2.20); mergeEffect(effectsMap, "차지 타입 스킬 피증", 23.50); break;
+                case 19: mergeEffect(effectsMap, "피증", 2.40); mergeEffect(effectsMap, "차지 타입 스킬 피증", 23.50); break;
+                case 20: mergeEffect(effectsMap, "피증", 2.60); mergeEffect(effectsMap, "차지 타입 스킬 피증", 23.50); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
+                case 10: mergeEffect(effectsMap, "피증", 2.00); break;
+                case 14: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "차지 타입 스킬 피증", 16.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "차지 타입 스킬 피증", 25.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 2.20); mergeEffect(effectsMap, "차지 타입 스킬 피증", 25.00); break;
+                case 19: mergeEffect(effectsMap, "피증", 2.40); mergeEffect(effectsMap, "차지 타입 스킬 피증", 25.00); break;
+                case 20: mergeEffect(effectsMap, "피증", 2.60); mergeEffect(effectsMap, "차지 타입 스킬 피증", 25.00); break;
             }
         }
     }
@@ -175,21 +177,21 @@ public class BladeSun  extends AbstractArkGrid {
     private void calcIlseom(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
+                case 10: mergeEffect(effectsMap, "피증", 2.00); break;
+                case 14: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 2.20); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); break;
+                case 19: mergeEffect(effectsMap, "피증", 2.40); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); break;
+                case 20: mergeEffect(effectsMap, "피증", 2.60); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
+                case 10: mergeEffect(effectsMap, "피증", 2.00); break;
+                case 14: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); mergeEffect(effectsMap, "적주피", 1.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 2.20); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); mergeEffect(effectsMap, "적주피", 1.00); break;
+                case 19: mergeEffect(effectsMap, "피증", 2.40); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); mergeEffect(effectsMap, "적주피", 1.00); break;
+                case 20: mergeEffect(effectsMap, "피증", 2.60); mergeEffect(effectsMap, "페이탈 웨이브 스킬 피증", 40.00); mergeEffect(effectsMap, "적주피", 1.00); break;
             }
         }
     }
