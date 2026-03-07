@@ -38,12 +38,6 @@ public class BardMoon extends AbstractArkGrid {
                 calcSecondImpact(effectsMap, point, grade);
             } else if ("조화의 연주".equals(name)) {
                 calcPerfomanceHarmony(effectsMap,point,grade);
-            } else if ("세라픽 펄스".equals(name)) {
-                calcSeraphicPulse(effectsMap,point,grade);
-            } else if ("브레이브 펄스".equals(name)) {
-                calcBravePulse(effectsMap, point, grade);
-            } else if("아리아 펄스".equals(name)) {
-                calcAriaPulse(effectsMap,point,grade);
             }
         });
 
@@ -53,31 +47,29 @@ public class BardMoon extends AbstractArkGrid {
     }
 
     //기원의 세레나데
-    //진욱쿤 질문(17포가 피증 or 음파 진동 스킬 피증)
     private void calcOriginSerenade(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "피증", 1.50); break;
                 case 14: mergeEffect(effectsMap, "피증", 1.50); break;
-                case 17: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 25.00); break;
-                case 18: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 25.60); break;
-                case 19: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 26.20); break;
-                case 20: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 26.80); break;
+                case 17: mergeEffect(effectsMap, "피증", 26.50); break;
+                case 18: mergeEffect(effectsMap, "피증", 26.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 0.60); break;
+                case 19: mergeEffect(effectsMap, "피증", 26.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 1.20); break;
+                case 20: mergeEffect(effectsMap, "피증", 26.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 1.80); break;
             }
         } else if ("고대".equals(grade)) {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "피증", 1.50); break;
                 case 14: mergeEffect(effectsMap, "피증", 1.50); break;
-                case 17: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 35.00); break;
-                case 18: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 35.60); break;
-                case 19: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 36.20); break;
-                case 20: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 36.80); break;
+                case 17: mergeEffect(effectsMap, "피증", 36.50); break;
+                case 18: mergeEffect(effectsMap, "피증", 36.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 0.60); break;
+                case 19: mergeEffect(effectsMap, "피증", 36.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 1.20); break;
+                case 20: mergeEffect(effectsMap, "피증", 36.50); mergeEffect(effectsMap, "음파 진동 스킬 피증", 1.80); break;
             }
         }
     }
 
     //세컨드 임팩트
-    //진욱쿤 질문(2버블? 3버블?)
     private void calcSecondImpact(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point) {
@@ -119,77 +111,6 @@ public class BardMoon extends AbstractArkGrid {
                 case 18: mergeEffect(effectsMap, "피증", 20.00); mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 0.90); break;
                 case 19: mergeEffect(effectsMap, "피증", 20.00); mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 1.80); break;
                 case 20: mergeEffect(effectsMap, "피증", 20.00); mergeEffect(effectsMap, "사운드 쇼크 스킬 피증", 2.70); break;
-            }
-        }
-    }
-
-    //세라픽 펄스
-    private void calcSeraphicPulse(Map<String, Double> effectsMap, int point, String grade) {
-        if("유물".equals(grade)) {
-            switch (point) {
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 5.60); break;
-            }
-        } else if("고대".equals(grade)) {
-            switch (point) {
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 8.50); break;
-            }
-        }
-    }
-
-    //브레이브 펄스
-    //진욱쿤 질문(17포 아피강 or 용맹의 세레나데 스킬 아피강)
-    private void calcBravePulse(Map<String, Double> effectsMap, int point, String grade) {
-        if("유물".equals(grade)) {
-            switch (point) {
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 6.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 6.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 6.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 6.50); break;
-            }
-        } else if("고대".equals(grade)) {
-            switch (point) {
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 10.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 10.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 10.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "용맹의 세레나데 스킬 아피강", 10.00); break;
-            }
-        }
-    }
-
-    //아리아 펄스
-    //진욱쿤 질문(17포 아피강 or 아리아 스킬 아피강)
-    private void calcAriaPulse(Map<String, Double> effectsMap, int point, String grade) {
-        if("유물".equals(grade)) {
-            switch (point) {
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아리아 스킬 아피강", 27.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아리아 스킬 아피강", 27.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아리아 스킬 아피강", 27.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아리아 스킬 아피강", 27.00); break;
-            }
-        } else if("고대".equals(grade)) {
-            switch (point) {
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아리아 스킬 아피강", 40.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아리아 스킬 아피강", 40.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아리아 스킬 아피강", 40.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아리아 스킬 아피강", 40.00); break;
             }
         }
     }

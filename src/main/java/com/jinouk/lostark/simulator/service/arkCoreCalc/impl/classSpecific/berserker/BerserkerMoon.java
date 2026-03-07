@@ -58,21 +58,21 @@ public class BerserkerMoon extends AbstractArkGrid {
     private void calcBloodCirculation(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "치피증", 3.00); break;
-                case 14: mergeEffect(effectsMap, "치피증", 3.00); break;
-                case 17: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); break; // 3.0 + 4.0
-                case 18: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.20); break;
-                case 19: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.40); break;
-                case 20: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.60); break;
+                case 10: mergeEffect(effectsMap, "피증", 4.00); break;
+                case 14: mergeEffect(effectsMap, "피증", 4.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 4.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 4.40); break;
+                case 19: mergeEffect(effectsMap, "피증", 4.80); break;
+                case 20: mergeEffect(effectsMap, "피증", 5.20); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.00); break;
-                case 14: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.00); break;
-                case 17: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.00); break; // 6.0 + 7.0
-                case 18: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.40); break; // 13.0 + 0.4
-                case 19: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.80); break; // 13.4 + 0.4
-                case 20: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 14.20); break; // 13.8 + 0.4
+                case 10: mergeEffect(effectsMap, "피증", 4.00); break;
+                case 14: mergeEffect(effectsMap, "피증", 4.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 6.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 6.40); break;
+                case 19: mergeEffect(effectsMap, "피증", 6.80); break;
+                case 20: mergeEffect(effectsMap, "피증", 7.20); break;
             }
         }
     }
@@ -81,22 +81,22 @@ public class BerserkerMoon extends AbstractArkGrid {
     private void calcOverBurst(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 36.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 36.65); break; // 36.0 + 0.65
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 37.30); break; // 36.65 + 0.65
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 37.95); break; // 37.30 + 0.65
+                case 10: mergeEffect(effectsMap, "적주피", 1.60); break;
+                case 14: mergeEffect(effectsMap, "적주피", 1.60); break;
+                case 17: mergeEffect(effectsMap, "적주피", 1.60); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 30.00); break;
+                case 18: mergeEffect(effectsMap, "적주피", 1.77); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 30.00); break;
+                case 19: mergeEffect(effectsMap, "적주피", 1.94); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 30.00); break;
+                case 20: mergeEffect(effectsMap, "적주피", 2.11); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 30.00); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 39.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 39.65); break; // 36.0 + 0.65
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 40.30); break; // 36.65 + 0.65
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 40.95); break; // 37.30 + 0.65
+                case 10: mergeEffect(effectsMap, "적주피", 1.60); break;
+                case 14: mergeEffect(effectsMap, "적주피", 1.60); break;
+                case 17: mergeEffect(effectsMap, "적주피", 1.60); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 35.00); break;
+                case 18: mergeEffect(effectsMap, "적주피", 1.77); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 35.00); break;
+                case 19: mergeEffect(effectsMap, "적주피", 1.94); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 35.00); break;
+                case 20: mergeEffect(effectsMap, "적주피", 2.11); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 35.00); break;
             }
         }
     }
@@ -105,21 +105,21 @@ public class BerserkerMoon extends AbstractArkGrid {
     private void calcBreakDash(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 스킬 피증", 3.50); break;
-                case 18: mergeEffect(effectsMap, "묵법 스킬 피증", 3.65); break; // 3.50 + 0.15
-                case 19: mergeEffect(effectsMap, "묵법 스킬 피증", 3.80); break; // 3.65 + 0.15
-                case 20: mergeEffect(effectsMap, "묵법 스킬 피증", 3.95); break; // 3.80 + 0.15
+                case 10: mergeEffect(effectsMap, "피증", 1.50); break;
+                case 14: mergeEffect(effectsMap, "피증", 1.50); break;
+                case 17: mergeEffect(effectsMap, "피증", 1.50); break;
+                case 18: mergeEffect(effectsMap, "피증", 1.65); break;
+                case 19: mergeEffect(effectsMap, "피증", 1.80); break;
+                case 20: mergeEffect(effectsMap, "피증", 1.95); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 스킬 피증", 5.50); break;
-                case 18: mergeEffect(effectsMap, "묵법 스킬 피증", 5.65); break; // 3.50 + 0.15
-                case 19: mergeEffect(effectsMap, "묵법 스킬 피증", 5.80); break; // 3.65 + 0.15
-                case 20: mergeEffect(effectsMap, "묵법 스킬 피증", 5.95); break; // 3.80 + 0.15
+                case 10: mergeEffect(effectsMap, "피증", 1.50); break;
+                case 14: mergeEffect(effectsMap, "피증", 1.50); break;
+                case 17: mergeEffect(effectsMap, "피증", 1.50); mergeEffect(effectsMap, "블러디 러쉬 스킬 피증", 2.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 1.65); mergeEffect(effectsMap, "블러디 러쉬 스킬 피증", 2.00); break;
+                case 19: mergeEffect(effectsMap, "피증", 1.80); mergeEffect(effectsMap, "블러디 러쉬 스킬 피증", 2.00); break;
+                case 20: mergeEffect(effectsMap, "피증", 1.95); mergeEffect(effectsMap, "블러디 러쉬 스킬 피증", 2.00); break;
             }
         }
     }
@@ -128,21 +128,21 @@ public class BerserkerMoon extends AbstractArkGrid {
     private void calcDarkTorrent(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 5.60); break;
+                case 10: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 80.00); break;
+                case 14: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 80.00); break;
+                case 17: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 130.00); break;
+                case 18: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 131.50); break;
+                case 19: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 133.00); break;
+                case 20: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 134.50); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 8.50); break;
+                case 10: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 80.00); break;
+                case 14: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 80.00); break;
+                case 17: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 136.00); break;
+                case 18: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 137.50); break;
+                case 19: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 139.00); break;
+                case 20: mergeEffect(effectsMap, "다크 러쉬 스킬 피증", 140.50); break;
             }
         }
     }
@@ -151,22 +151,22 @@ public class BerserkerMoon extends AbstractArkGrid {
     private void calcRapidSlash(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
+                case 10: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 5.00); break;
+                case 14: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 5.00); break;
+                case 17: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 13.00); break;
+                case 18: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 13.00); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 0.80); break;
+                case 19: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 13.00); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 1.60); break;
+                case 20: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 13.00); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 2.40); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
+                case 10: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 5.00); break;
+                case 14: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 5.00); break;
+                case 17: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 13.00); break;
+                case 18: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 13.00); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 0.80); break;
+                case 19: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 13.00); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 1.60); break;
+                case 20: mergeEffect(effectsMap, "더블 슬래쉬 스킬 피증", 13.00); mergeEffect(effectsMap, "오버드라이브 스킬 피증", 2.40); break;
             }
         }
     }
@@ -175,21 +175,21 @@ public class BerserkerMoon extends AbstractArkGrid {
     private void calcCycloneSlash(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
+                case 10: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.00); break;
+                case 14: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.00); break;
+                case 17: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.00); mergeEffect(effectsMap, "헬 블레이드 스킬 피증", 15.00); break;
+                case 18: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.40); mergeEffect(effectsMap, "헬 블레이드 스킬 피증", 15.00); break;
+                case 19: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.80); mergeEffect(effectsMap, "헬 블레이드 스킬 피증", 15.00); break;
+                case 20: mergeEffect(effectsMap, "홀딩 스킬 피증", 7.20); mergeEffect(effectsMap, "헬 블레이드 스킬 피증", 15.00); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
+                case 10: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.00); break;
+                case 14: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.00); break;
+                case 17: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.00); mergeEffect(effectsMap, "헬 블레이드 스킬 피증", 20.00); break;
+                case 18: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.40); mergeEffect(effectsMap, "헬 블레이드 스킬 피증", 20.00); break;
+                case 19: mergeEffect(effectsMap, "홀딩 스킬 피증", 6.80); mergeEffect(effectsMap, "헬 블레이드 스킬 피증", 20.00); break;
+                case 20: mergeEffect(effectsMap, "홀딩 스킬 피증", 7.20); mergeEffect(effectsMap, "헬 블레이드 스킬 피증", 20.00); break;
             }
         }
     }

@@ -57,22 +57,22 @@ public class ArcanaMoon extends AbstractArkGrid {
     private void calcEdgeCombo(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point) {
-                case 10: mergeEffect(effectsMap, "적주피", 2.00); break;
-                case 14: mergeEffect(effectsMap, "적주피", 2.00); break;
-                case 17: mergeEffect(effectsMap, "적주피", 2.00); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
-                case 18: mergeEffect(effectsMap, "적주피", 2.20); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
-                case 19: mergeEffect(effectsMap, "적주피", 2.40); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
-                case 120: mergeEffect(effectsMap, "적주피", 2.60); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
+                case 10: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); break;
+                case 14: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); break;
+                case 17: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
+                case 18: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.20); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
+                case 19: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.40); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
+                case 120: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point) {
-                case 10: mergeEffect(effectsMap, "적주피", 2.00); break;
-                case 14: mergeEffect(effectsMap, "적주피", 2.00); break;
-                case 17: mergeEffect(effectsMap, "적주피", 2.00); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
-                case 18: mergeEffect(effectsMap, "적주피", 2.20); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
-                case 19: mergeEffect(effectsMap, "적주피", 2.40); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
-                case 120: mergeEffect(effectsMap, "적주피", 2.60); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
+                case 10: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); break;
+                case 14: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); break;
+                case 17: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
+                case 18: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.20); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
+                case 19: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.40); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
+                case 120: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
             }
         }
     }
@@ -107,7 +107,7 @@ public class ArcanaMoon extends AbstractArkGrid {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "루인 스킬 피증", 2.80); break;
                 case 14: mergeEffect(effectsMap, "루인 스킬 피증", 2.80); break;
-                case 17: mergeEffect(effectsMap,"피증",3.50); break;
+                case 17: mergeEffect(effectsMap,"루인 스킬 피증",3.50); break;
                 case 18: mergeEffect(effectsMap, "루인 스킬 피증", 3.10); mergeEffect(effectsMap,"피증",3.50); break;
                 case 19: mergeEffect(effectsMap, "루인 스킬 피증", 3.40); mergeEffect(effectsMap,"피증",3.50); break;
                 case 20: mergeEffect(effectsMap, "루인 스킬 피증", 3.70); mergeEffect(effectsMap,"피증",3.50); break;
@@ -117,7 +117,7 @@ public class ArcanaMoon extends AbstractArkGrid {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "루인 스킬 피증", 2.80); break;
                 case 14: mergeEffect(effectsMap, "루인 스킬 피증", 2.80); break;
-                case 17: mergeEffect(effectsMap,"피증",3.50); break;
+                case 17: mergeEffect(effectsMap,"루인 스킬 피증",3.50); break;
                 case 18: mergeEffect(effectsMap, "루인 스킬 피증", 3.10); mergeEffect(effectsMap,"피증",4.50); break;
                 case 19: mergeEffect(effectsMap, "루인 스킬 피증", 3.40); mergeEffect(effectsMap,"피증",4.50); break;
                 case 20: mergeEffect(effectsMap, "루인 스킬 피증", 3.70); mergeEffect(effectsMap,"피증",4.50); break;
@@ -132,7 +132,7 @@ public class ArcanaMoon extends AbstractArkGrid {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "피증", 2.00); break;
                 case 14: mergeEffect(effectsMap, "피증", 2.00); break;
-                case 17: mergeEffect(effectsMap,"황제 카드 피증",15.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap,"황제 카드 피증",15.00); break;
                 case 18: mergeEffect(effectsMap, "피증", 2.20); mergeEffect(effectsMap,"황제 카드 피증",15.00); break;
                 case 19: mergeEffect(effectsMap, "피증", 2.40); mergeEffect(effectsMap,"황제 카드 피증",15.00); break;
                 case 20: mergeEffect(effectsMap, "피증", 2.60); mergeEffect(effectsMap,"황제 카드 피증",15.00); break;
@@ -180,7 +180,7 @@ public class ArcanaMoon extends AbstractArkGrid {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "체크메이트 스킬 피증", 12.00); break;
                 case 14: mergeEffect(effectsMap, "체크메이트 스킬 피증", 12.00); break;
-                case 17: mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",20.00); break;
+                case 17: mergeEffect(effectsMap, "체크메이트 스킬 피증", 12.00);  mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",20.00); break;
                 case 18: mergeEffect(effectsMap, "체크메이트 스킬 피증", 12.80); mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",20.00); break;
                 case 19: mergeEffect(effectsMap, "체크메이트 스킬 피증", 13.60); mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",20.00); break;
                 case 20: mergeEffect(effectsMap, "체크메이트 스킬 피증", 14.40); mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",20.00); break;
@@ -190,7 +190,7 @@ public class ArcanaMoon extends AbstractArkGrid {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "체크메이트 스킬 피증", 12.00); break;
                 case 14: mergeEffect(effectsMap, "체크메이트 스킬 피증", 12.00); break;
-                case 17: mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",25.00); break;
+                case 17: mergeEffect(effectsMap, "체크메이트 스킬 피증", 12.00);  mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",25.00); break;
                 case 18: mergeEffect(effectsMap, "체크메이트 스킬 피증", 12.80); mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",25.00); break;
                 case 19: mergeEffect(effectsMap, "체크메이트 스킬 피증", 13.60); mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",25.00); break;
                 case 20: mergeEffect(effectsMap, "체크메이트 스킬 피증", 14.40); mergeEffect(effectsMap,"다크 리저렉션 스킬 피증",25.00); break;

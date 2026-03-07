@@ -37,12 +37,6 @@ public class ArtistStar extends AbstractArkGrid {
                 calcFastBrush(effectsMap, point, grade);
             } else if("쏟아지는 두루미".equals(name)) {
                 calcCranes(effectsMap,point,grade);
-            } else if("붓 콩콩".equals(name)) {
-                calcBrushKongKong(effectsMap,point,grade);
-            } else if("차원의 문".equals(name)) {
-                calcDimensionGate(effectsMap,point,grade);
-            }else if("먹물 뿌리기".equals(name)) {
-                calcSprayInk(effectsMap,point,grade);
             }
         });
 
@@ -55,19 +49,19 @@ public class ArtistStar extends AbstractArkGrid {
             switch (point){
                 case 10: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.00); break;
                 case 14: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.00); break;
-                case 17: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.00); mergeEffect(effectsMap, "치피증", 50.00); break;
-                case 18: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.40); mergeEffect(effectsMap, "치피증", 50.00); break;
-                case 19: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.80); mergeEffect(effectsMap, "치피증", 50.00); break;
-                case 20: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.20); mergeEffect(effectsMap, "치피증", 50.00); break;
+                case 17: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.00); mergeEffect(effectsMap, "묵법 : 파죽 스킬 치피증", 50.00); break;
+                case 18: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.40); mergeEffect(effectsMap, "묵법 : 파죽 스킬 치피증", 50.00); break;
+                case 19: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.80); mergeEffect(effectsMap, "묵법 : 파죽 스킬 치피증", 50.00); break;
+                case 20: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.20); mergeEffect(effectsMap, "묵법 : 파죽 스킬 치피증", 50.00); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
                 case 10: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.00); break;
                 case 14: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.00); break;
-                case 17: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.00); mergeEffect(effectsMap, "치피증", 60.00); break;
-                case 18: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.40); mergeEffect(effectsMap, "치피증", 60.00); break;
-                case 19: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.80); mergeEffect(effectsMap, "치피증", 60.00); break;
-                case 20: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.20); mergeEffect(effectsMap, "치피증", 60.00); break;
+                case 17: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.00); mergeEffect(effectsMap, "묵법 : 파죽 스킬 치피증", 60.00); break;
+                case 18: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.40); mergeEffect(effectsMap, "묵법 : 파죽 스킬 치피증", 60.00); break;
+                case 19: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 5.80); mergeEffect(effectsMap, "묵법 : 파죽 스킬 치피증", 60.00); break;
+                case 20: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.20); mergeEffect(effectsMap, "묵법 : 파죽 스킬 치피증", 60.00); break;
             }
         }
     }
@@ -78,20 +72,20 @@ public class ArtistStar extends AbstractArkGrid {
             switch (point){
                 case 10: break;
                 case 14: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.00); break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.00); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 피증", 33.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.65); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 피증", 33.00); break;
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 21.30); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 피증", 33.00); break;
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 21.95); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 피증", 33.00); break;
+                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.00); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 트라이포드 피증", 33.00); break;
+                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.65); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 트라이포드 피증", 33.00); break;
+                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 21.30); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 트라이포드 피증", 33.00); break;
+                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 21.95); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 트라이포드 피증", 33.00); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
                 case 10: break;
                 case 14: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.00); break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.00); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 피증", 36.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.65); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 피증", 36.00); break;
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 21.30); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 피증", 36.00); break;
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 21.95); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 피증", 36.00); break;
+                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.00); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 트라이포드 피증", 36.00); break;
+                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 20.65); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 트라이포드 피증", 36.00); break;
+                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 21.30); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 트라이포드 피증", 36.00); break;
+                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 21.95); mergeEffect(effectsMap, "필법 : 한획긋기 스킬 연속 긋기 트라이포드 피증", 36.00); break;
             }
         }
     }
@@ -101,93 +95,20 @@ public class ArtistStar extends AbstractArkGrid {
         if("유물".equals(grade)) {
             switch (point){
                 case 10: break;
-                case 14: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); break;
-                case 17: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 14.00); break;
-                case 18: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 15.30); break;
-                case 19: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 16.60); break;
-                case 20: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 17.90); break;
+                case 14: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); break;
+                case 17: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 14.00); break;
+                case 18: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 15.30); break;
+                case 19: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 16.60); break;
+                case 20: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 17.90); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
                 case 10: break;
-                case 14: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); break;
-                case 17: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 17.00); break;
-                case 18: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 18.30); break;
-                case 19: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 19.60); break;
-                case 20: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 20.90); break;
-            }
-        }
-    }
-
-    //붓 콩콩
-    //진욱쿤 질문
-    private void calcBrushKongKong(Map<String, Double> effectsMap, int point, String grade) {
-        if("유물".equals(grade)) {
-            switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: break;
-                case 18: mergeEffect(effectsMap, "필법 : 콩콩이 스킬 쿨감", 1.00); break;
-                case 19: mergeEffect(effectsMap, "필법 : 콩콩이 스킬 쿨감", 2.00); break;
-                case 20: mergeEffect(effectsMap, "필법 : 콩콩이 스킬 쿨감", 3.00); break;
-            }
-        } else if("고대".equals(grade)) {
-            switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: break;
-                case 18: mergeEffect(effectsMap, "필법 : 콩콩이 스킬 쿨감", 1.00); break;
-                case 19: mergeEffect(effectsMap, "필법 : 콩콩이 스킬 쿨감", 2.00); break;
-                case 20: mergeEffect(effectsMap, "필법 : 콩콩이 스킬 쿨감", 3.00); break;
-            }
-        }
-    }
-
-    //차원의 문
-    //진욱쿤 찬스
-    private void calcDimensionGate(Map<String, Double> effectsMap, int point, String grade) {
-        if("유물".equals(grade)) {
-            switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 : 환영의 문 스킬 쿨감", 7.00); break;
-                case 18: mergeEffect(effectsMap, "묵법 : 환영의 문 스킬 쿨감", 8.00); break;
-                case 19: mergeEffect(effectsMap, "묵법 : 환영의 문 스킬 쿨감", 9.00); break;
-                case 20: mergeEffect(effectsMap, "묵법 : 환영의 문 스킬 쿨감", 10.00); break;
-            }
-        }
-        else if("고대".equals(grade)) {
-            switch (point) {
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 : 환영의 문 스킬 쿨감", 10.00); break;
-                case 18: mergeEffect(effectsMap, "묵법 : 환영의 문 스킬 쿨감", 11.00); break;
-                case 19: mergeEffect(effectsMap, "묵법 : 환영의 문 스킬 쿨감", 12.00); break;
-                case 20: mergeEffect(effectsMap, "묵법 : 환영의 문 스킬 쿨감", 13.00); break;
-            }
-        }
-    }
-
-    //먹물 뿌리기
-    //진욱쿤 찬스
-    private void calcSprayInk(Map<String, Double> effectsMap, int point, String grade) {
-        if("유물".equals(grade)) {
-            switch (point) {
-                case 10: break;
-                case 14: break;
-                case 17: break;
-                case 18: break;
-                case 19: break;
-                case 20: break;
-            }
-        } else if("고대".equals(grade)) {
-            switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: break;
-                case 18: break;
-                case 19: break;
-                case 20: break;
+                case 14: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); break;
+                case 17: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 17.00); break;
+                case 18: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 18.30); break;
+                case 19: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 19.60); break;
+                case 20: mergeEffect(effectsMap, "묵법 : 달그리기 스킬 먹물 세례 트라이포드 피증", 120.00); mergeEffect(effectsMap, "묵법 : 두루미나래 스킬 피증", 20.90); break;
             }
         }
     }
