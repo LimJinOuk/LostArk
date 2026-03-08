@@ -41,4 +41,8 @@ public class homecontroller {
     public String Guide(){
         return "forward:/index.html";
     }
+    @GetMapping("/privacyPage")
+    public String Privacy(){
+        return "forward:/index.html";
+    }
 }

@@ -54,142 +54,142 @@ public class HawkEyeStar extends AbstractArkGrid {
         return new ArkGridResponseDto(effectsMap);
     }
 
-    //
+    //HSU-04 자동 제어 스코프
     private void calcHsu04AutoControlScope(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "치피증", 3.00); break;
-                case 14: mergeEffect(effectsMap, "치피증", 3.00); break;
-                case 17: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); break; // 3.0 + 4.0
-                case 18: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.20); break;
-                case 19: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.40); break;
-                case 20: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.60); break;
+                case 10: break; // 시전 속도 증가만 있음
+                case 14: mergeEffect(effectsMap, "스나이프 스킬 피증", 8.00); break;
+                case 17: mergeEffect(effectsMap, "스나이프 스킬 피증", 15.00); break; // 8.0 + 7.0
+                case 18: mergeEffect(effectsMap, "스나이프 스킬 피증", 15.60); break;
+                case 19: mergeEffect(effectsMap, "스나이프 스킬 피증", 16.20); break;
+                case 20: mergeEffect(effectsMap, "스나이프 스킬 피증", 16.80); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.00); break;
-                case 14: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.00); break;
-                case 17: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.00); break; // 6.0 + 7.0
-                case 18: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.40); break; // 13.0 + 0.4
-                case 19: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.80); break; // 13.4 + 0.4
-                case 20: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 14.20); break; // 13.8 + 0.4
+                case 10: break; // 시전 속도 증가만 있음
+                case 14: mergeEffect(effectsMap, "스나이프 스킬 피증", 8.00); break;
+                case 17: mergeEffect(effectsMap, "스나이프 스킬 피증", 18.00); break; // 8.0 + 7.0
+                case 18: mergeEffect(effectsMap, "스나이프 스킬 피증", 18.60); break;
+                case 19: mergeEffect(effectsMap, "스나이프 스킬 피증", 19.20); break;
+                case 20: mergeEffect(effectsMap, "스나이프 스킬 피증", 19.80); break;
             }
         }
     }
 
-    //
+    //HSU-17 일렉트릭 노바
     private void calcHsu17ElectricNova(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 36.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 36.65); break; // 36.0 + 0.65
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 37.30); break; // 36.65 + 0.65
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 37.95); break; // 37.30 + 0.65
+                case 10: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 8.00); break;
+                case 14: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 8.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); break;
+                case 17: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 8.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); mergeEffect(effectsMap, "애로우 샤워 스킬 꿰뚫는 화살 트라이포드 피증", 60.00); break;
+                case 18: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 9.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); mergeEffect(effectsMap, "애로우 샤워 스킬 꿰뚫는 화살 트라이포드 피증", 60.00); break;
+                case 19: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 10.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); mergeEffect(effectsMap, "애로우 샤워 스킬 꿰뚫는 화살 트라이포드 피증", 60.00); break;
+                case 20: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 11.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); mergeEffect(effectsMap, "애로우 샤워 스킬 꿰뚫는 화살 트라이포드 피증", 60.00); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 39.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 39.65); break; // 36.0 + 0.65
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 40.30); break; // 36.65 + 0.65
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 40.95); break; // 37.30 + 0.65
+                case 10: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 8.00); break;
+                case 14: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 8.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); break;
+                case 17: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 8.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); mergeEffect(effectsMap, "애로우 샤워 스킬 꿰뚫는 화살 트라이포드 피증", 70.00); break;
+                case 18: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 9.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); mergeEffect(effectsMap, "애로우 샤워 스킬 꿰뚫는 화살 트라이포드 피증", 70.00); break;
+                case 19: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 10.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); mergeEffect(effectsMap, "애로우 샤워 스킬 꿰뚫는 화살 트라이포드 피증", 70.00); break;
+                case 20: mergeEffect(effectsMap, "애로우 샤워 스킬 피증", 11.00); mergeEffect(effectsMap, "애로우 샤워 스킬 전기 세례 트라이포드 피증", 180.00); mergeEffect(effectsMap, "애로우 샤워 스킬 꿰뚫는 화살 트라이포드 피증", 70.00); break;
             }
         }
     }
 
-    //
+    //HSU-31 블록버스터
     private void calcHsu31Blockbuster(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 스킬 피증", 3.50); break;
-                case 18: mergeEffect(effectsMap, "묵법 스킬 피증", 3.65); break; // 3.50 + 0.15
-                case 19: mergeEffect(effectsMap, "묵법 스킬 피증", 3.80); break; // 3.65 + 0.15
-                case 20: mergeEffect(effectsMap, "묵법 스킬 피증", 3.95); break; // 3.80 + 0.15
+                case 10: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 10.00); break;
+                case 14: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 10.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 100.00); break;
+                case 17: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 30.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 100.00); break; // 10.0 + 20.0
+                case 18: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 30.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 105.00); break;
+                case 19: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 30.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 110.00); break;
+                case 20: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 30.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 115.00); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 스킬 피증", 5.50); break;
-                case 18: mergeEffect(effectsMap, "묵법 스킬 피증", 5.65); break; // 3.50 + 0.15
-                case 19: mergeEffect(effectsMap, "묵법 스킬 피증", 5.80); break; // 3.65 + 0.15
-                case 20: mergeEffect(effectsMap, "묵법 스킬 피증", 5.95); break; // 3.80 + 0.15
+                case 10: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 10.00); break;
+                case 14: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 10.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 100.00); break;
+                case 17: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 40.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 100.00); break; // 10.0 + 20.0
+                case 18: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 40.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 105.00); break;
+                case 19: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 40.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 110.00); break;
+                case 20: mergeEffect(effectsMap, "크레모아 지뢰 스킬 피증", 40.00); mergeEffect(effectsMap, "아토믹 애로우 스킬 피증", 115.00); break;
             }
         }
     }
 
-    //
+    //HSU-06 레이저사이트
     private void calcHsu06LaserSight(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 5.60); break;
+                case 10: mergeEffect(effectsMap, "스나이프 스킬 피증", 6.00); break;
+                case 14: mergeEffect(effectsMap, "스나이프 스킬 피증", 6.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 20.00); break;
+                case 17: mergeEffect(effectsMap, "스나이프 스킬 피증", 18.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 20.00); break; // 6.0 + 12.0
+                case 18: mergeEffect(effectsMap, "스나이프 스킬 피증", 18.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 21.40); break;
+                case 19: mergeEffect(effectsMap, "스나이프 스킬 피증", 18.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 22.80); break;
+                case 20: mergeEffect(effectsMap, "스나이프 스킬 피증", 18.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 24.20); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 8.50); break;
+                case 10: mergeEffect(effectsMap, "스나이프 스킬 피증", 6.00); break;
+                case 14: mergeEffect(effectsMap, "스나이프 스킬 피증", 6.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 20.00); break;
+                case 17: mergeEffect(effectsMap, "스나이프 스킬 피증", 22.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 20.00); break; // 6.0 + 12.0
+                case 18: mergeEffect(effectsMap, "스나이프 스킬 피증", 22.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 21.40); break;
+                case 19: mergeEffect(effectsMap, "스나이프 스킬 피증", 22.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 22.80); break;
+                case 20: mergeEffect(effectsMap, "스나이프 스킬 피증", 22.00); mergeEffect(effectsMap, "호크 샷 스킬 피증", 24.20); break;
             }
         }
     }
 
-    //
+    //HSU-57 근력 보조 장갑
     private void calcHsu57PowerAssistGlove(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
+                case 10: mergeEffect(effectsMap, "차징 샷 스킬 피증", 7.00); break;
+                case 14: mergeEffect(effectsMap, "차징 샷 스킬 피증", 107.00); break; // 7.0 + 100.0
+                case 17: mergeEffect(effectsMap, "차징 샷 스킬 피증", 107.00); mergeEffect(effectsMap, "차징 샷 스킬 정조준 트라이포드 피증", 10.00); break;
+                case 18: mergeEffect(effectsMap, "차징 샷 스킬 피증", 107.60); mergeEffect(effectsMap, "차징 샷 스킬 정조준 트라이포드 피증", 10.00); break;
+                case 19: mergeEffect(effectsMap, "차징 샷 스킬 피증", 108.20); mergeEffect(effectsMap, "차징 샷 스킬 정조준 트라이포드 피증", 10.00); break;
+                case 20: mergeEffect(effectsMap, "차징 샷 스킬 피증", 108.80); mergeEffect(effectsMap, "차징 샷 스킬 정조준 트라이포드 피증", 10.00); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
+                case 10: mergeEffect(effectsMap, "차징 샷 스킬 피증", 7.00); break;
+                case 14: mergeEffect(effectsMap, "차징 샷 스킬 피증", 107.00); break; // 7.0 + 100.0
+                case 17: mergeEffect(effectsMap, "차징 샷 스킬 피증", 107.00); mergeEffect(effectsMap, "차징 샷 스킬 정조준 트라이포드 피증", 15.00); break;
+                case 18: mergeEffect(effectsMap, "차징 샷 스킬 피증", 107.60); mergeEffect(effectsMap, "차징 샷 스킬 정조준 트라이포드 피증", 15.00); break;
+                case 19: mergeEffect(effectsMap, "차징 샷 스킬 피증", 108.20); mergeEffect(effectsMap, "차징 샷 스킬 정조준 트라이포드 피증", 15.00); break;
+                case 20: mergeEffect(effectsMap, "차징 샷 스킬 피증", 108.80); mergeEffect(effectsMap, "차징 샷 스킬 정조준 트라이포드 피증", 15.00); break;
             }
         }
     }
 
-    //
+    //HSU-22 사지 안정기
     private void calcHsu22LimbStabilizer(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
+                case 10: break; // 시전 속도 증가만 있음
+                case 14: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 16.00); break;
+                case 17: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 156.00); break; // 16.0 + 140.0
+                case 18: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 156.80); break;
+                case 19: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 157.60); break;
+                case 20: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 158.40); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
+                case 10: break; // 시전 속도 증가만 있음
+                case 14: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 16.00); break;
+                case 17: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 166.00); break; // 16.0 + 140.0
+                case 18: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 166.80); break;
+                case 19: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 167.60); break;
+                case 20: mergeEffect(effectsMap, "래피드 샷 스킬 피증", 168.40); break;
             }
         }
     }
