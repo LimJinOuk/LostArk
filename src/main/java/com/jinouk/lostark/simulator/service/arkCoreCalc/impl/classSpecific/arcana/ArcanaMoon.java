@@ -62,7 +62,7 @@ public class ArcanaMoon extends AbstractArkGrid {
                 case 17: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
                 case 18: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.20); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
                 case 19: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.40); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
-                case 120: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
+                case 20: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap,"루인 스킬 피증",5.00); break;
             }
         }
         else if("고대".equals(grade)) {
@@ -72,7 +72,7 @@ public class ArcanaMoon extends AbstractArkGrid {
                 case 17: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
                 case 18: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.20); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
                 case 19: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.40); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
-                case 120: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
+                case 20: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap,"루인 스킬 피증",6.00); break;
             }
         }
     }
@@ -142,7 +142,7 @@ public class ArcanaMoon extends AbstractArkGrid {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "피증", 2.00); break;
                 case 14: mergeEffect(effectsMap, "피증", 2.00); break;
-                case 17: mergeEffect(effectsMap,"황제 카드 피증",15.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap,"황제 카드 피증",20.00); break;
                 case 18: mergeEffect(effectsMap, "피증", 2.20); mergeEffect(effectsMap,"황제 카드 피증",20.00); break;
                 case 19: mergeEffect(effectsMap, "피증", 2.40); mergeEffect(effectsMap,"황제 카드 피증",20.00); break;
                 case 20: mergeEffect(effectsMap, "피증", 2.60); mergeEffect(effectsMap,"황제 카드 피증",20.00); break;
