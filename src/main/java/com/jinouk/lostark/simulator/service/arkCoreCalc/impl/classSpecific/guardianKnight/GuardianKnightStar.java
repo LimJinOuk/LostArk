@@ -53,142 +53,143 @@ public class GuardianKnightStar  extends AbstractArkGrid {
         return new ArkGridResponseDto(effectsMap);
     }
 
-    //
+    //라스트 스탠드
     private void calcLastStand(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "치피증", 3.00); break;
-                case 14: mergeEffect(effectsMap, "치피증", 3.00); break;
-                case 17: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); break; // 3.0 + 4.0
-                case 18: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.20); break;
-                case 19: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.40); break;
-                case 20: mergeEffect(effectsMap, "치피증", 7.00); mergeEffect(effectsMap, "초풍각 스킬 피증", 28.00); mergeEffect(effectsMap, "치명타 적중 시 피증", 0.60); break;
+                case 10: break;
+                case 14: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); break;
+                case 17: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 푸른 심장 트라이포드 피증", 20.00); break;
+                case 18: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 푸른 심장 트라이포드 피증", 20.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 피증", 0.70); break;
+                case 19: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 푸른 심장 트라이포드 피증", 20.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 피증", 1.40); break;
+                case 20: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 푸른 심장 트라이포드 피증", 20.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 피증", 2.10); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.00); break;
-                case 14: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 6.00); break;
-                case 17: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.00); break; // 6.0 + 7.0
-                case 18: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.40); break; // 13.0 + 0.4
-                case 19: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 13.80); break; // 13.4 + 0.4
-                case 20: mergeEffect(effectsMap, "묵법 : 파죽 스킬 피증", 14.20); break; // 13.8 + 0.4
+                case 10: break;
+                case 14: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); break;
+                case 17: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 푸른 심장 트라이포드 피증", 27.00); break;
+                case 18: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 푸른 심장 트라이포드 피증", 27.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 피증", 0.70); break;
+                case 19: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 푸른 심장 트라이포드 피증", 27.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 피증", 1.40); break;
+                case 20: mergeEffect(effectsMap, "블레이즈 플래시 스킬 피증", 8.00); mergeEffect(effectsMap, "윙 래시 스킬 피증", 8.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 푸른 심장 트라이포드 피증", 27.00); mergeEffect(effectsMap, "익스플로전 피니셔 스킬 피증", 2.10); break;
             }
         }
     }
 
-    //
+    //엑스큐셔너
     private void calcExecutioner(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 36.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 36.65); break; // 36.0 + 0.65
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 37.30); break; // 36.65 + 0.65
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 37.95); break; // 37.30 + 0.65
+                case 10: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); break;
+                case 14: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); break;
+                case 17: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); mergeEffect(effectsMap, "렌딩 피니셔 스킬 피증", 10.00); break;
+                case 18: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); mergeEffect(effectsMap, "렌딩 피니셔 스킬 피증", 10.80); break;
+                case 19: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); mergeEffect(effectsMap, "렌딩 피니셔 스킬 피증", 11.60); break;
+                case 20: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); mergeEffect(effectsMap, "렌딩 피니셔 스킬 피증", 12.40); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
-                case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 39.00); break;
-                case 18: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 39.65); break; // 36.0 + 0.65
-                case 19: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 40.30); break; // 36.65 + 0.65
-                case 20: mergeEffect(effectsMap, "필법 : 한획긋기 스킬 피증", 40.95); break; // 37.30 + 0.65
+                case 10: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); break;
+                case 14: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); break;
+                case 17: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); mergeEffect(effectsMap, "렌딩 피니셔 스킬 피증", 15.00); break;
+                case 18: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); mergeEffect(effectsMap, "렌딩 피니셔 스킬 피증", 15.80); break;
+                case 19: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); mergeEffect(effectsMap, "렌딩 피니셔 스킬 피증", 16.60); break;
+                case 20: mergeEffect(effectsMap, "발현 스킬 피증", 5.00); mergeEffect(effectsMap, "렌딩 피니셔 스킬 피증", 17.40); break;
             }
         }
     }
 
-    //
+    //추격 시작
     private void calcStartChase(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
                 case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 스킬 피증", 3.50); break;
-                case 18: mergeEffect(effectsMap, "묵법 스킬 피증", 3.65); break; // 3.50 + 0.15
-                case 19: mergeEffect(effectsMap, "묵법 스킬 피증", 3.80); break; // 3.65 + 0.15
-                case 20: mergeEffect(effectsMap, "묵법 스킬 피증", 3.95); break; // 3.80 + 0.15
+                case 14: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 20.00); break;
+                case 17: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 20.00); mergeEffect(effectsMap, "블레이즈 플래시 스킬 맹렬한 추격 트라이포드 피증", 16.00); break;
+                case 18: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 20.80); mergeEffect(effectsMap, "블레이즈 플래시 스킬 맹렬한 추격 트라이포드 피증", 16.00); break;
+                case 19: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 21.60); mergeEffect(effectsMap, "블레이즈 플래시 스킬 맹렬한 추격 트라이포드 피증", 16.00); break;
+                case 20: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 22.40); mergeEffect(effectsMap, "블레이즈 플래시 스킬 맹렬한 추격 트라이포드 피증", 16.00); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
                 case 10: break;
-                case 14: break;
-                case 17: mergeEffect(effectsMap, "묵법 스킬 피증", 5.50); break;
-                case 18: mergeEffect(effectsMap, "묵법 스킬 피증", 5.65); break; // 3.50 + 0.15
-                case 19: mergeEffect(effectsMap, "묵법 스킬 피증", 5.80); break; // 3.65 + 0.15
-                case 20: mergeEffect(effectsMap, "묵법 스킬 피증", 5.95); break; // 3.80 + 0.15
+                case 14: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 20.00); break;
+                case 17: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 20.00); mergeEffect(effectsMap, "블레이즈 플래시 스킬 맹렬한 추격 트라이포드 피증", 25.00); break;
+                case 18: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 20.80); mergeEffect(effectsMap, "블레이즈 플래시 스킬 맹렬한 추격 트라이포드 피증", 25.00); break;
+                case 19: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 21.60); mergeEffect(effectsMap, "블레이즈 플래시 스킬 맹렬한 추격 트라이포드 피증", 25.00); break;
+                case 20: mergeEffect(effectsMap, "리벤지 스피어 스킬 피증", 22.40); mergeEffect(effectsMap, "블레이즈 플래시 스킬 맹렬한 추격 트라이포드 피증", 25.00); break;
             }
         }
     }
 
-    //
+    //그랜드 피날레
+    //진욱쿤(14포, 17포 차지 조작)
     private void calcGrandFinale(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 5.60); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 5.60); break;
+                case 10: break;
+                case 14: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); break;
+                case 17: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 말살 트라이포드 피증", 14.00); break;
+                case 18: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 말살 트라이포드 피증", 14.00); mergeEffect(effectsMap, "치명타 시 피해량 증가", 0.21); break;
+                case 19: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 말살 트라이포드 피증", 14.00); mergeEffect(effectsMap, "치명타 시 피해량 증가", 0.42); break;
+                case 20: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 말살 트라이포드 피증", 14.00); mergeEffect(effectsMap, "치명타 시 피해량 증가", 0.63); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "아공강", 8.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "아공강", 8.50); break;
+                case 10: break;
+                case 14: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); break;
+                case 17: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 말살 트라이포드 피증", 18.00); break;
+                case 18: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 말살 트라이포드 피증", 18.00); mergeEffect(effectsMap, "치명타 시 피해량 증가", 0.21); break;
+                case 19: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 말살 트라이포드 피증", 18.00); mergeEffect(effectsMap, "치명타 시 피해량 증가", 0.42); break;
+                case 20: mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 12.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 죽음의 일격 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 말살 트라이포드 피증", 18.00); mergeEffect(effectsMap, "치명타 시 피해량 증가", 0.63); break;
             }
         }
     }
 
-    //
+    //일당백
     private void calcMatchlessWarrior(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 27.00); break;
+                case 10: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 8.00); break;
+                case 14: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 8.00); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 80.00); break;
+                case 17: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 8.00); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 80.00); break;
+                case 18: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 8.80); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 80.00); break;
+                case 19: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 9.60); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 80.00); break;
+                case 20: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 10.40); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 80.00); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "묵법 : 미르 새김 스킬 아피강", 40.00); break;
+                case 10: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 8.00); break;
+                case 14: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 8.00); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 88.00); break;
+                case 17: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 8.00); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 88.00); break;
+                case 18: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 8.80); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 88.00); break;
+                case 19: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 9.60); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 88.00); break;
+                case 20: mergeEffect(effectsMap, "프렌지 스윕 스킬 피증", 10.40); mergeEffect(effectsMap, "길로틴 스핀 스킬 천부적인 힘 트라이포드 피증", 8.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 맹습 트라이포드 피증", 88.00); break;
             }
         }
     }
 
-    //
+    //파멸
     private void calcRuin(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 6.50); break;
+                case 10: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); break;
+                case 14: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 15.00); break;
+                case 17: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 15.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 피증", 15.00); break;
+                case 18: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 15.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 피증", 15.90); break;
+                case 19: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 15.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 피증", 16.80); break;
+                case 20: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 15.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 피증", 17.70); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 14: mergeEffect(effectsMap, "아피강", 1.50); break;
-                case 17: mergeEffect(effectsMap, "아피강", 1.50); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 18: mergeEffect(effectsMap, "아피강", 1.67); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 19: mergeEffect(effectsMap, "아피강", 1.84); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
-                case 20: mergeEffect(effectsMap, "아피강", 2.01); mergeEffect(effectsMap, "저무는 달 스킬 아피강", 10.00); break;
+                case 10: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); break;
+                case 14: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 20.00); break;
+                case 17: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 피증", 15.00); break;
+                case 18: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 피증", 15.90); break;
+                case 19: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 피증", 16.80); break;
+                case 20: mergeEffect(effectsMap, "길로틴 스핀 스킬 피증", 10.00); mergeEffect(effectsMap, "프렌지 스윕 스킬 파멸의 오브 트라이포드 피증", 20.00); mergeEffect(effectsMap, "퀘이크 스매시 스킬 피증", 17.70); break;
             }
         }
     }
