@@ -78,7 +78,7 @@ public class BlasterStar  extends AbstractArkGrid {
     }
 
     //타임 온 타겟
-    //진욱쿤 찬스(A.C.T??)
+    //진욱쿤 찬스(A.C.T 스킬 피증)
     private void calcTimeOnTarget(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

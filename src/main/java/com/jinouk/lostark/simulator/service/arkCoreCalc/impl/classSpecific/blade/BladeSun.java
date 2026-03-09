@@ -55,7 +55,7 @@ public class BladeSun  extends AbstractArkGrid {
     }
 
     //블레이드 버스트
-    //진욱쿤 찬스(블레이드 버스트 피증? 피증?)
+    //진욱쿤 찬스(블레이드 버스트 스킬 피증 -> 피증)
     private void calcBladeBurst(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -149,7 +149,7 @@ public class BladeSun  extends AbstractArkGrid {
     }
 
     //집중의 일격
-    //진욱쿤 찬스(차지 타입 스킬)
+    //진욱쿤 찬스(차지 타입 스킬 -> 피증)
     private void calcFocusedStrike(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

@@ -78,7 +78,7 @@ public class BlasterMoon  extends AbstractArkGrid {
     }
 
     //과열된 포탄
-    //진욱쿤 찬스(포격 스킬 피증? 피증?)
+    //진욱쿤 찬스(포격 스킬 피증)
     private void calcOverheatedShell(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

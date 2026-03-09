@@ -125,7 +125,7 @@ public class ScouterSun  extends AbstractArkGrid {
     }
 
     //아스트라 슈트
-    //진욱쿤(하이퍼 싱크 스킬?)
+    //진욱쿤(하이퍼 싱크 스킬? 피증)
     private void calcAstraSuit(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

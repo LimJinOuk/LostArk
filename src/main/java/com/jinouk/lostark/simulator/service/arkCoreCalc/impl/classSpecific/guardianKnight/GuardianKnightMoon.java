@@ -55,7 +55,7 @@ public class GuardianKnightMoon  extends AbstractArkGrid {
     }
 
     //노바 플레임
-    //진욱쿤 찬스(화신 상태)
+    //진욱쿤 찬스(화신 상태 -> 적주피)
     private void calcNovaFlame(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -126,7 +126,7 @@ public class GuardianKnightMoon  extends AbstractArkGrid {
     }
 
     //위압
-    //진욱쿤 찬스(차지 조작 스킬)
+    //진욱쿤 찬스(피증)
     private void calcOverpower(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -174,7 +174,7 @@ public class GuardianKnightMoon  extends AbstractArkGrid {
     }
 
     //도미넌트
-    //(초월 상태 적주피)
+    //(초월 상태 적주피 -> 적주피)
     private void calcDominant(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

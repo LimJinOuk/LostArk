@@ -124,7 +124,7 @@ public class DestroyerMoon extends AbstractArkGrid {
     }
 
     //사건의 지평선
-    //진욱쿤 찬스(10포, 17포)
+    //진욱쿤 찬스(10포 -> 중수 스킬 피증, 17포 -> 적주피)
     private void calcEventHorizon(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -172,7 +172,7 @@ public class DestroyerMoon extends AbstractArkGrid {
     }
 
     //몰아치는 중력
-    //진욱쿤 찬스(마지막 공격?)
+    //진욱쿤 찬스(볼텍스 그라비티 스킬 피증)
     private void calcRushingGravity(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

@@ -54,7 +54,7 @@ public class DevilHunterSun extends AbstractArkGrid {
 
 
     //블러드 하운드
-    //진욱쿤 찬스(14포)
+    //진욱쿤 찬스(14포) -> 무력화x
     private void calcBloodHound(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

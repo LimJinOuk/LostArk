@@ -124,7 +124,7 @@ public class DevilHunterMoon  extends AbstractArkGrid {
     }
 
     //하늘의 지배자
-    //진욱쿤 찬스(핸드건)
+    //진욱쿤 찬스(핸드건 스킬 피증)
     private void calcRulerOfSky(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

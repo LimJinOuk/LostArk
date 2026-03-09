@@ -148,7 +148,7 @@ public class BreakerSun extends AbstractArkGrid {
     }
 
     //수라안
-    //진욱쿤 찬스(수라결 기본 공격 스킬 피증? 피증?)
+    //진욱쿤 찬스(수라결 스킬 피증? 피증?)
     private void calcSuraan(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

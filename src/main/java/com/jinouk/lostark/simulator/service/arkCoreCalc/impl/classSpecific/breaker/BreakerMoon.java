@@ -55,7 +55,7 @@ public class BreakerMoon extends AbstractArkGrid {
     }
 
     //권왕태세
-    //진욱쿤 찬스(권왕태세 상태?)
+    //진욱쿤 찬스(권왕태세 상태 적주피 -> 적주피)
     private void calcKwonwangTaese(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -79,7 +79,7 @@ public class BreakerMoon extends AbstractArkGrid {
     }
 
     //진 파천섬광
-    //진욱쿤 찬스(충격 스킬 피증? 피증?)
+    //진욱쿤 찬스(충격 스킬 피증)
     private void calcJinPacheonSeomgwang(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -104,7 +104,7 @@ public class BreakerMoon extends AbstractArkGrid {
     }
 
     //충격 충전
-    //진욱쿤 찬스(충격 스킬 피증? 피증?)
+    //진욱쿤 찬스(충격 스킬 피증)
     private void calcShockCharge(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -175,7 +175,7 @@ public class BreakerMoon extends AbstractArkGrid {
     }
 
     //종횡무진
-    //진욱쿤 찬스(기력 스킬 피증? 피증?)
+    //진욱쿤 찬스(기력 스킬 피증)
     private void calcJonghoengMujin(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

@@ -148,7 +148,7 @@ public class BreakerStar  extends AbstractArkGrid {
     }
 
     //수라
-    //진욱쿤 찬스(수라결 기본 공격 피증)
+    //진욱쿤 찬스(수라결 스킬 피증)
     private void calcSura(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

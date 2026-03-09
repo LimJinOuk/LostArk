@@ -54,7 +54,7 @@ public class SorceressMoon  extends AbstractArkGrid {
     }
 
     //점화의 문장
-    //진욱쿤(마력 방출 중)
+    //진욱쿤(마력 방출 중 -> 피증)
     private void calcIgnitionEmblem(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -78,7 +78,7 @@ public class SorceressMoon  extends AbstractArkGrid {
     }
 
     //연소 가속
-    //진욱쿤(캐스팅 조작)
+    //진욱쿤(캐스팅 조작 -> 피증)
     private void calcCombustionAcceleration(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

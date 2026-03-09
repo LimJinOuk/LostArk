@@ -55,7 +55,7 @@ public class BladeStar  extends AbstractArkGrid {
     }
 
     //일격
-    //진욱쿤 찬스(블레이드 버스트 피증 or 피증)
+    //진욱쿤 찬스(블레이드 버스트 스킬 피증)
     private void calcSingleStrike(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
