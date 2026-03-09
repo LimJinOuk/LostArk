@@ -77,7 +77,7 @@ public class DestroyerStar  extends AbstractArkGrid {
     }
 
     //몰아치는 해방
-    //진욱쿤 질문(중력 해방 모드 시..)
+    //진욱쿤 질문(중력 해방 모드 시.. -> 해방 스킬 피증)
     private void calcRushingLiberation(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -125,7 +125,7 @@ public class DestroyerStar  extends AbstractArkGrid {
     }
 
     //붕괴
-    //진욱쿤 질문(10포 방어력을 무시한다 / 중력 가중영역 기본 공격의...)
+    //진욱쿤 질문(10포 방어력을 무시한다 -> 방깎/ 중력 가중영역 기본 공격의... -> 중수 스킬 치피증)
     private void calcCollapse(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

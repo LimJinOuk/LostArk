@@ -172,7 +172,7 @@ public class ReaperStar extends AbstractArkGrid {
     }
 
     //다가오는 죽음
-    //진욱쿤(과다 출혈 피증?)
+    //진욱쿤(과다 출혈 피증? -> 과다 출혈 상태 피증)
     private void calcApproachingDeath(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

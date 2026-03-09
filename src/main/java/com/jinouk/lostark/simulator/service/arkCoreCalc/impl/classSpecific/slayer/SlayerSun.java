@@ -55,7 +55,7 @@ public class SlayerSun extends AbstractArkGrid {
     }
 
     //단두대
-    //진욱쿤(폭주 상태)
+    //진욱쿤(폭주 상태 -> 피증(폭주 상태 제거))
     private void calcGuillotine(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -149,7 +149,7 @@ public class SlayerSun extends AbstractArkGrid {
     }
 
     //예측불가
-    //진욱쿤(선택한 스킬 피증?)
+    //진욱쿤(선택한 스킬 피증? -> 피증)
     private void calcUnpredictable(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

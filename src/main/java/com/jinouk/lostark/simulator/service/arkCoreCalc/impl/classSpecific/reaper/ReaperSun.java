@@ -78,7 +78,7 @@ public class ReaperSun  extends AbstractArkGrid {
     }
 
     //달의 악몽
-    //진욱쿤(나이트메어 스킬의 내려찍는 공격 피해량이 200.0% 증가 -> 나이트 메어 스킬 피증 200?)
+    //진욱쿤(나이트메어 스킬의 내려찍는 공격 피해량이 200.0% 증가 -> 나이트 메어 스킬 피증 130 &&  160 )
     private void calcLunarNightmare(Map<String, Double> effectsMap, int point, String grade) {
         if ("유물".equals(grade)) {
             switch (point) {
@@ -171,7 +171,7 @@ public class ReaperSun  extends AbstractArkGrid {
     }
 
     //피의 갈증
-    //진욱쿤(과다 출혈 피증? 17포)
+    //진욱쿤(과다 출혈 피증? 17포 -> 과다 출혈 상태 피증)
     private void calcBloodThirst(Map<String, Double> effectsMap, int point, String grade) {
         if ("유물".equals(grade)) {
             switch (point) {

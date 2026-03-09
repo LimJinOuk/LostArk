@@ -171,7 +171,7 @@ public class ReaperMoon  extends AbstractArkGrid {
     }
 
     //출혈독
-    //진욱쿤(과다 출혈 피해량?)
+    //진욱쿤(과다 출혈 피해량? -> 과다 출혈 상태 피증)
     private void calcBleedingPoison(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

@@ -148,7 +148,7 @@ public class BladeMoon  extends AbstractArkGrid {
     }
 
     //리차지
-    //진욱쿤 찬스(차지 타입 우야노)
+    //진욱쿤 찬스(차지 타입 -> 피증)
     private void calcRecharge(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

@@ -55,7 +55,7 @@ public class SlayerMoon  extends AbstractArkGrid {
     }
 
     //단죄의 칼날
-    //진욱쿤(폭주 중?)
+    //진욱쿤(폭주 중? -> 피증)
     private void calcBladeOfCondemnation(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -79,7 +79,7 @@ public class SlayerMoon  extends AbstractArkGrid {
     }
 
     //힘의 응축
-    //진욱쿤(폭주 상태가 필요한 것인가)
+    //진욱쿤(폭주 상태가 필요한 것인가 -> 피증)
     private void calcPowerCondensation(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

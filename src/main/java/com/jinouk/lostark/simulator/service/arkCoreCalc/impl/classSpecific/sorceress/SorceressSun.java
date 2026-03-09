@@ -54,7 +54,7 @@ public class SorceressSun  extends AbstractArkGrid {
     }
 
     //마력의 촉매
-    //진욱쿤(마력 방출 중.., 각성기 제외)
+    //진욱쿤(마력 방출 중.. -> 피증, 각성기 제외 -> 피증)
     private void calcManaCatalyst(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -78,7 +78,7 @@ public class SorceressSun  extends AbstractArkGrid {
     }
 
     //불완전 연소
-    //진욱쿤(캐스팅 조작 스킬 피증)
+    //진욱쿤(피증)
     private void calcIncompleteCombustion(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -126,7 +126,7 @@ public class SorceressSun  extends AbstractArkGrid {
     }
 
     //편향
-    //진욱쿤(일반 조작, 지점 조작)
+    //진욱쿤(일반 조작, 지점 조작 -> x)
     private void calcDeflection(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

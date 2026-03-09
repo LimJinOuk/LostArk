@@ -55,7 +55,7 @@ public class InFighterSun  extends AbstractArkGrid {
     }
 
     //충격 폭주
-    //진욱쿤(14포 충격을 모두 소모하는 스킬의...)
+    //진욱쿤(14포 충격을 모두 소모하는 스킬의... -> 충격 스킬 피증)
     private void calcImpactBerserk(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

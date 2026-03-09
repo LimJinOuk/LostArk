@@ -55,7 +55,7 @@ public class DestroyerSun extends AbstractArkGrid {
     }
 
     //특이점
-    //진욱쿤 찬스(헤드 어택)
+    //진욱쿤 찬스(헤드 어택 -> 피증)
     private void calcSingularity(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -103,7 +103,7 @@ public class DestroyerSun extends AbstractArkGrid {
     }
 
     //어스 웨이브
-    //진욱쿤 찬스(일반 조작으로 사용 시 / 14포)
+    //진욱쿤 찬스(일반 조작으로 사용 시 -> 해방 스킬 피증/ 14포 -> 해방 스킬 1.55 피증)
     private void calcEarthWave(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -127,7 +127,7 @@ public class DestroyerSun extends AbstractArkGrid {
     }
 
     //중력 역전
-    //진욱쿤 찬스(중력 가중영역 기본 공격의...)
+    //진욱쿤 찬스(중력 가중영역 기본 공격의... -> 중수 치피증)
     private void calcGravityInversion(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -175,7 +175,7 @@ public class DestroyerSun extends AbstractArkGrid {
     }
 
     //그라비티 코어
-    //진욱쿤 찬스(마지막 공격 피해량)
+    //진욱쿤 찬스(마지막 공격 피해량 -> 피증)
     private void calcGravityCore(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

@@ -78,7 +78,7 @@ public class LanceMasterMoon  extends AbstractArkGrid {
     }
 
     //집중 강화
-    //진욱쿤(17포 무력화?)
+    //진욱쿤(17포 무력화? -> x)
     private void calcFocusReinforce(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
@@ -173,7 +173,7 @@ public class LanceMasterMoon  extends AbstractArkGrid {
     }
 
     //연환 타격
-    //진욱쿤(콤보 타입?)
+    //진욱쿤(콤보 타입? -> x)
     private void calcChainStrike(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){

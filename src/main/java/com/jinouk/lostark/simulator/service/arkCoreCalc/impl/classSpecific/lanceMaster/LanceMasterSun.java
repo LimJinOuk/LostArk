@@ -172,7 +172,7 @@ public class LanceMasterSun  extends AbstractArkGrid {
     }
 
     //맹룡오격
-    //진욱쿤(콤보 타입 스킬?)
+    //진욱쿤(콤보 타입 스킬 -> 피증)
     private void calcFierceDragonFiveStrike(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
