@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class berserker {
+public class berserkerdto {
     private double 적주피;
     private double 공격력;
     private double 치명타_피해량;

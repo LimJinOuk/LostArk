@@ -2,17 +2,17 @@ package com.jinouk.lostark.simulator.service.ArkPassiveService.job;
 
 import com.jinouk.lostark.simulator.dto.ArkPassiveDTO;
 import org.springframework.stereotype.Service;
-import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.warLord;
+import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.warlorddto;
 import com.jinouk.lostark.simulator.service.ArkPassiveService.evolutioncalc;
 import java.util.Map;
 
 @Service
 public class warlord {
 
-    public warLord warlord(String title ,ArkPassiveDTO dto ){
+    public warlorddto warlord(String title , ArkPassiveDTO dto ){
 
-        warLord warLorddto;
-        warLorddto = new warLord();
+        warlorddto warLorddto;
+        warLorddto = new warlorddto();
         evolutioncalc evolutioncalc;
         evolutioncalc = new evolutioncalc();
 

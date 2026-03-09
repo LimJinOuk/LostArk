@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class warLord {
+public class warlorddto {
     private double 치명타_적중률;
     private double 랜스_스킬_피해량;
     private double 랜스_스킬_치피증;
