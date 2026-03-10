@@ -56,7 +56,7 @@ public class valkyrie {
             정의_성휘_스킬_피해 += 5 * 검술_훈련;
         }if(성검_개방 > 0){
             if(성검_개방 == 1){
-                치적 += evolutioncalc.CritProbCalc(치명, 예리한_감각, 혼신의_강타 ,일격, 달인, 뭉툭한_가시);
+                치적 += evolutioncalc.get치적(치명, 예리한_감각, 혼신의_강타 ,일격, 달인, 뭉툭한_가시);
                 double temp적주피 = 0.0;
                 double temp종언 = 0.0;
                 temp적주피 += 0.15 * 치적;
@@ -68,7 +68,7 @@ public class valkyrie {
                 적주피 += temp적주피;
                 종언의_빛_스킬_피해 += temp종언;
             } else if (성검_개방 == 2) {
-                치적 += evolutioncalc.CritProbCalc(치명, 예리한_감각, 혼신의_강타 ,일격, 달인, 뭉툭한_가시);
+                치적 += evolutioncalc.get치적(치명, 예리한_감각, 혼신의_강타 ,일격, 달인, 뭉툭한_가시);
                 double temp적주피 = 0.0;
                 double temp종언 = 0.0;
                 temp적주피 += 0.35 * 치적;
@@ -81,7 +81,7 @@ public class valkyrie {
                 종언의_빛_스킬_피해 += temp종언;
             }
             else if(성검_개방 == 3){
-                치적 += evolutioncalc.CritProbCalc(치명, 예리한_감각, 혼신의_강타 ,일격, 달인, 뭉툭한_가시);
+                치적 += evolutioncalc.get치적(치명, 예리한_감각, 혼신의_강타 ,일격, 달인, 뭉툭한_가시);
                 double temp적주피 = 0.0;
                 double temp종언 = 0.0;
                 temp적주피 += 0.55 * 치적;

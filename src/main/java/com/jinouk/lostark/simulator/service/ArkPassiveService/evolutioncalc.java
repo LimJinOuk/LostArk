@@ -1,56 +1,18 @@
 package com.jinouk.lostark.simulator.service.ArkPassiveService;
 
-import com.jinouk.lostark.simulator.dto.ArkPassiveDTO;
+import com.jinouk.lostark.simulator.dto.arkPassiveEv.arkPassiveEvdto;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 @Service
 public class evolutioncalc {
+    arkPassiveEvdto arkPassiveEvdto = new arkPassiveEvdto();
 
     double 치적 = 0.0;
     double 진피 = 0.0;
-    double 피증 = 0.0;
     double 공이속 = 100.0;
+    double 치피증 = 100.0;
 
-    public String ev(ArkPassiveDTO dto) {
-        Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> evolution = nodes.get("진화");
-        int 치명 = evolution.get("치명");
-        int 특화 = evolution.get("특화");
-        int 신속 = evolution.get("신속");
-        int 금단의_주문 = evolution.get("금단의 주문");
-        int 예리한_감각 = evolution.get("예리한 감각");
-        int 한계_돌파 = evolution.get("한계 돌파");
-        int 최적화_훈련 = evolution.get("최적화 훈련");
-        int 무한한_마력 = evolution.get("무한한 마력");
-        int 혼신의_강타 = evolution.get("혼신의 강타");
-        int 일격 = evolution.get("일격");
-        int 파괴_전차 = evolution.get("파괴 전차");
-        int 타이밍_지배 = evolution.get("타이밍 지배");
-        int 회심 = evolution.get("회심");
-        int 달인 = evolution.get("달인");
-        int 분쇄 = evolution.get("분쇄");
-        int 뭉툭한_가시 = evolution.get("뭉툭한 가시");
-        int 음속_돌파 = evolution.get("음속 돌파");
-        int 인파이팅 = evolution.get("인파이팅");
-        int 입식_타격가 = evolution.get("입식타격가");
-        int 마나_용광로 = evolution.get("마나 용광로");
-
-        Map<String , Double> result = new HashMap<String , Double>();
-
-        치적 = CritProbCalc(치명 , 예리한_감각 , 혼신의_강타 , 일격 , 달인 , 뭉툭한_가시);
-
-        result.put("치적" , 치적);
-        result.put("진피" , 진피);
-        result.put("피증" , 피증);
-        return "";
-    }
-
-    public double CritProbCalc (int 치명 , int 예리한_감각 , int 혼신의_강타 , int 일격 , int 달인 , int 뭉툭한_가시){
+    public double get치적(int 치명 , int 예리한_감각 , int 혼신의_강타 , int 일격 , int 달인 , int 뭉툭한_가시){
         double CritProb = 0.0;
         if(뭉툭한_가시 == 1){
             double CritProbForEvDmg = 0.0;
@@ -103,7 +65,8 @@ public class evolutioncalc {
             CritProb += 혼신의_강타 * 12.0;
             CritProb += 일격 * 10.0;
             CritProb += 달인 * 7.0;
-            return CritProb;
+            치적 = CritProb;
+            return 치적;
         }
     }
 
@@ -112,7 +75,7 @@ public class evolutioncalc {
         return 공이속;
     }
 
-    public double EvDmgCalc(int 금단의_주문 , int 예리한_감각 , int 한계_돌파
+    public double get진피(int 금단의_주문 , int 예리한_감각 , int 한계_돌파
             , int 최적화_훈련 , int 무한한_마력, int 혼신의_강타 , int 파괴_전차
             , int 타이밍_지배 , int 분쇄, int 뭉툭한_가시 , int 음속_돌파
             , int 인파이팅 , int 입식_타격가 , int 마나_용광로)
@@ -146,5 +109,15 @@ public class evolutioncalc {
         
         진피 += 마나_용광로 * 1;
         return 진피;
+    }
+
+    public double get치피증 (int 일격 , int 회심){
+        if (일격 > 0){
+            치피증 += 16.0 * 일격;
+        }
+        if(회심 > 0){
+            치피증 += 12.0 * 회심;
+        }
+        return 치피증;
     }
 }
