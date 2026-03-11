@@ -44,6 +44,9 @@ public class soulfist {
         int 입식_타격가 = evolution.get("입식타격가");
         int 마나_용광로 = evolution.get("마나 용광로");
 
+        치적 = evolutioncalc.get치적(치명, 예리한_감각, 혼신의_강타, 일격, 달인, 뭉툭한_가시);
+
+
         int 세맥타통2 = enlightment.get("세맥타통 II");
         int 내공폭발 = enlightment.get("내공 폭발");
         int 운기행공 = enlightment.get("운기행공");
