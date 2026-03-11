@@ -148,26 +148,25 @@ public class BladeSun  extends AbstractArkGrid {
     }
 
     //집중의 일격
-    //진욱쿤 찬스(차지 타입 스킬 -> 피증)
     private void calcFocusedStrike(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
                 case 10: mergeEffect(effectsMap, "피증", 2.00); break;
-                case 14: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "차지 타입 스킬 피증", 16.00); break;
-                case 17: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "차지 타입 스킬 피증", 23.50); break;
-                case 18: mergeEffect(effectsMap, "피증", 2.20); mergeEffect(effectsMap, "차지 타입 스킬 피증", 23.50); break;
-                case 19: mergeEffect(effectsMap, "피증", 2.40); mergeEffect(effectsMap, "차지 타입 스킬 피증", 23.50); break;
-                case 20: mergeEffect(effectsMap, "피증", 2.60); mergeEffect(effectsMap, "차지 타입 스킬 피증", 23.50); break;
+                case 14: mergeEffect(effectsMap, "피증", 18.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 25.50); break;
+                case 18: mergeEffect(effectsMap, "피증", 25.70); break;
+                case 19: mergeEffect(effectsMap, "피증", 25.90); break;
+                case 20: mergeEffect(effectsMap, "피증", 26.10); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
                 case 10: mergeEffect(effectsMap, "피증", 2.00); break;
-                case 14: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "차지 타입 스킬 피증", 16.00); break;
-                case 17: mergeEffect(effectsMap, "피증", 2.00); mergeEffect(effectsMap, "차지 타입 스킬 피증", 25.00); break;
-                case 18: mergeEffect(effectsMap, "피증", 2.20); mergeEffect(effectsMap, "차지 타입 스킬 피증", 25.00); break;
-                case 19: mergeEffect(effectsMap, "피증", 2.40); mergeEffect(effectsMap, "차지 타입 스킬 피증", 25.00); break;
-                case 20: mergeEffect(effectsMap, "피증", 2.60); mergeEffect(effectsMap, "차지 타입 스킬 피증", 25.00); break;
+                case 14: mergeEffect(effectsMap, "피증", 18.00); break;
+                case 17: mergeEffect(effectsMap, "피증", 27.00); break;
+                case 18: mergeEffect(effectsMap, "피증", 27.20); break;
+                case 19: mergeEffect(effectsMap, "피증", 27.40); break;
+                case 20: mergeEffect(effectsMap, "피증", 28.60); break;
             }
         }
     }

@@ -126,21 +126,21 @@ public class ArcanaStar extends AbstractArkGrid {
     private void calcDarkCollection(Map<String, Double> effectsMap, int point, String grade) {
         if ("유물".equals(grade)) {
             switch (point) {
-                case 10: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00); break;
-                case 14: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00);break;
-                case 17: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 15.00); break;
-                case 18: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00); mergeEffect(effectsMap, "이보크 스킬 피증", 16.50); break;
-                case 19: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00); mergeEffect(effectsMap, "이보크 스킬 피증", 18.00); break;
-                case 20: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00); mergeEffect(effectsMap, "이보크 스킬 피증", 19.50); break;
+                case 10: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00); break;
+                case 14: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00);break;
+                case 17: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 15.00); break;
+                case 18: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00); mergeEffect(effectsMap, "이보크 스킬 피증", 16.50); break;
+                case 19: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00); mergeEffect(effectsMap, "이보크 스킬 피증", 18.00); break;
+                case 20: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00); mergeEffect(effectsMap, "이보크 스킬 피증", 19.50); break;
             }
         } else if ("고대".equals(grade)) {
             switch (point) {
-                case 10:  mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00);break;
-                case 14: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00);  mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00);break;
-                case 17: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 20.00); break;
-                case 18: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 21.50); break;
-                case 19: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 23.00); break;
-                case 20: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 24.50); break;
+                case 10:  mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00);break;
+                case 14: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00);  mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00);break;
+                case 17: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 20.00); break;
+                case 18: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 21.50); break;
+                case 19: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 23.00); break;
+                case 20: mergeEffect(effectsMap, "다크리저렉션 스킬 피증", 6.00); mergeEffect(effectsMap, "다크리저렉션 스킬 죽음의 공포 트라이포드 중독 스킬 피증", 70.00);mergeEffect(effectsMap, "이보크 스킬 피증", 24.50); break;
             }
         }
     }
@@ -149,21 +149,21 @@ public class ArcanaStar extends AbstractArkGrid {
     private void calcShuffleDance(Map<String, Double> effectsMap, int point, String grade) {
         if ("유물".equals(grade)) {
             switch (point) {
-                case 10: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 130.00); break;
-                case 14: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); break;
-                case 17: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); mergeEffect(effectsMap, "언리미티드 스킬 피증", 90.00); break;
-                case 18: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); mergeEffect(effectsMap, "언리미티드 스킬 피증", 90.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 1.60); break;
-                case 19: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); mergeEffect(effectsMap, "언리미티드 스킬 피증", 90.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 3.20); break;
-                case 20: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); mergeEffect(effectsMap, "언리미티드 스킬 피증", 90.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 4.80); break;
+                case 10: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 130.00); break;
+                case 14: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); break;
+                case 17: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); mergeEffect(effectsMap, "언리미티드 셔플 스킬 피증", 90.00); break;
+                case 18: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); mergeEffect(effectsMap, "언리미티드 셔플 스킬 피증", 90.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 1.60); break;
+                case 19: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); mergeEffect(effectsMap, "언리미티드 셔플 스킬 피증", 90.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 3.20); break;
+                case 20: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); mergeEffect(effectsMap, "언리미티드 셔플 스킬 피증", 90.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 4.80); break;
             }
         } else if ("고대".equals(grade)) {
             switch (point) {
-                case 10: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 130.00); break;
-                case 14: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); break;
-                case 17: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); mergeEffect(effectsMap, "언리미티드 스킬 피증", 10.00); break;
-                case 18: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); mergeEffect(effectsMap, "언리미티드 스킬 피증", 100.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 1.60); break;
-                case 19: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); mergeEffect(effectsMap, "언리미티드 스킬 피증", 100.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 3.20); break;
-                case 20: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 피증", 260.00); mergeEffect(effectsMap, "언리미티드 스킬 피증", 100.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 4.80); break;
+                case 10: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 130.00); break;
+                case 14: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); break;
+                case 17: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); mergeEffect(effectsMap, "언리미티드 셔플 스킬 피증", 10.00); break;
+                case 18: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); mergeEffect(effectsMap, "언리미티드 셔플 스킬 피증", 100.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 1.60); break;
+                case 19: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); mergeEffect(effectsMap, "언리미티드 셔플 스킬 피증", 100.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 3.20); break;
+                case 20: mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 페이크 플립 트라이포드 치명적 가시 스킬 피증", 260.00); mergeEffect(effectsMap, "언리미티드 셔플 스킬 피증", 100.00); mergeEffect(effectsMap, "댄싱 오브 스파인플라워 스킬 피증", 4.80); break;
             }
         }
     }

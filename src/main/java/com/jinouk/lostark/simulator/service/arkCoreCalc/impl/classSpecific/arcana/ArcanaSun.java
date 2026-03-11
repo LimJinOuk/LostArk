@@ -59,20 +59,20 @@ public class ArcanaSun extends AbstractArkGrid {
         if("유물".equals(grade)) {
             switch (point) {
                 case 10: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); break;
-                case 14: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap, "루인 스킬 피증", 8.00); break;
-                case 17: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap, "루인 스킬 피증", 10.00); break;
-                case 18: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.20); mergeEffect(effectsMap, "루인 스킬 피증", 10.00); break;
-                case 19: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.40); mergeEffect(effectsMap, "루인 스킬 피증", 10.00); break;
-                case 20: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap, "루인 스킬 피증", 10.00); break;
+                case 14: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap, "루인 스킬 피증", 24.00); break;
+                case 17: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap, "루인 스킬 피증", 50.00); break;
+                case 18: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.20); mergeEffect(effectsMap, "루인 스킬 피증", 50.00); break;
+                case 19: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.40); mergeEffect(effectsMap, "루인 스킬 피증", 50.00); break;
+                case 20: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap, "루인 스킬 피증", 50.00); break;
             }
         } else if ("고대".equals(grade)) {
             switch (point) {
                     case 10: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); break;
-                    case 14: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap, "루인 스킬 피증", 8.00); break;
-                    case 17: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap, "루인 스킬 피증", 11.00); break;
-                    case 18: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.20); mergeEffect(effectsMap, "루인 스킬 피증", 11.00); break;
-                    case 19: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.40); mergeEffect(effectsMap, "루인 스킬 피증", 11.00); break;
-                    case 20: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap, "루인 스킬 피증", 11.00); break;
+                    case 14: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap, "루인 스킬 피증", 24.00); break;
+                    case 17: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.00); mergeEffect(effectsMap, "루인 스킬 피증", 55.00); break;
+                    case 18: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.20); mergeEffect(effectsMap, "루인 스킬 피증", 55.00); break;
+                    case 19: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.40); mergeEffect(effectsMap, "루인 스킬 피증", 55.00); break;
+                    case 20: mergeEffect(effectsMap, "치명타 시 피해량 증가", 2.60); mergeEffect(effectsMap, "루인 스킬 피증", 55.00); break;
             }
         }
     }

@@ -53,7 +53,6 @@ public class BlasterSun  extends AbstractArkGrid {
     }
 
     //폭격
-    //진욱쿤 찬스(포격 스킬 피증? 피증?)
     private void calcBombardment(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
