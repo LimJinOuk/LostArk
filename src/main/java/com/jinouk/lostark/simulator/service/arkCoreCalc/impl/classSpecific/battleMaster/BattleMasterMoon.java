@@ -127,21 +127,21 @@ public class BattleMasterMoon extends AbstractArkGrid {
     private void calcMapOfRuin(Map<String, Double> effectsMap, int point, String grade) {
         if("유물".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "오의 스킬 피증", 4.00); break;
-                case 14: mergeEffect(effectsMap, "오의 스킬 피증", 4.00); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "오의 스킬 피증", 4.00); break;
-                case 18: mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 4.40); mergeEffect(effectsMap, "적주피", -25.0); break;
-                case 19: mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 4.80); mergeEffect(effectsMap, "적주피", -25.0); break;
-                case 20: mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 5.20); mergeEffect(effectsMap, "적주피", -25.0); break;
+                case 10: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); break;
+                case 14: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); break; // 운명 발동 (수치 변화 없음)
+                case 17: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); break;
+                case 18: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 0.40); mergeEffect(effectsMap, "적주피", -25.0); break;
+                case 19: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 0.80); mergeEffect(effectsMap, "적주피", -25.0); break;
+                case 20: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 1.20); mergeEffect(effectsMap, "적주피", -25.0); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){
-                case 10: mergeEffect(effectsMap, "오의 스킬 피증", 4.00); break;
-                case 14: mergeEffect(effectsMap, "오의 스킬 피증", 4.00); break; // 운명 발동 (수치 변화 없음)
-                case 17: mergeEffect(effectsMap, "오의 스킬 피증", 4.00); break;
-                case 18: mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 4.40);mergeEffect(effectsMap, "적주피", -23.0); break;
-                case 19: mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 4.80);mergeEffect(effectsMap, "적주피", -23.0);break;
-                case 20: mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 5.20); mergeEffect(effectsMap, "적주피", -23.0);break;
+                case 10: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); break;
+                case 14: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); break; // 운명 발동 (수치 변화 없음)
+                case 17: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); break;
+                case 18: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 0.40);mergeEffect(effectsMap, "적주피", -23.0); break;
+                case 19: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 0.80);mergeEffect(effectsMap, "적주피", -23.0);break;
+                case 20: mergeEffect(effectsMap, "오의 스킬 치피증", 4.00); mergeEffect(effectsMap, "오의 : 창룡패황권 스킬 피증", 1.20); mergeEffect(effectsMap, "적주피", -23.0);break;
             }
         }
     }
@@ -152,20 +152,20 @@ public class BattleMasterMoon extends AbstractArkGrid {
             switch (point){
                 case 10: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); break;
                 case 14: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); break;
-                case 17: mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 1.95); break;
-                case 18: mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 2.35); mergeEffect(effectsMap, "적주피", -16.0); break;
-                case 19: mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 2.75); mergeEffect(effectsMap, "적주피", -16.0); break;
-                case 20: mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 3.15); mergeEffect(effectsMap, "적주피", -16.0); break;
+                case 17: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); mergeEffect(effectsMap, "적주피", -16.0);break;
+                case 18: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 0.40); mergeEffect(effectsMap, "적주피", -16.0); break;
+                case 19: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 0.80); mergeEffect(effectsMap, "적주피", -16.0); break;
+                case 20: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 1.20); mergeEffect(effectsMap, "적주피", -16.0); break;
             }
         }
         else if("고대".equals(grade)) {
             switch (point){
                 case 10: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); break;
                 case 14: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); break;
-                case 17: mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 1.95); break;
-                case 18: mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 2.35); mergeEffect(effectsMap, "적주피", -13.0); break;
-                case 19: mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 2.75); mergeEffect(effectsMap, "적주피", -13.0); break;
-                case 20: mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 3.15); mergeEffect(effectsMap, "적주피", -13.0); break;
+                case 17: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); mergeEffect(effectsMap, "적주피", -16.0);break;
+                case 18: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 0.40); mergeEffect(effectsMap, "적주피", -13.0); break;
+                case 19: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 0.80); mergeEffect(effectsMap, "적주피", -13.0); break;
+                case 20: mergeEffect(effectsMap, "오의 스킬 피증", 1.55); mergeEffect(effectsMap, "오의 : 화룡천상 스킬 피증", 1.20); mergeEffect(effectsMap, "적주피", -13.0); break;
             }
         }
     }
