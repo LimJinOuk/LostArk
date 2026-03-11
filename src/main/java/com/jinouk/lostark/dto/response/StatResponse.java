@@ -1,6 +1,5 @@
 package com.jinouk.lostark.dto.response;
 
-import lombok.Getter;
 import java.util.List;
 
 public record StatResponse(

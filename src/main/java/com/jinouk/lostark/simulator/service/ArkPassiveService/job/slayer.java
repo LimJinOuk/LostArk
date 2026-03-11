@@ -1,8 +1,8 @@
 package com.jinouk.lostark.simulator.service.ArkPassiveService.job;
 
 import com.jinouk.lostark.simulator.dto.ArkPassiveDTO;
-import org.springframework.stereotype.Service;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.slayerdto;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
@@ -13,9 +13,7 @@ public class slayer {
         slayerdto slayerdto = new slayerdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> evolution = nodes.get("진화");
         Map<String , Integer> enlightment = nodes.get("깨달음");
-        Map<String , Integer> leap = nodes.get("도약");
 
         double 블러드러스트_피해 = 0.0;
         double 적주피 = 0.0;

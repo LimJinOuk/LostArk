@@ -3,12 +3,10 @@ package com.jinouk.lostark.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+import com.jinouk.lostark.dto.rankingDto;
 import com.jinouk.lostark.dto.response.ArkPassiveResponse;
 import com.jinouk.lostark.dto.response.EquipmentResponse;
 import com.jinouk.lostark.dto.response.StatResponse;
-import com.jinouk.lostark.dto.rankingDto;
-
 import com.jinouk.lostark.entity.characterEntity;
 import com.jinouk.lostark.repository.rankingRepository;
 import lombok.RequiredArgsConstructor;

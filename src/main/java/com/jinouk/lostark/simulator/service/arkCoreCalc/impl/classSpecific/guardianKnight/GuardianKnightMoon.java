@@ -3,7 +3,6 @@ package com.jinouk.lostark.simulator.service.arkCoreCalc.impl.classSpecific.guar
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.core.AbstractArkGrid;
-import com.jinouk.lostark.simulator.service.arkCoreCalc.core.IArkGrid;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -135,7 +134,7 @@ public class GuardianKnightMoon  extends AbstractArkGrid {
                 case 17: mergeEffect(effectsMap, "차지 조작 스킬 피증", 2.00); mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 40.00); break;
                 case 18: mergeEffect(effectsMap, "차지 조작 스킬 피증", 2.20); mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 40.00); break;
                 case 19: mergeEffect(effectsMap, "차지 조작 스킬 피증", 2.40); mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 40.00); break;
-                case 20: mergeEffect(effectsMap, "차지 조작 스킬 피증", 2.60); mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 40.00); break;;
+                case 20: mergeEffect(effectsMap, "차지 조작 스킬 피증", 2.60); mergeEffect(effectsMap, "임페일 쇼크 스킬 피증", 40.00); break;
             }
         } else if("고대".equals(grade)) {
             switch (point){

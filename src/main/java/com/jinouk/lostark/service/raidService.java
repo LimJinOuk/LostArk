@@ -3,8 +3,8 @@ package com.jinouk.lostark.service;
 import com.jinouk.lostark.dto.difficultyDto;
 import com.jinouk.lostark.dto.raidDto;
 import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service

@@ -1,9 +1,9 @@
 package com.jinouk.lostark.simulator.service.ArkPassiveService.job;
 
 import com.jinouk.lostark.simulator.dto.ArkPassiveDTO;
-import org.springframework.stereotype.Service;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.valkyriedto;
 import com.jinouk.lostark.simulator.service.ArkPassiveService.evolutioncalc;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 

@@ -3,7 +3,6 @@ package com.jinouk.lostark.simulator.service.arkCoreCalc.impl.classSpecific.slay
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.core.AbstractArkGrid;
-import com.jinouk.lostark.simulator.service.arkCoreCalc.core.IArkGrid;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
