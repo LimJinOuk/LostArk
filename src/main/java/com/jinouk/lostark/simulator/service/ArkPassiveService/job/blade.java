@@ -69,6 +69,12 @@ public class blade {
             버스트_피해량 += 2.0 * 에너지_강화;
         }
 
+        bladedto.set버스트_피해량(버스트_피해량);
+        bladedto.set적주피(적주피);
+        bladedto.set이속(이속);
+        bladedto.set공격력(공격력);
+        bladedto.set일반_스킬_피해량(일반_스킬_피해량);
+
         return bladedto;
     }
 }
