@@ -62,4 +62,10 @@ public class simulatorController {
         System.out.println("수신된 각인 정보: " + engravingDto.toString());
         return "각인 데이터 수신 성공!";
     }
+    @PostMapping("/simulatorSkills")
+    public ResponseEntity<Map<String, skillsDto>> skills (@RequestBody skillsDto skillsDto) {
+        Map<String, skillsDto> res = new HashMap<>();
+        res.put("skillsDto", skillsDto);
+        return ResponseEntity.status(200).body(res);
+    }
 }
