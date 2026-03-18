@@ -8,6 +8,6 @@ import lombok.Data;
     public class equipmentsDto {
 
     private double additionalDamage;
-    private int baseAttack;
+    private int finalBaseAttack;
     private int weaponAttack;
 }
