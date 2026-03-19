@@ -7,6 +7,7 @@ import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.ArkGridService;
 import com.jinouk.lostark.simulator.service.simulatorService;
+import com.jinouk.lostark.simulator.service.simulatorSkillService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,11 +23,17 @@ import java.util.Map;
 public class simulatorController {
 
     private final simulatorService service;
+    private final simulatorSkillService skillService;
     private final ArkGridService arkGridService;
 
     @GetMapping("/do")
     public Mono<List<skillPostProcess>> doProcess(@RequestParam String characterName) {
         return service.doProcess(characterName);
+    }
+
+    @PostMapping("/simulatorSkills")
+    public Mono<List<skillPostProcess>> skills(@RequestParam String characterName, @RequestBody skillsDto skillsDto) {
+        return skillService.parsingSkillPostProcess(characterName, skillsDto);
     }
 
     @PostMapping("/simulatorJewels")
@@ -61,11 +68,5 @@ public class simulatorController {
     public String engravings (@RequestBody engravingDto engravingDto ) {
         System.out.println("수신된 각인 정보: " + engravingDto.toString());
         return "각인 데이터 수신 성공!";
-    }
-    @PostMapping("/simulatorSkills")
-    public ResponseEntity<Map<String, skillsDto>> skills (@RequestBody skillsDto skillsDto) {
-        Map<String, skillsDto> res = new HashMap<>();
-        res.put("skillsDto", skillsDto);
-        return ResponseEntity.status(200).body(res);
     }
 }

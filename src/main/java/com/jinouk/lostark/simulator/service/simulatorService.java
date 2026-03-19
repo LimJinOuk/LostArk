@@ -15,7 +15,6 @@ public class simulatorService {
     private final armoriesAPIService armoriesAPIService;
 
     // com.jinouk.lostark.simulator.service.simulatorService
-
     public Mono<List<skillPostProcess>> doProcess(String name) {
         return armoriesAPIService.getArmoriesCharacterCombatSkills(name)
                 .map(list -> list.stream()
