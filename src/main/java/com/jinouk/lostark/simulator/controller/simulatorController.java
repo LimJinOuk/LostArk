@@ -4,6 +4,8 @@ package com.jinouk.lostark.simulator.controller;
 import com.jinouk.lostark.simulator.dto.*;
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
 import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
+import com.jinouk.lostark.simulator.dto.skill.identitySkillsDto;
+import com.jinouk.lostark.simulator.dto.skill.skillsDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.ArkGridService;
 import com.jinouk.lostark.simulator.service.simulatorService;
@@ -34,6 +36,12 @@ public class simulatorController {
     @PostMapping("/simulatorSkills")
     public Mono<List<skillPostProcess>> skills(@RequestParam String characterName, @RequestBody skillsDto skillsDto) {
         return skillService.parsingSkillPostProcess(characterName, skillsDto);
+    }
+
+    @PostMapping("/identitySkills")
+    public String identitySkills(@RequestBody identitySkillsDto identitySkillsDto) {
+        System.out.println("수신된 아덴 스킬 정보: " + identitySkillsDto.toString());
+        return "아덴 스킬 데이터 수신 성공!";
     }
 
     @PostMapping("/simulatorJewels")
