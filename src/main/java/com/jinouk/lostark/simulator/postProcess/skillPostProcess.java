@@ -11,11 +11,9 @@ public class skillPostProcess {
     private String name;
     private Integer level;
     private String type;
+    private String skillCategory;
     private String icon;
-
-    // ✅ 추가: 스킬 자체 Tooltip(JSON 문자열)
     private String tooltip;
-
     private RuneDto rune;
     private List<TripodDto> selectedTripods;
 
