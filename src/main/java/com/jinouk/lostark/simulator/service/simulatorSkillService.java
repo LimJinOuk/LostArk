@@ -1,8 +1,7 @@
 package com.jinouk.lostark.simulator.service;
 
 import com.jinouk.lostark.service.armoriesAPIService;
-import com.jinouk.lostark.simulator.dto.TestSkillDto;
-import com.jinouk.lostark.simulator.dto.skillsDto;
+import com.jinouk.lostark.simulator.dto.skill.skillsDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
