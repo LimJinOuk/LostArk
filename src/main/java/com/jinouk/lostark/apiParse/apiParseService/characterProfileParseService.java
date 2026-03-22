@@ -19,7 +19,7 @@ public class characterProfileParseService {
 
         armoriesAPIService armoriesAPIService = new armoriesAPIService(loawebclient);
 
-        return armoriesAPIService.getArmoriesCharacterProfile(characterName)
+        return armoriesAPIService.getArmoriesCharacter(characterName)
                 .doOnNext(jsonString -> {
                     try {
 

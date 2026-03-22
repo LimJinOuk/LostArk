@@ -25,7 +25,7 @@ public class equipmentWeaponParseService {
     public Mono<String> getAndProcessWeapon(String characterName) {
         armoriesAPIService apiService = new armoriesAPIService(loawebclient);
 
-        return apiService.getArmoriesCharacterEquipment(characterName)
+        return apiService.getArmoriesCharacter(characterName)
                 .doOnNext(jsonString -> {
                     try {
                         JsonNode rootArray = objectMapper.readTree(jsonString);
