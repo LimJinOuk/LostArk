@@ -10,6 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Data
+
 public class PointDTO {
     @JsonAlias({"Name", "name"})
     private String name;

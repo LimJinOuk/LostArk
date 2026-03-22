@@ -1,4 +1,4 @@
-package com.jinouk.lostark.simulator.dto.arkgrid;
+package com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

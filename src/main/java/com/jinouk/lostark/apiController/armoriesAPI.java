@@ -3,7 +3,7 @@ package com.jinouk.lostark.apiController;
 import com.jinouk.lostark.apiParse.apiParseService.characterProfileParseService;
 import com.jinouk.lostark.apiParse.apiParseService.equipmentWeaponParseService;
 import com.jinouk.lostark.service.armoriesAPIService;
-import com.jinouk.lostark.simulator.dto.skillsResponse;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.skillsResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

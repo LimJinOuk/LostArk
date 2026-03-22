@@ -1,6 +1,6 @@
 package com.jinouk.lostark.simulator.service.ArkPassiveService.job;
 
-import com.jinouk.lostark.simulator.dto.ArkPassiveDTO;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import org.springframework.stereotype.Service;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.strikerdto;
 

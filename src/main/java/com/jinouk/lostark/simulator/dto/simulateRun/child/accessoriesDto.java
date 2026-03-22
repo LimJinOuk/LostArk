@@ -1,14 +1,16 @@
-package com.jinouk.lostark.simulator.dto;
+package com.jinouk.lostark.simulator.dto.simulateRun.child;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Component
 public class accessoriesDto {
 
     private Map<String, AccessoryItem> accessories;

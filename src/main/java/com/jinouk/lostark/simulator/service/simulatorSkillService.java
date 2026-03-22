@@ -3,7 +3,7 @@ package com.jinouk.lostark.simulator.service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jinouk.lostark.service.armoriesAPIService;
-import com.jinouk.lostark.simulator.dto.skill.skillsDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.skill.skillsDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

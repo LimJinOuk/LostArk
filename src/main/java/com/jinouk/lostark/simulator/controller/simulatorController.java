@@ -1,11 +1,13 @@
 package com.jinouk.lostark.simulator.controller;
 
 
-import com.jinouk.lostark.simulator.dto.*;
-import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
-import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
-import com.jinouk.lostark.simulator.dto.skill.identitySkillsDto;
-import com.jinouk.lostark.simulator.dto.skill.skillsDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.*;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridRequestDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridResponseDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.run.RunRequestDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.run.RunResponseDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.skill.identitySkillsDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.skill.skillsDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.ArkGridService;
 import com.jinouk.lostark.simulator.service.simulatorService;
@@ -76,5 +78,26 @@ public class simulatorController {
     public String engravings (@RequestBody engravingDto engravingDto ) {
         System.out.println("수신된 각인 정보: " + engravingDto.toString());
         return "각인 데이터 수신 성공!";
+    }
+    @PostMapping("/simulatorRun")
+    public RunResponseDto run(@RequestBody RunRequestDto runDto) {
+        ArkGridResponseDto arkGridResult = arkGridService.getArkGrid(runDto.getArkGrid());
+
+        List<skillPostProcess> processedSkills = skillService
+                .parsingSkillPostProcess(runDto.getCharacterName(), runDto.getSkills())
+                .block();
+
+        // 2. 응답 객체 생성 및 데이터 매핑
+        return RunResponseDto.builder()
+                .characterName(runDto.getCharacterName())
+                .equipments(runDto.getEquipments())
+                .accessories(runDto.getAccessories())
+                .jewel(runDto.getJewel())
+                .gemEffect(runDto.getGemEffect())
+                .engraving(runDto.getEngraving())
+                .arkGrid(arkGridResult.getEffects())
+                .skills(processedSkills)
+                .identitySkills(runDto.getIdentitySkills())
+                .build();
     }
 }

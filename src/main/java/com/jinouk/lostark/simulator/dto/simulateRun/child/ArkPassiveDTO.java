@@ -1,6 +1,7 @@
-package com.jinouk.lostark.simulator.dto;
+package com.jinouk.lostark.simulator.dto.simulateRun.child;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.jinouk.lostark.simulator.dto.PointDTO;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
