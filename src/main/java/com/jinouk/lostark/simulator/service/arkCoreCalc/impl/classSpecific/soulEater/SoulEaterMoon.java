@@ -1,7 +1,7 @@
 package com.jinouk.lostark.simulator.service.arkCoreCalc.impl.classSpecific.soulEater;
 
-import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
-import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridRequestDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridResponseDto;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.core.AbstractArkGrid;
 import org.springframework.stereotype.Service;
 

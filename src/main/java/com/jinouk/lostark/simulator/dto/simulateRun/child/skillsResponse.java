@@ -1,4 +1,4 @@
-package com.jinouk.lostark.simulator.dto;
+package com.jinouk.lostark.simulator.dto.simulateRun.child;
 
 import lombok.Data;
 

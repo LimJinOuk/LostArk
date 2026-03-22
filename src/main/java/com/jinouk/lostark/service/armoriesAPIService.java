@@ -1,6 +1,6 @@
 package com.jinouk.lostark.service;
 
-import com.jinouk.lostark.simulator.dto.skillsResponse;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.skillsResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;

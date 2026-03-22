@@ -1,8 +1,8 @@
 package com.jinouk.lostark.simulator.service.arkCoreCalc.core;
 
 
-import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridRequestDto;
-import com.jinouk.lostark.simulator.dto.arkgrid.ArkGridResponseDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridRequestDto;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridResponseDto;
 
 public interface IArkGrid {
     String getClassName();

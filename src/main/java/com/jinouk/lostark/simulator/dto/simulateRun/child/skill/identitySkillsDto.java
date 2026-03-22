@@ -1,4 +1,4 @@
-package com.jinouk.lostark.simulator.dto.skill;
+package com.jinouk.lostark.simulator.dto.simulateRun.child.skill;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

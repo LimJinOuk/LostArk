@@ -1,6 +1,6 @@
 package com.jinouk.lostark.simulator.service.ArkPassiveService;
 
-import com.jinouk.lostark.simulator.dto.ArkPassiveDTO;
+import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.service.ArkPassiveService.job.warlord;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
