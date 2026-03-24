@@ -27,4 +27,5 @@ public class RunResponseDto {
     private Map<String, Double> arkGrid;
     private List<skillPostProcess> skills;
     private identitySkillsDto identitySkills;
+    private ArkPassiveDTO arkPassive;
 }

@@ -22,4 +22,5 @@ public class RunRequestDto {
     private ArkGridRequestDto arkGrid;
     private skillsDto skills;
     private identitySkillsDto identitySkills;
+    private ArkPassiveDTO arkPassive;
 }

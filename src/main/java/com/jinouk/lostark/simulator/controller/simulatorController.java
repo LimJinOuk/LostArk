@@ -98,6 +98,7 @@ public class simulatorController {
                 .arkGrid(arkGridResult.getEffects())
                 .skills(processedSkills)
                 .identitySkills(runDto.getIdentitySkills())
+                .arkPassive(runDto.getArkPassive())
                 .build();
     }
 }
