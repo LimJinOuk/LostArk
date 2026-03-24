@@ -19,6 +19,7 @@ import java.util.Map;
 public class RunResponseDto {
 
     private String characterName;
+    private String characterClass;
     private equipmentsDto equipments;
     private accessoriesDto accessories;
     private JewelDto jewel;
@@ -27,4 +28,5 @@ public class RunResponseDto {
     private Map<String, Double> arkGrid;
     private List<skillPostProcess> skills;
     private identitySkillsDto identitySkills;
+    private ArkPassiveDTO arkPassive;
 }

@@ -90,6 +90,7 @@ public class simulatorController {
         // 2. 응답 객체 생성 및 데이터 매핑
         return RunResponseDto.builder()
                 .characterName(runDto.getCharacterName())
+                .characterClass(runDto.getCharacterClass())
                 .equipments(runDto.getEquipments())
                 .accessories(runDto.getAccessories())
                 .jewel(runDto.getJewel())
@@ -98,6 +99,7 @@ public class simulatorController {
                 .arkGrid(arkGridResult.getEffects())
                 .skills(processedSkills)
                 .identitySkills(runDto.getIdentitySkills())
+                .arkPassive(runDto.getArkPassive())
                 .build();
     }
 }

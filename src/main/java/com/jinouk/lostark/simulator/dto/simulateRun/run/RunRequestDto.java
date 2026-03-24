@@ -14,6 +14,7 @@ import lombok.*;
 public class RunRequestDto {
 
     private String characterName;
+    private String characterClass;
     private equipmentsDto equipments;
     private accessoriesDto accessories;
     private JewelDto jewel;
@@ -22,4 +23,5 @@ public class RunRequestDto {
     private ArkGridRequestDto arkGrid;
     private skillsDto skills;
     private identitySkillsDto identitySkills;
+    private ArkPassiveDTO arkPassive;
 }
