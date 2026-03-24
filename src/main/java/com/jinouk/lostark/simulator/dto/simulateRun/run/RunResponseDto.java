@@ -19,6 +19,7 @@ import java.util.Map;
 public class RunResponseDto {
 
     private String characterName;
+    private String characterClass;
     private equipmentsDto equipments;
     private accessoriesDto accessories;
     private JewelDto jewel;
