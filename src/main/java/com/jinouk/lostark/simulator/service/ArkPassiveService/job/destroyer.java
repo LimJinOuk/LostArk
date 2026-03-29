@@ -3,14 +3,16 @@ package com.jinouk.lostark.simulator.service.ArkPassiveService.job;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.destroyerdto;
 import com.jinouk.lostark.simulator.service.ArkPassiveService.evolutioncalc;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
+@Component
 @Service
 public class destroyer {
 
-    public destroyerdto destroyer(String title , ArkPassiveDTO dto) {
+    public destroyerdto destroyer( ArkPassiveDTO dto) {
 
         destroyerdto destroyerdto = new destroyerdto();
         evolutioncalc evolutioncalc = new evolutioncalc();
