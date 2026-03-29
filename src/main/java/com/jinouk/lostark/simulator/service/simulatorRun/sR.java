@@ -3,18 +3,14 @@ package com.jinouk.lostark.simulator.service.simulatorRun;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.*;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridRequestDto;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridResponseDto;
-import com.jinouk.lostark.simulator.service.ArkPassiveService.job.destroyer;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.impl.common.ChaosMoon;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.impl.common.ChaosStar;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.impl.common.ChaosSun;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Slf4j
@@ -311,6 +307,30 @@ public class sR {
         공격력 += 공격력 * chaosStarEffects.getEffects().get("공퍼력");
         무공 += chaosStarEffects.getEffects().get("무공");
         무공 += 무공 * chaosStarEffects.getEffects().get("무공퍼");
+
+        //장비
+        double AdditionalDmg = equipmentsDto.getAdditionalDamage();
+        추피 += AdditionalDmg;
+
+        int weaponAttack = equipmentsDto.getWeaponAttack();
+        무공 += weaponAttack;
+
+        int BaseAttack = equipmentsDto.getFinalBaseAttack();
+        공격력 += BaseAttack;
+
+        //Gem
+        double Add_Dmg = gemEffectDto.getAdd_pct();
+        추피 += Add_Dmg;
+
+        double BossDmg = gemEffectDto.getBoss_pct();
+        피증 += BossDmg;
+
+        double attck = gemEffectDto.getAtk_pct();
+        공격력 += attck;
+
+        //보석
+        double jewelbonus = jewelDto.getTotalGemAtkBonus();
+        공증 += jewelbonus;
 
 
         Map<String , Double> res = new HashMap<>();
