@@ -139,13 +139,13 @@ public class ChaosMoon extends AbstractArkGrid {
     private void calcSteel(Map<String, Double> effectsMap, int point, String grade) {
         if ("고대".equals(grade)) {
             switch (point) {
-                case 10: mergeEffect(effectsMap, "발깎", 0.2); break;
-                case 17: mergeEffect(effectsMap, "발깎", 1.0); break;
+                case 10: mergeEffect(effectsMap, "방깎", 0.2); break;
+                case 17: mergeEffect(effectsMap, "방깎", 1.0); break;
             }
         } else if ("유물".equals(grade)) {
             switch (point) {
-                case 10: mergeEffect(effectsMap, "발깎", 0.2); break;
-                case 17: mergeEffect(effectsMap, "발깎", 0.6); break;
+                case 10: mergeEffect(effectsMap, "방깎", 0.2); break;
+                case 17: mergeEffect(effectsMap, "방깎", 0.6); break;
             }
         }
     }
