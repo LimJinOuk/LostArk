@@ -19,6 +19,7 @@ public class accessoriesDto {
     @Data
     public static class AccessoryItem {
         private String accStats;
+        private Integer currentStat;
         private Map<String, Effect> effects;
     }
     @Data
@@ -30,6 +31,6 @@ public class accessoriesDto {
     @Data
     public static class Effect {
         private String name;
-        private Object value;
+        private Double value;
     }
 }
