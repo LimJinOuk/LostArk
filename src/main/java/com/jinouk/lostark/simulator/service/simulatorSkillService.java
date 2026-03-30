@@ -30,12 +30,16 @@ public class simulatorSkillService {
                             var skillInfo = skillsDto.getSkillName().get(item.getName());
                             var dtoTripodList = skillInfo == null ? null : skillInfo.getTripodName();
 
-                            var rune = item.getRune() == null ? null : skillPostProcess.RuneDto.builder()
-                                    .name(item.getRune().getName())
-                                    .grade(item.getRune().getGrade())
-                                    .icon(item.getRune().getIcon())
-                                    .tooltip(item.getRune().getTooltip())
-                                    .build();
+                            skillPostProcess.RuneDto rune = null;
+                            if (skillInfo != null && skillInfo.getRuneData() != null) {
+                                var rd = skillInfo.getRuneData();
+                                rune = skillPostProcess.RuneDto.builder()
+                                        .name(rd.getRuneName())
+                                        .grade(rd.getRuneGrade())
+                                        .icon(rd.getRuneIcon())
+                                        .tooltip(rd.getRuneDescription())
+                                        .build();
+                            }
 
                             var selectedTripods = item.getTripods() == null
                                     ? List.<skillPostProcess.TripodDto>of()
