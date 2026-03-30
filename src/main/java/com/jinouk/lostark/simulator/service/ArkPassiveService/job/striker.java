@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import org.springframework.stereotype.Service;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.strikerdto;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -14,7 +15,7 @@ public class striker {
         strikerdto strikerdto = new strikerdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 오의스킬피해 = 0.0 ;
         double 구축오의스킬 = 0.0;
@@ -23,11 +24,11 @@ public class striker {
         double 치적 = 0.0 ;
         double 일반스킬피해 = 0.0 ;
 
-        int 일격필살1 = enlightment.get("일격필살 I");
-        int 일격필살2 = enlightment.get("일격필살 II");
-        int 구슬의축복 = enlightment.get("구슬의 축복");
-        int 치명적인_오의 = enlightment.get("치명적인 오의");
-        int 완전_충전 = enlightment.get("완전 충전");
+        int 일격필살1 = enlightment.getOrDefault("일격필살 I" , 0);
+        int 일격필살2 = enlightment.getOrDefault("일격필살 II" , 0);
+        int 구슬의축복 = enlightment.getOrDefault("구슬의 축복" , 0);
+        int 치명적인_오의 = enlightment.getOrDefault("치명적인 오의" , 0);
+        int 완전_충전 = enlightment.getOrDefault("완전 충전" , 0);
 
         if (일격필살1 > 0){
             오의스킬피해 += 12.0 * 일격필살1;
@@ -60,11 +61,11 @@ public class striker {
         }
 
 
-        int 답보 = enlightment.get("답보");
-        int 오의_집중 = enlightment.get("오의 집중");
-        int 난무_강화 = enlightment.get("난무 강화");
-        int 후방_기습 = enlightment.get("후방 기습");
-        int 체술_강화 = enlightment.get("체술 강화");
+        int 답보 = enlightment.getOrDefault("답보" , 0);
+        int 오의_집중 = enlightment.getOrDefault("오의 집중" , 0);
+        int 난무_강화 = enlightment.getOrDefault("난무 강화" , 0);
+        int 후방_기습 = enlightment.getOrDefault("후방 기습" , 0);
+        int 체술_강화 = enlightment.getOrDefault("체술 강화" , 0);
 
         if (답보 > 0){
             오의스킬피해 += 4.0 * 답보;

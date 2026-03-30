@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.soulfistdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -17,13 +18,13 @@ public class soulfist {
         double 치피 = 0.0;
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
 
-        int 세맥타통2 = enlightment.get("세맥타통 II");
-        int 내공폭발 = enlightment.get("내공 폭발");
-        int 운기행공 = enlightment.get("운기행공");
-        int 자연체 = enlightment.get("자연체");
+        int 세맥타통2 = enlightment.getOrDefault("세맥타통 II" , 0);
+        int 내공폭발 = enlightment.getOrDefault("내공 폭발" , 0);
+        int 운기행공 = enlightment.getOrDefault("운기행공" , 0);
+        int 자연체 = enlightment.getOrDefault("자연체" , 0);
 
         if(세맥타통2 > 0){
             적주피 += 17.0 * 세맥타통2;
@@ -39,10 +40,10 @@ public class soulfist {
             적주피 += 1.0 * 자연체;
         }
 
-        int 금강선공_강화 = enlightment.get("금강선공 강화");
-        int 한계돌파 = enlightment.get("한계 돌파");
-        int 반동제어 = enlightment.get("반동 제어");
-        int 날카로운_기공 = enlightment.get("날카로운 기공");
+        int 금강선공_강화 = enlightment.getOrDefault("금강선공 강화" , 0);
+        int 한계돌파 = enlightment.getOrDefault("한계 돌파" , 0);
+        int 반동제어 = enlightment.getOrDefault("반동 제어" , 0);
+        int 날카로운_기공 = enlightment.getOrDefault("날카로운 기공" , 0);
 
         if(금강선공_강화 > 0){
             적주피 += 8.0 * 금강선공_강화;

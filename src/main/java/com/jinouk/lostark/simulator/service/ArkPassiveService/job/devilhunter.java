@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.devilhunterdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -14,7 +15,7 @@ public class devilhunter {
         devilhunterdto devilhunterdto = new devilhunterdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 적주피 = 0.0;
         double 샷건_스킬_피해량 = 0.0;
@@ -23,10 +24,10 @@ public class devilhunter {
         double 치적 = 0.0;
         double 치피 = 0.0;
 
-        int 핸드_거너 = enlightment.get("핸드 거너");
-        int 핸드건_강화 = enlightment.get("핸드건 강화");
-        int 퀵_드로우 = enlightment.get("퀵 드로우");
-        int 빛나는_탄 = enlightment.get("빛나는 탄");
+        int 핸드_거너 = enlightment.getOrDefault("핸드 거너" , 0);
+        int 핸드건_강화 = enlightment.getOrDefault("핸드건 강화" , 0);
+        int 퀵_드로우 = enlightment.getOrDefault("퀵 드로우" , 0);
+        int 빛나는_탄 = enlightment.getOrDefault("빛나는 탄" , 0);
 
         if (핸드_거너 > 0){
             이속 += 8.0 * 핸드_거너;
@@ -41,11 +42,11 @@ public class devilhunter {
             핸드건_스킬_피해량 += 1.4 * 빛나는_탄;
         }
 
-        int 전술_탄환 = enlightment.get("전술 탄환");
-        int 정밀_사격_훈련 = enlightment.get("정밀 사격 훈련");
-        int 전략적_군장 = enlightment.get("전략적 군장");
-        int 해결사의_움직임 = enlightment.get("해결사의 움직임");
-        int 고폭탄 = enlightment.get("고폭탄");
+        int 전술_탄환 = enlightment.getOrDefault("전술 탄환" , 0);
+        int 정밀_사격_훈련 = enlightment.getOrDefault("정밀 사격 훈련" , 0);
+        int 전략적_군장 = enlightment.getOrDefault("전략적 군장" , 0);
+        int 해결사의_움직임 = enlightment.getOrDefault("해결사의 움직임" , 0);
+        int 고폭탄 = enlightment.getOrDefault("고폭탄" , 0);
 
         if (전술_탄환 > 0){
             적주피 += 3.0 * 전술_탄환;

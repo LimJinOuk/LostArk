@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.souleaterdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -12,7 +13,7 @@ public class souleater {
     public souleaterdto souleater(String title , ArkPassiveDTO dto){
         souleaterdto souleaterdto = new souleaterdto();
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 사신화_상태에서_사신_스킬_피해량 = 0.0;
         double 사신화_상태에서_살귀_스킬_피해량 = 0.0;
@@ -23,11 +24,11 @@ public class souleater {
         double 망자_스킬_피해량 = 0.0;
         double 치적 = 0.0;
 
-        int 그믐의_경계 = enlightment.get("그믐의 경계");
-        int 죽음_연마 = enlightment.get("죽음 연마");
-        int 허물어진_경계 = enlightment.get("허물어진 경계");
-        int 영혼_강화 = enlightment.get("영혼 강화");
-        int 영혼_제어 = enlightment.get("영혼 제어");
+        int 그믐의_경계 = enlightment.getOrDefault("그믐의 경계" , 0);
+        int 죽음_연마 = enlightment.getOrDefault("죽음 연마" , 0);
+        int 허물어진_경계 = enlightment.getOrDefault("허물어진 경계" , 0);
+        int 영혼_강화 = enlightment.getOrDefault("영혼 강화" , 0);
+        int 영혼_제어 = enlightment.getOrDefault("영혼 제어" , 0);
 
         if (그믐의_경계 > 0){
             살귀_스킬_피해량 += 40.0 * 그믐의_경계;
@@ -48,10 +49,10 @@ public class souleater {
             망자_스킬_피해량 += 1.0 * 영혼_제어;
         }
 
-        int 영혼_친화력 = enlightment.get("영혼 친화력");
-        int 만월의_집행자 = enlightment.get("만월의 집행자");
-        int 영혼_증폭 = enlightment.get("영혼 증폭");
-        int 영혼_길잡이 = enlightment.get("영혼 길잡이");
+        int 영혼_친화력 = enlightment.getOrDefault("영혼 친화력" , 0);
+        int 만월의_집행자 = enlightment.getOrDefault("만월의 집행자" , 0);
+        int 영혼_증폭 = enlightment.getOrDefault("영혼 증폭" , 0);
+        int 영혼_길잡이 = enlightment.getOrDefault("영혼 길잡이" , 0);
 
         if (영혼_친화력 > 0){
             치적 += 3.0 * 영혼_친화력;

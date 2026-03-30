@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.scouterdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -13,7 +14,7 @@ public class scouter {
         scouterdto scouterdto = new scouterdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 싱크_계열_스킬_피해량 = 0.0;
         double 일부_하이퍼_싱크_스킬_피해량 = 0.0;
@@ -25,11 +26,11 @@ public class scouter {
         double 치적 = 0.0;
         double 적주피 = 0.0;
 
-        int 아르데타인의_기술 = enlightment.get("아르데타인의 기술");
-        int 기술_업그레이드 = enlightment.get("기술 업그레이드");
-        int 코어_인챈트 = enlightment.get("코어 인챈트");
-        int 전술_재장전 = enlightment.get("전술 재장전");
-        int 최고의_합작 = enlightment.get("최고의 합작");
+        int 아르데타인의_기술 = enlightment.getOrDefault("아르데타인의 기술" , 0);
+        int 기술_업그레이드 = enlightment.getOrDefault("기술 업그레이드" , 0);
+        int 코어_인챈트 = enlightment.getOrDefault("코어 인챈트" , 0);
+        int 전술_재장전 = enlightment.getOrDefault("전술 재장전" , 0);
+        int 최고의_합작 = enlightment.getOrDefault("최고의 합작" , 0);
 
         if (아르데타인의_기술 > 0){
             이속 += 10.0 * 아르데타인의_기술;
@@ -53,10 +54,10 @@ public class scouter {
         }
 
 
-        int 전투_모드 = enlightment.get("전투 모드");
-        int 제로_모드 = enlightment.get("제로 모드");
-        int 코어_반응_증폭 = enlightment.get("코어 반응 증폭");
-        int 제로_코어_에너지 = enlightment.get("제로 코어 에너지");
+        int 전투_모드 = enlightment.getOrDefault("전투 모드" , 0);
+        int 제로_모드 = enlightment.getOrDefault("제로 모드" , 0);
+        int 코어_반응_증폭 = enlightment.getOrDefault("코어 반응 증폭" , 0);
+        int 제로_코어_에너지 = enlightment.getOrDefault("제로 코어 에너지" , 0);
 
         if (전투_모드 > 0){
             싱크_계열_스킬_피해량 += 7.0 * 전투_모드;

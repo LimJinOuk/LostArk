@@ -5,6 +5,7 @@ import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.valkyriedto;
 import com.jinouk.lostark.simulator.service.ArkPassiveService.evolutioncalc;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -14,41 +15,41 @@ public class valkyrie {
         evolutioncalc evolutioncalc = new evolutioncalc();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> evolution = nodes.get("진화");
-        Map<String , Integer> enlightment = nodes.get("깨달음");
-        Map<String , Integer> leap = nodes.get("도약");
+        Map<String , Integer> evolution = nodes.getOrDefault("진화" , new HashMap<>());
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음", new HashMap<>());
+        Map<String , Integer> leap = nodes.getOrDefault("도약", new HashMap<>());
 
         double 적주피 = 0.0;
         double 정의_성휘_스킬_피해 = 0.0;
         double 종언의_빛_스킬_피해 = 0.0;
         double 치적 = 0.0;
 
-        int 치명 = evolution.get("치명");
-        int 특화 = evolution.get("특화");
-        int 신속 = evolution.get("신속");
-        int 금단의_주문 = evolution.get("금단의 주문");
-        int 예리한_감각 = evolution.get("예리한 감각");
-        int 한계_돌파 = evolution.get("한계 돌파");
-        int 최적화_훈련 = evolution.get("최적화 훈련");
-        int 무한한_마력 = evolution.get("무한한 마력");
-        int 혼신의_강타 = evolution.get("혼신의 강타");
-        int 일격 = evolution.get("일격");
-        int 파괴_전차 = evolution.get("파괴 전차");
-        int 타이밍_지배 = evolution.get("타이밍 지배");
-        int 회심 = evolution.get("회심");
-        int 달인 = evolution.get("달인");
-        int 분쇄 = evolution.get("분쇄");
-        int 뭉툭한_가시 = evolution.get("뭉툭한 가시");
-        int 음속_돌파 = evolution.get("음속 돌파");
-        int 인파이팅 = evolution.get("인파이팅");
-        int 입식_타격가 = evolution.get("입식타격가");
-        int 마나_용광로 = evolution.get("마나 용광로");
+        int 치명 = evolution.getOrDefault("치명" , 0);
+        int 특화 = evolution.getOrDefault("특화" , 0);
+        int 신속 = evolution.getOrDefault("신속" , 0);
+        int 금단의_주문 = evolution.getOrDefault("금단의 주문" , 0);
+        int 예리한_감각 = evolution.getOrDefault("예리한 감각" , 0);
+        int 한계_돌파 = evolution.getOrDefault("한계 돌파" , 0);
+        int 최적화_훈련 = evolution.getOrDefault("최적화 훈련" , 0);
+        int 무한한_마력 = evolution.getOrDefault("무한한 마력" , 0);
+        int 혼신의_강타 = evolution.getOrDefault("혼신의 강타" , 0);
+        int 일격 = evolution.getOrDefault("일격" , 0);
+        int 파괴_전차 = evolution.getOrDefault("파괴 전차" , 0);
+        int 타이밍_지배 = evolution.getOrDefault("타이밍 지배" , 0);
+        int 회심 = evolution.getOrDefault("회심" , 0);
+        int 달인 = evolution.getOrDefault("달인" , 0);
+        int 분쇄 = evolution.getOrDefault("분쇄" , 0);
+        int 뭉툭한_가시 = evolution.getOrDefault("뭉툭한 가시" , 0);
+        int 음속_돌파 = evolution.getOrDefault("음속 돌파" , 0);
+        int 인파이팅 = evolution.getOrDefault("인파이팅" , 0);
+        int 입식_타격가 = evolution.getOrDefault("입식타격가" , 0);
+        int 마나_용광로 = evolution.getOrDefault("마나 용광로" , 0);
 
-        int 빛의_기사 = enlightment.get("빛의 기사");
-        int 검술_훈련 = enlightment.get("검술 훈련");
-        int 성검_개방 = enlightment.get("성검 개방");
-        int 최후의_빛 = enlightment.get("최후의 빛");
-        int 삼위일체 = enlightment.get("삼위일체");
+        int 빛의_기사 = enlightment.getOrDefault("빛의 기사" , 0);
+        int 검술_훈련 = enlightment.getOrDefault("검술 훈련" , 0);
+        int 성검_개방 = enlightment.getOrDefault("성검 개방" , 0);
+        int 최후의_빛 = enlightment.getOrDefault("최후의 빛" , 0);
+        int 삼위일체 = enlightment.getOrDefault("삼위일체" , 0);
 
         if(빛의_기사 > 0){
             적주피 += 10 * 빛의_기사;

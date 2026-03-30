@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.reaperdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -13,7 +14,7 @@ public class reaper {
         reaperdto reaperdto = new reaperdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 페르소나_아닐_경우_급습_스킬_피해량 = 0.0;
         double 페르소나_상태시_급습_스킬_피해량 = 0.0;
@@ -25,11 +26,11 @@ public class reaper {
         double 적주피 = 0.0;
         double 치적 = 0.0;
 
-        int 피냄새 = enlightment.get("피냄새");
-        int 갈증 = enlightment.get("갈증");
-        int 살인귀 = enlightment.get("살인귀");
-        int 암살자의_손놀림 = enlightment.get("암살자의 손놀림");
-        int 혼돈_강화 = enlightment.get("혼돈 강화");
+        int 피냄새 = enlightment.getOrDefault("피냄새" , 0);
+        int 갈증 = enlightment.getOrDefault("갈증" , 0);
+        int 살인귀 = enlightment.getOrDefault("살인귀" , 0);
+        int 암살자의_손놀림 = enlightment.getOrDefault("암살자의 손놀림" , 0);
+        int 혼돈_강화 = enlightment.getOrDefault("혼돈 강화" , 0);
 
         if (피냄새 > 0){
             치적 = 18.0 * 피냄새;
@@ -51,12 +52,12 @@ public class reaper {
             급습_스킬_피해량 += 1.2 * 혼돈_강화;
         }
 
-        int 달의_소리 = enlightment.get("달의 소리");
-        int 유령_무회 = enlightment.get("유령 무회");
-        int 그림자_밟기 = enlightment.get("그림자 밟기");
-        int 급소_확보 = enlightment.get("급소 확보");
-        int 곡예사 = enlightment.get("곡예사");
-        int 잠행 = enlightment.get("잠행");
+        int 달의_소리 = enlightment.getOrDefault("달의 소리" , 0);
+        int 유령_무회 = enlightment.getOrDefault("유령 무회" , 0);
+        int 그림자_밟기 = enlightment.getOrDefault("그림자 밟기" , 0);
+        int 급소_확보 = enlightment.getOrDefault("급소 확보" , 0);
+        int 곡예사 = enlightment.getOrDefault("곡예사" , 0);
+        int 잠행 = enlightment.getOrDefault("잠행" , 0);
 
         if (달의_소리 > 0){
             급습_스킬_피해량 += 30.0 * 달의_소리;

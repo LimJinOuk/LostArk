@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.animaldto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -13,7 +14,7 @@ public class animal {
         animaldto animaldto = new animaldto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 둔갑_스킬_피해량 = 0.0;
         double 환수_스킬_피해량 = 0.0;
@@ -25,12 +26,12 @@ public class animal {
         double 찢곰_피해량 = 0.0;
         double 여우별소나기_피해량 = 0.0;
 
-        int 환수_각성 = enlightment.get("환수 각성");
-        int 활기 = enlightment.get("활기");
-        int 환수의_정기 = enlightment.get("환수의 정기");
-        int 날렵한_걸음걸이 = enlightment.get("날렵한 걸음걸이");
-        int 천부적_재능 = enlightment.get("천부적 재능");
-        int 환수_술사 = enlightment.get("환수 술사");
+        int 환수_각성 = enlightment.getOrDefault("환수 각성" , 0);
+        int 활기 = enlightment.getOrDefault("활기" , 0);
+        int 환수의_정기 = enlightment.getOrDefault("환수의 정기" , 0);
+        int 날렵한_걸음걸이 = enlightment.getOrDefault("날렵한 걸음걸이" , 0);
+        int 천부적_재능 = enlightment.getOrDefault("천부적 재능" , 0);
+        int 환수_술사 = enlightment.getOrDefault("환수 술사" , 0);
 
         if (환수_각성 > 0) {
             이속 += 20.0 * 환수_각성;
@@ -51,12 +52,12 @@ public class animal {
             환수_스킬_피해량 += 1.0 * 환수_술사;
         }
 
-        int 야성 = enlightment.get("야성");
-        int 깨어난_잠재력 = enlightment.get("깨어난 잠재력");
-        int 야생의_충동 = enlightment.get("야생의 충동");
-        int 사냥_본능 = enlightment.get("사냥 본능");
-        int 야수의_공명 = enlightment.get("야수의 공명");
-        int 기민함 = enlightment.get("기민함");
+        int 야성 = enlightment.getOrDefault("야성" , 0);
+        int 깨어난_잠재력 = enlightment.getOrDefault("깨어난 잠재력" , 0);
+        int 야생의_충동 = enlightment.getOrDefault("야생의 충동" , 0);
+        int 사냥_본능 = enlightment.getOrDefault("사냥 본능" , 0);
+        int 야수의_공명 = enlightment.getOrDefault("야수의 공명" , 0);
+        int 기민함 = enlightment.getOrDefault("기민함" , 0);
 
         if (야성 >0){
             방깎 += 12.0 * 야성;

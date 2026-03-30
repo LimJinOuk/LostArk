@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.guardiannightsdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -13,7 +14,7 @@ public class guardiannights {
         guardiannightsdto g = new guardiannightsdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 인페르노_버스트_피해량 = 0.0;
         double 기운_소모당_피해량 = 0.0;
@@ -28,12 +29,12 @@ public class guardiannights {
         double 이속 = 0.0;
         double 치적 = 0.0;
 
-        int 드레드_로어 = enlightment.get("드레드 로어");
-        int 완전_연소 = enlightment.get("완전 연소");
-        int 돌파의_외침 = enlightment.get("돌파의 외침");
-        int 한계_초월 = enlightment.get("한계 초월");
-        int 날카로운_비늘 = enlightment.get("날카로운 비늘");
-        int 할버드의_대가 = enlightment.get("할버드의 대가");
+        int 드레드_로어 = enlightment.getOrDefault("드레드 로어" , 0);
+        int 완전_연소 = enlightment.getOrDefault("완전 연소" , 0);
+        int 돌파의_외침 = enlightment.getOrDefault("돌파의 외침" , 0);
+        int 한계_초월 = enlightment.getOrDefault("한계 초월" , 0);
+        int 날카로운_비늘 = enlightment.getOrDefault("날카로운 비늘" , 0);
+        int 할버드의_대가 = enlightment.getOrDefault("할버드의 대가" , 0);
 
         if (드레드_로어 > 0) {
             적주피 += 6.0 * 드레드_로어;
@@ -60,12 +61,12 @@ public class guardiannights {
 
 
 
-        int 업화의_계승자 = enlightment.get("업화의 계승자");
-        int 깨어나는_힘 = enlightment.get("깨어나는 힘");
-        int 힘의_제어 = enlightment.get("힘의 제어");
-        int 완전_융화 = enlightment.get("완전 융화");
-        int 초비행 = enlightment.get("초비행");
-        int 잔불 = enlightment.get("잔불");
+        int 업화의_계승자 = enlightment.getOrDefault("업화의 계승자" , 0);
+        int 깨어나는_힘 = enlightment.getOrDefault("깨어나는 힘" , 0);
+        int 힘의_제어 = enlightment.getOrDefault("힘의 제어" , 0);
+        int 완전_융화 = enlightment.getOrDefault("완전 융화" , 0);
+        int 초비행 = enlightment.getOrDefault("초비행" , 0);
+        int 잔불 = enlightment.getOrDefault("잔불" , 0);
 
         if (업화의_계승자>0){
             이속 += 11.0 * 업화의_계승자;

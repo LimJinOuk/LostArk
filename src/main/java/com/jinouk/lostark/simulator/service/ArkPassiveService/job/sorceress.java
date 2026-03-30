@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.sorceressdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -13,7 +14,7 @@ public class sorceress {
         sorceressdto sorceressdto = new sorceressdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 마력_해방중_치적 = 0.0;
         double 마력_해방중_치피 = 0.0;
@@ -27,10 +28,10 @@ public class sorceress {
         double 적주피 = 0.0;
         double 마력_해방중_적주피 = 0.0;
 
-        int 환류강화 = enlightment.get("환류 강화");
-        int 마력충전 = enlightment.get("마력 충전");
-        int 해방봉인 = enlightment.get("해방 봉인");
-        int 응집되는_마력 = enlightment.get("응집되는 마력");
+        int 환류강화 = enlightment.getOrDefault("환류 강화" , 0);
+        int 마력충전 = enlightment.getOrDefault("마력 충전" , 0);
+        int 해방봉인 = enlightment.getOrDefault("해방 봉인" , 0);
+        int 응집되는_마력 = enlightment.getOrDefault("응집되는 마력" , 0);
 
         if (환류강화 > 0){
             적주피 += 22.0 * 환류강화;
@@ -47,11 +48,11 @@ public class sorceress {
             적주피 += 1.2 * 응집되는_마력;
         }
 
-        int 점화의_불씨 = enlightment.get("점화의 불씨");
-        int 발화 = enlightment.get("발화");
-        int 마나_순환 = enlightment.get("마나 순환");
-        int 화력_충전 = enlightment.get("화력 충전");
-        int 점멸폭발 = enlightment.get("점멸 폭발");
+        int 점화의_불씨 = enlightment.getOrDefault("점화의 불씨" , 0);
+        int 발화 = enlightment.getOrDefault("발화" , 0);
+        int 마나_순환 = enlightment.getOrDefault("마나 순환" , 0);
+        int 화력_충전 = enlightment.getOrDefault("화력 충전" , 0);
+        int 점멸폭발 = enlightment.getOrDefault("점멸 폭발" , 0);
 
         if (점화의_불씨 > 0){
             마력_해방중_치적 += 10.0 * 점화의_불씨;

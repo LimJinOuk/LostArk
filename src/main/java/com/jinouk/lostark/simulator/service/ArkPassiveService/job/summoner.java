@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.summonerdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -13,7 +14,7 @@ public class summoner {
         summonerdto summonerdto = new summonerdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 이속 = 0.0;
         double 적주피 = 0.0;
@@ -34,11 +35,11 @@ public class summoner {
         double 알리마지_피해량 = 0.0;
         double 피닉스_피해량 = 0.0;
 
-        int 정신집중 = enlightment.get("정신 집중");
-        int 고대의힘 = enlightment.get("고대의 힘");
-        int 고대의_축복 = enlightment.get("고대의 축복");
-        int 고대의_바람 = enlightment.get("고대의 바람");
-        int 고대의_속삭임 = enlightment.get("고대의 속삭임");
+        int 정신집중 = enlightment.getOrDefault("정신 집중" , 0);
+        int 고대의힘 = enlightment.getOrDefault("고대의 힘" , 0);
+        int 고대의_축복 = enlightment.getOrDefault("고대의 축복" , 0);
+        int 고대의_바람 = enlightment.getOrDefault("고대의 바람" , 0);
+        int 고대의_속삭임 = enlightment.getOrDefault("고대의 속삭임" , 0);
 
         if (정신집중 > 0){
             일반_스킬_피해량 += 7.0 * 정신집중;
@@ -62,10 +63,10 @@ public class summoner {
             피닉스_피해량 += 80.0 * 고대의_속삭임;
         }
 
-        int 정령의_교감 = enlightment.get("정령의 교감");
-        int 정령_폭주 = enlightment.get("정령 폭주");
-        int 교감_강화 = enlightment.get("교감 강화");
-        int 절대적인_명령 = enlightment.get("절대적인 명령");
+        int 정령의_교감 = enlightment.getOrDefault("정령의 교감" , 0);
+        int 정령_폭주 = enlightment.getOrDefault("정령 폭주" , 0);
+        int 교감_강화 = enlightment.getOrDefault("교감 강화" , 0);
+        int 절대적인_명령 = enlightment.getOrDefault("절대적인 명령" , 0);
 
         if (정령의_교감 > 0){
             켈시온_피해량 += 23.0 * 정령의_교감;

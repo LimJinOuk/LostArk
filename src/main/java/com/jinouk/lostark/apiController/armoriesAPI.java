@@ -15,7 +15,6 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
 public class armoriesAPI {
     private final armoriesAPIService service;
     private final characterProfileParseService parseProfile;

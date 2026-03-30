@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.gunslingerdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -13,17 +14,17 @@ public class gunslinger {
         gunslingerdto gunslingerdto = new gunslingerdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 치적 = 0.0;
         double 적주피 = 0.0;;
         double 이속 = 0.0;;
         double 치피 = 0.0;;
 
-        int 라이플숙련 = enlightment.get("라이플 숙련");
-        int 일발필중 = enlightment.get("일발필중");
-        int 급소전문가 = enlightment.get("급소 전문가");
-        int 저격수의의지 = enlightment.get("저격수의 의지");
+        int 라이플숙련 = enlightment.getOrDefault("라이플 숙련" , 0);
+        int 일발필중 = enlightment.getOrDefault("일발필중" , 0);
+        int 급소전문가 = enlightment.getOrDefault("급소 전문가" , 0);
+        int 저격수의의지 = enlightment.getOrDefault("저격수의 의지" , 0);
 
         if (라이플숙련 > 0) {
             치적 += 25.0 * 라이플숙련;
@@ -39,11 +40,11 @@ public class gunslinger {
             치피 += 3.0 * 저격수의의지;
         }
 
-        int 피메샷건 = enlightment.get("피스메이커 - 샷건");
-        int 피메라이플 = enlightment.get("피스메이커 - 라이플");
-        int 평화주의자 = enlightment.get("평화주의자");
-        int 시크릿_불릿 = enlightment.get("시크릿 불릿");
-        int 총기_교체_기술 = enlightment.get("총기 교체 기술");
+        int 피메샷건 = enlightment.getOrDefault("피스메이커 - 샷건" , 0);
+        int 피메라이플 = enlightment.getOrDefault("피스메이커 - 라이플" , 0);
+        int 평화주의자 = enlightment.getOrDefault("평화주의자" , 0);
+        int 시크릿_불릿 = enlightment.getOrDefault("시크릿 불릿" , 0);
+        int 총기_교체_기술 = enlightment.getOrDefault("총기 교체 기술" , 0);
 
         if (피메샷건 > 0){
             치적 += 3.0 * 피메샷건;

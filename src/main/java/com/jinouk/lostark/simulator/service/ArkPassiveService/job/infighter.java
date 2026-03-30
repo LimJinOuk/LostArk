@@ -4,6 +4,7 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.ArkPassiveDTO;
 import com.jinouk.lostark.simulator.dto.arkPassiveEnlight.infighterdto;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -13,7 +14,7 @@ public class infighter {
         infighterdto infighterdto = new infighterdto();
 
         Map<String , Map<String , Integer>> nodes = dto.getNodes();
-        Map<String , Integer> enlightment = nodes.get("깨달음");
+        Map<String , Integer> enlightment = nodes.getOrDefault("깨달음" , new HashMap<>());
 
         double 기력_스킬_피해 = 0.0;
         double 치명타_적중률 = 0.0;
@@ -22,9 +23,9 @@ public class infighter {
         double 충격_스킬_피해 = 0.0;
         double 적주피 = 0.0;
 
-        int 극의체술 = enlightment.get("극의 : 체술");
-        int 날카로운타격 = enlightment.get("날카로운 타격");
-        int 치명적인투지 = enlightment.get("치명적인 투지");
+        int 극의체술 = enlightment.getOrDefault("극의 : 체술" , 0);
+        int 날카로운타격 = enlightment.getOrDefault("날카로운 타격" , 0);
+        int 치명적인투지 = enlightment.getOrDefault("치명적인 투지" , 0);
 
         if (극의체술 > 0){
             기력_스킬_피해 += 40.0 * 극의체술;
@@ -39,9 +40,9 @@ public class infighter {
             치명타_적중률 += 2.0 * 치명적인투지;
         }
 
-        int 충격단련 = enlightment.get("충격 단련");
-        int 충격발산 = enlightment.get("충격 발산");
-        int 더킹2 = enlightment.get("더킹 II");
+        int 충격단련 = enlightment.getOrDefault("충격 단련" , 0);
+        int 충격발산 = enlightment.getOrDefault("충격 발산" , 0);
+        int 더킹2 = enlightment.getOrDefault("더킹 II" , 0);
 
         if (충격단련 > 0){
             충격_스킬_피해 += 10.0 * 충격단련;
