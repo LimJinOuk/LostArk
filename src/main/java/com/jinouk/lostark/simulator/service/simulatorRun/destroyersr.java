@@ -9,10 +9,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
@@ -47,5 +43,7 @@ public class destroyersr {
 
         //아크패시브
         destroyer.destroyer(arkPassiveDTO);
+
+        return ResponseEntity.ok(destroyer.destroyer(arkPassiveDTO));
     }
 }

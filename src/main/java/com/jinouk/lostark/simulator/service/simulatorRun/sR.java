@@ -288,25 +288,48 @@ public class sR {
         //혼돈 아크 그리드
         //해
         ArkGridResponseDto chaosSunEffects = chaosSun.getArkGrid(arkGridRequestDto);
-        치명타시피증 += chaosSunEffects.getEffects().get("치피증");
-        피증 += chaosSunEffects.getEffects().get("적주피");
-        피증 += chaosSunEffects.getEffects().get("추피");
+        if(chaosSunEffects.getEffects().get("치피증") != null){
+            치명타시피증 += chaosSunEffects.getEffects().get("치피증");
+        }
+        if (chaosSunEffects.getEffects().get("적주피") != null){
+            피증 += chaosSunEffects.getEffects().get("적주피");
+        }
+        if (chaosSunEffects.getEffects().get("추피")!=null){
+            피증 += chaosSunEffects.getEffects().get("추피");
+        }
 
 
         //달
         ArkGridResponseDto chaosMoonEffects = chaosMoon.getArkGrid(arkGridRequestDto);
-        치명타시피증 += chaosMoonEffects.getEffects().get("치피증");
-        피증 += chaosMoonEffects.getEffects().get("적주피");
-        치적 += chaosMoonEffects.getEffects().get("치적");
-        적방어력 -= chaosMoonEffects.getEffects().get("방깎");
+        if (chaosMoonEffects.getEffects().get("치피증")!=null){
+            치명타시피증 += chaosMoonEffects.getEffects().get("치피증");
+        }
+        if (chaosMoonEffects.getEffects().get("적주피")!=null){
+            피증 += chaosMoonEffects.getEffects().get("적주피");
+        }
+        if (chaosMoonEffects.getEffects().get("치적")!=null){
+            치적 += chaosMoonEffects.getEffects().get("치적");
+        }
+        if (chaosMoonEffects.getEffects().get("방깎")!=null){
+            적방어력 -= chaosMoonEffects.getEffects().get("방깎");
+        }
 
 
         //별
         ArkGridResponseDto chaosStarEffects = chaosStar.getArkGrid(arkGridRequestDto);
-        공격력 += chaosStarEffects.getEffects().get("공격력");
-        공격력 += 공격력 * chaosStarEffects.getEffects().get("공퍼력");
-        무공 += chaosStarEffects.getEffects().get("무공");
-        무공 += 무공 * chaosStarEffects.getEffects().get("무공퍼");
+        if (chaosStarEffects.getEffects().get("공격력")!=null){
+            공격력 += chaosStarEffects.getEffects().get("공격력");
+        }
+        if (chaosStarEffects.getEffects().get("공퍼력")!=null){
+            공격력 += 공격력 * chaosStarEffects.getEffects().get("공퍼력");
+        }
+        if (chaosStarEffects.getEffects().get("무공")!=null){
+            무공 += chaosStarEffects.getEffects().get("무공");
+        }
+        if (chaosStarEffects.getEffects().get("무공퍼")!=null){
+            무공 += 무공 * chaosStarEffects.getEffects().get("무공퍼");
+        }
+
 
         //장비
         double AdditionalDmg = equipmentsDto.getAdditionalDamage();
