@@ -16,8 +16,17 @@ public class skillsDto {
     @Getter
     @AllArgsConstructor
     public static class TripodListDto {
-
         private List<String> tripodName;
+        private RuneDataDto runeData;
+    }
+
+    @Getter
+    @AllArgsConstructor
+    public static class RuneDataDto {
+        private String runeName;
+        private String runeGrade;
+        private String runeIcon;
+        private String runeDescription;
     }
 }
 
