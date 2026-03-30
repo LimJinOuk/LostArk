@@ -5,11 +5,11 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.*;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridRequestDto;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridResponseDto;
 import com.jinouk.lostark.simulator.dto.simulateRun.run.RunRequestDto;
-import com.jinouk.lostark.simulator.dto.simulateRun.run.RunResponseDto;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.skill.identitySkillsDto;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.skill.skillsDto;
 import com.jinouk.lostark.simulator.postProcess.skillPostProcess;
 import com.jinouk.lostark.simulator.service.arkCoreCalc.ArkGridService;
+import com.jinouk.lostark.simulator.service.simulatorRun.destroyersr;
 import com.jinouk.lostark.simulator.service.simulatorService;
 import com.jinouk.lostark.simulator.service.simulatorSkillService;
 import lombok.RequiredArgsConstructor;
@@ -23,7 +23,6 @@ import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3001"})
 public class simulatorController {
 
     private final simulatorService service;
@@ -79,27 +78,19 @@ public class simulatorController {
         System.out.println("수신된 각인 정보: " + engravingDto.toString());
         return "각인 데이터 수신 성공!";
     }
+
+    private final destroyersr destroyer;
+
     @PostMapping("/simulatorRun")
-    public RunResponseDto run(@RequestBody RunRequestDto runDto) {
-        ArkGridResponseDto arkGridResult = arkGridService.getArkGrid(runDto.getArkGrid());
+    public ResponseEntity<?> run(@RequestBody RunRequestDto runDto) {
+        if (runDto.getCharacterClass() == "디스트로이어"){
+            destroyer.srdestroyer( runDto.getAccessories() , runDto.getArkGrid() , runDto.getArkPassive() ,
+                    runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel());
 
-        List<skillPostProcess> processedSkills = skillService
-                .parsingSkillPostProcess(runDto.getCharacterName(), runDto.getSkills())
-                .block();
-
-        // 2. 응답 객체 생성 및 데이터 매핑
-        return RunResponseDto.builder()
-                .characterName(runDto.getCharacterName())
-                .characterClass(runDto.getCharacterClass())
-                .equipments(runDto.getEquipments())
-                .accessories(runDto.getAccessories())
-                .jewel(runDto.getJewel())
-                .gemEffect(runDto.getGemEffect())
-                .engraving(runDto.getEngraving())
-                .arkGrid(arkGridResult.getEffects())
-                .skills(processedSkills)
-                .identitySkills(runDto.getIdentitySkills())
-                .arkPassive(runDto.getArkPassive())
-                .build();
+        }
+        return destroyer.srdestroyer( runDto.getAccessories() , runDto.getArkGrid() , runDto.getArkPassive() ,
+                runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel());
     }
+
+
 }

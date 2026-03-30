@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Slf4j
@@ -354,6 +355,20 @@ public class sR {
         //보석
         double jewelbonus = jewelDto.getTotalGemAtkBonus();
         공증 += jewelbonus;
+
+        //각인
+        List<engravingDto.engravingsList> engravingsLists = engravingDto.getEngravings();
+
+        for (engravingDto.engravingsList engravings : engravingsLists) {
+            String engravingName = engravings.getName();
+            String engravingGrade = engravings.getGrade();
+            int engravingLevel = engravings.getLevel();
+            int abillityStoneLv = engravings.getAbilityStoneLevel();
+
+            if (engravingName == "기습의 대가"){
+                
+            }
+        }
 
 
         Map<String , Double> res = new HashMap<>();

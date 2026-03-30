@@ -4,6 +4,7 @@ package com.jinouk.lostark.simulator.service.simulatorRun;
 
 import com.jinouk.lostark.simulator.dto.simulateRun.child.*;
 import com.jinouk.lostark.simulator.dto.simulateRun.child.arkgrid.ArkGridRequestDto;
+import com.jinouk.lostark.simulator.service.ArkPassiveService.evolutioncalc;
 import com.jinouk.lostark.simulator.service.ArkPassiveService.job.destroyer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class destroyersr {
     private final destroyer destroyer;
+    private final evolutioncalc evolutioncalc;
     private final sR sr;
 
     //스킬 리스트 만들어 놔야 함.
