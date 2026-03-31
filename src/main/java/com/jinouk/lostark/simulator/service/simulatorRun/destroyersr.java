@@ -28,8 +28,7 @@ public class destroyersr {
     private final destroyer destroyer;
     private final evolutioncalc evolutioncalc;
     private final sR sr;
-
-
+    private final evolutioncalc evolutioncalc1;
 
     public ResponseEntity<?> srdestroyer(accessoriesDto accessoriesDto , ArkGridRequestDto arkGridRequestDto, ArkPassiveDTO arkPassiveDTO ,
                                          engravingDto engravingDto , equipmentsDto equipmentsDto ,
@@ -103,9 +102,9 @@ public class destroyersr {
 
         적방어력 = normal.get("적방어력");
 
-        치명타_적중률 = dt.get치명타_적중률();
-        치명타_피해 = dt.get치명타_피해();
-        적주피= dt.get적주피();
+        치명타_적중률 = dt.get치명타_적중률() + 치적;
+        치명타_피해 = dt.get치명타_피해() + 치피증;
+        적주피= dt.get적주피() + 피증;
         해방_스킬_피해= dt.get해방_스킬_피해();
         중수_치적= dt.get중수_치적();
         중수_피해= dt.get중수_피해();
@@ -117,6 +116,6 @@ public class destroyersr {
         //추피 x 피증 x 치피증 x 치명타시피증
 
 
-        return ResponseEntity.ok(normal);
+        return ResponseEntity.ok(dt);
     }
 }
