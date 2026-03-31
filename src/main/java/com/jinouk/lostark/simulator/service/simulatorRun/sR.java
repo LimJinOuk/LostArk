@@ -364,10 +364,9 @@ public class sR {
             String engravingGrade = engravings.getGrade();
             int engravingLevel = engravings.getLevel();
             int abillityStoneLv = engravings.getAbilityStoneLevel();
-
-            if (engravingName == "기습의 대가"){
-                
-            }
+            String description = engravings.getDescription();
+            Map<String, Double> calcDescription = EngravingCalc.calc(engravingName, description);
+            System.out.println("calcDescription: " + calcDescription);
         }
 
 
