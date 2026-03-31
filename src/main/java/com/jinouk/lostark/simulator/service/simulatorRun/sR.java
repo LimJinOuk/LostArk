@@ -37,9 +37,16 @@ public class sR {
 
         double 추피 = 0;
         double 피증 = 0;
+        double 헤드피증 = 0;
+        double 백피증 = 0;
+        double 타대피증 = 0;
+        double 돌대피증 = 0;
+
+        double 이속증 = 0;
 
         double 치적 = 0;
         double 치피증 = 0;
+        double 치피감소 = 0;
         double 치명타시피증 = 0;
 
         double 적방어력 = 5850;
@@ -238,7 +245,7 @@ public class sR {
 
 
         //반지4
-        accessoriesDto.AccessoryItem ring_4 = accessories.get("반지_3");
+        accessoriesDto.AccessoryItem ring_4 = accessories.get("반지_4");
         //반지4 힘민지
         int ring_4_Stat = ring_4.getCurrentStat();
         //반지4 옵션1
@@ -366,7 +373,36 @@ public class sR {
             int abillityStoneLv = engravings.getAbilityStoneLevel();
             String description = engravings.getDescription();
             Map<String, Double> calcDescription = EngravingCalc.calc(engravingName, description);
-            System.out.println("calcDescription: " + calcDescription);
+            if (calcDescription.containsKey("피증")){
+                피증 += calcDescription.get("피증");
+                if (calcDescription.get("헤드어택시 추가 피증") != null){
+                    헤드피증 += calcDescription.get("헤드어택시 추가 피증");
+                }
+                if (calcDescription.get("백어택시 추가 피증")!=null){
+                    백피증 += calcDescription.get("백어택시 추가 피증");
+                }
+                if (calcDescription.get("헤드어택시 추가 피증")!=null){
+                    타대피증 += calcDescription.get("헤드어택시 추가 피증");
+                }
+            }
+            if (calcDescription.get("돌대피증")!= null){
+                돌대피증 += calcDescription.get("돌대피증");
+            }
+            if (calcDescription.get("공증")!=null){
+                공증 += calcDescription.get("공증");
+            }
+            if (calcDescription.get("치피증")!=null){
+                치피증 += calcDescription.get("치피증");
+            }
+            if (calcDescription.get("이속증")!=null){
+                이속증 += calcDescription.get("이속증");
+            }
+            if (calcDescription.get("치피감소")!=null){
+                치피감소 += calcDescription.get("치피감소");
+            }
+            if (calcDescription.get("치적")!=null){
+                치적 += calcDescription.get("치적");
+            }
         }
 
 
@@ -377,8 +413,14 @@ public class sR {
         res.put("공격력" , 공격력);
         res.put("추피" , 추피);
         res.put("피증" , 피증);
+        res.put("헤드피증" , 헤드피증);
+        res.put("백피증" , 백피증);
+        res.put("타대피증" , 타대피증);
+        res.put("돌대피증" , 돌대피증);
+        res.put("이속증" , 이속증);
         res.put("치적" , 치적);
         res.put("치피증" , 치피증);
+        res.put("치피감소" , 치피감소);
         res.put("치명타시피증" , 치명타시피증);
         res.put("적방어력" , 적방어력);
 
