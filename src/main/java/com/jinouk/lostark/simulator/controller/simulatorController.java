@@ -17,6 +17,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -83,7 +84,7 @@ public class simulatorController {
     private final destroyersr destroyer;
 
     @PostMapping("/simulatorRun")
-    public ResponseEntity<?> run(@RequestBody RunRequestDto runDto) {
+    public ResponseEntity<?> run(@RequestBody RunRequestDto runDto) throws IOException {
         if (runDto.getCharacterClass() == "디스트로이어"){
             destroyer.srdestroyer( runDto.getAccessories() , runDto.getArkGrid() , runDto.getArkPassive() ,
                     runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel());
