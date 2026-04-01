@@ -13,7 +13,7 @@ import java.util.Map;
 @Service
 public class destroyer {
 
-    public destroyerdto destroyer( ArkPassiveDTO dto) {
+    public destroyerdto destroyer( ArkPassiveDTO dto , int 치명 , int 특화 , int 신속) {
 
         destroyerdto destroyerdto = new destroyerdto();
         evolutioncalc evolutioncalc = new evolutioncalc();
@@ -31,10 +31,7 @@ public class destroyer {
         double 중수_피해= 0.0;
         double 중수_치피= 0.0;
 
-        //TODO : 치명 값을 진화 기준(ex : 10 , 20 , 30)이 아니라 스탯 기준(ex : 1183 / 1333 )으로 바꾸기
-        int 치명 = evolution.getOrDefault("치명", 0) * 50;
-        int 특화 = evolution.getOrDefault("특화", 0);
-        int 신속 = evolution.getOrDefault("신속", 0);
+
         int 금단의_주문 = evolution.getOrDefault("금단의 주문", 0);
         int 예리한_감각 = evolution.getOrDefault("예리한 감각", 0);
         int 한계_돌파 = evolution.getOrDefault("한계 돌파", 0);
@@ -64,6 +61,9 @@ public class destroyer {
         int 새로운_코어 = enlightment.getOrDefault("새로운 코어", 0);
 
         치명타_적중률 += evolutioncalc.get치적(치명 , 예리한_감각 ,혼신의_강타,일격, 달인, 뭉툭한_가시);
+
+        치명타_피해 += evolutioncalc.get치피(일격);
+
         if (날카로운_해머 > 0){치명타_적중률 += 날카로운_해머 * 6;}
         if (분노의_망치 > 0 ) { 치명타_피해 += 분노의_망치 * 15; }
         if( 해방_강화 > 0 ){
