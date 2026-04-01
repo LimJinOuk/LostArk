@@ -1,0 +1,135 @@
+[
+  {
+    "name": "헤비 크러쉬",
+    "direct": "헤드",
+    "type": "일반스킬",
+    "category": "집속스킬",
+    "dmg": 840
+  },
+  {
+    "name": "그라비티 임팩트",
+    "direct": "타대",
+    "type": "일반스킬",
+    "category": "집속스킬",
+    "dmg": 1170
+  },
+  {
+    "name": "드레드노트",
+    "direct": "헤드",
+    "type": "일반스킬",
+    "category": "집속스킬",
+    "dmg": 1130
+  },
+  {
+    "name": "파워 스트라이크",
+    "direct": "헤드",
+    "type": "일반스킬",
+    "category": "집속스킬",
+    "dmg": 1900
+  },
+  {
+    "name": "점핑 스매쉬",
+    "direct": "헤드",
+    "type": "지점스킬",
+    "category": "집속스킬",
+    "dmg": 1260
+  },
+  {
+    "name": "파워 숄더",
+    "direct": "타대",
+    "type": "콤보스킬",
+    "category": "집속스킬",
+    "dmg": 1300
+  },
+  {
+    "name": "어스 스매셔",
+    "direct": "헤드",
+    "type": "일반스킬",
+    "category": "집속스킬",
+    "dmg": 2900
+  },
+  {
+    "name": "러닝 크래쉬",
+    "direct": "타대",
+    "type": "홀딩스킬",
+    "category": "집속스킬",
+    "dmg": 2100
+  },
+  {
+    "name": "그라비티 포스",
+    "direct": "타대",
+    "type": "일반스킬",
+    "category": "집속스킬",
+    "dmg": 1300
+  },
+  {
+    "name": "인듀어 페인",
+    "direct": "헤드",
+    "type": "일반스킬",
+    "category": "집속스킬",
+    "dmg": 2000
+  },
+  {
+    "name": "어스 이터",
+    "direct": "헤드",
+    "type": "일반스킬",
+    "category": "해방스킬",
+    "dmg": 3100
+  },
+  {
+    "name": "풀 스윙",
+    "direct": "헤드",
+    "type": "차지스킬",
+    "category": "해방스킬",
+    "dmg": 3400
+  },
+  {
+    "name": "뉴트럴라이저",
+    "direct": "헤드",
+    "type": "콤보스킬",
+    "category": "해방스킬",
+    "dmg": 2300
+  },
+  {
+    "name": "어스 웨이브",
+    "direct": "헤드",
+    "type": "일반스킬",
+    "category": "해방스킬",
+    "dmg": 2800
+  },
+  {
+    "name": "퍼펙트 스윙",
+    "direct": "헤드백",
+    "type": "차지스킬",
+    "category": "해방스킬",
+    "dmg": 6100
+  },
+  {
+    "name": "그라비티 컴프레이션",
+    "direct": "타대",
+    "type": "홀딩스킬",
+    "category": "해방스킬",
+    "dmg": 2600
+  },
+  {
+    "name": "사이즈믹 해머",
+    "direct": "해드백",
+    "type": "일반스킬",
+    "category": "해방스킬",
+    "dmg": 3700
+  },
+  {
+    "name": "슈퍼노바",
+    "direct": "헤드",
+    "type": "차지스킬",
+    "category": "초각성스킬",
+    "dmg": 33867
+  },
+  {
+    "name": "체인 스트라이크",
+    "direct": "헤드",
+    "type": "콤보스킬",
+    "category": "초각성스킬",
+    "dmg": 56230
+  }
+]
