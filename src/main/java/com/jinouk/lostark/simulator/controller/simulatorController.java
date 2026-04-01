@@ -21,10 +21,10 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
 public class simulatorController {
 
     private final simulatorService service;
@@ -85,13 +85,16 @@ public class simulatorController {
 
     @PostMapping("/simulatorRun")
     public ResponseEntity<?> run(@RequestBody RunRequestDto runDto) throws IOException {
-        if (runDto.getCharacterClass() == "디스트로이어"){
+        System.out.println("Asdfasdfasdfasdf" + runDto.getCharacterClass());
+        if (Objects.equals(runDto.getCharacterClass(), "디스트로이어")){
+            System.out.println("asfffffffffffffffffffff : " + runDto.getProfiles());
             destroyer.srdestroyer( runDto.getAccessories() , runDto.getArkGrid() , runDto.getArkPassive() ,
-                    runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel());
+                    runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel() , runDto.getProfiles());
 
         }
+        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx : " + runDto.getProfiles());
         return destroyer.srdestroyer( runDto.getAccessories() , runDto.getArkGrid() , runDto.getArkPassive() ,
-                runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel());
+                runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel(), runDto.getProfiles());
     }
 
 
