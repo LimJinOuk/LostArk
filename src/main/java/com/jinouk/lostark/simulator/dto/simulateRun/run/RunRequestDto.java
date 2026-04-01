@@ -27,11 +27,6 @@ public class RunRequestDto {
     private skillsDto skills;
     private identitySkillsDto identitySkills;
     private ArkPassiveDTO arkPassive;
-    private List<profileData> profiles;
+    private List<Map<String, Integer>> profiles;
 
-    @Getter
-    @AllArgsConstructor
-    private static class profileData{
-        private Map<String, Integer> data;
-    }
 }
