@@ -11,7 +11,7 @@ public class evolutioncalc {
     double 진피 = 0.0;
     double 공이속 = 100.0;
     double 치피증 = 100.0;
-
+    double 치피 = 200.0;
     public double get치적(int 치명 , int 예리한_감각 , int 혼신의_강타 , int 일격 , int 달인 , int 뭉툭한_가시){
         double CritProb = 0.0;
         if(뭉툭한_가시 == 1){
@@ -68,6 +68,12 @@ public class evolutioncalc {
             치적 = CritProb;
             return 치적;
         }
+    }
+
+    public double get치피 (int 일격)
+    {
+        치피 += 일격  * 16;
+        return 치피;
     }
 
     public double get공이속 (int 신속){
