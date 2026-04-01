@@ -7,6 +7,9 @@ import com.jinouk.lostark.simulator.dto.simulateRun.child.skill.identitySkillsDt
 import com.jinouk.lostark.simulator.dto.simulateRun.child.skill.skillsDto;
 import lombok.*;
 
+import java.util.List;
+import java.util.Map;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -24,4 +27,11 @@ public class RunRequestDto {
     private skillsDto skills;
     private identitySkillsDto identitySkills;
     private ArkPassiveDTO arkPassive;
+    private List<profileData> profiles;
+
+    @Getter
+    @AllArgsConstructor
+    private static class profileData{
+        private Map<String, Integer> data;
+    }
 }
