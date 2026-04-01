@@ -49,7 +49,7 @@ public class sR {
         double 치피감소 = 0;
         double 치명타시피증 = 0;
 
-        double 적방어력 = 5850;
+        double 적방어력 = 100;
 
         //악세사리
         Map<String, accessoriesDto.AccessoryItem> accessories = accessoriesDto.getAccessories();
