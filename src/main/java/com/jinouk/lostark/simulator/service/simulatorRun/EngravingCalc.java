@@ -63,7 +63,6 @@ public class EngravingCalc {
         while (matcher.find()) {
             values.add(Double.parseDouble(matcher.group()));
         }
-        System.out.println("sex : " + values);
         return values;
     }
 }
