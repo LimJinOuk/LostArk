@@ -84,17 +84,16 @@ public class simulatorController {
     private final destroyersr destroyer;
 
     @PostMapping("/simulatorRun")
-    public ResponseEntity<?> run(@RequestBody RunRequestDto runDto) throws IOException {
-        System.out.println("Asdfasdfasdfasdf" + runDto.getCharacterClass());
+    public boolean run(@RequestBody RunRequestDto runDto) throws IOException {
+        System.out.println("캐릭터 클래스 : " + runDto.getCharacterClass());
         if (Objects.equals(runDto.getCharacterClass(), "디스트로이어")){
-            System.out.println("asfffffffffffffffffffff : " + runDto.getProfiles());
+            System.out.println("치특신 : " + runDto.getProfiles());
             destroyer.srdestroyer( runDto.getAccessories() , runDto.getArkGrid() , runDto.getArkPassive() ,
                     runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel() , runDto.getProfiles());
 
         }
-        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx : " + runDto.getProfiles());
-        return destroyer.srdestroyer( runDto.getAccessories() , runDto.getArkGrid() , runDto.getArkPassive() ,
-                runDto.getEngraving() , runDto.getEquipments() , runDto.getGemEffect() , runDto.getJewel(), runDto.getProfiles());
+
+        return true;
     }
 
 
