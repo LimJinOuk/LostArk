@@ -26,14 +26,18 @@ public class evolutioncalc {
             if(CritProbForEvDmg >0){
                 double EvDmg = CritProbForEvDmg * 1.25;
                 if(EvDmg > 52.5){
-                    진피 += 52.5;
+                    진피 = 52.5;
                 }
                 else {
-                    진피 += EvDmg;
+                    진피 = EvDmg;
                 }
+                System.out.println("뭉가 1 채택시 진화 노드 계산으로 인한 치적 값 : " + 80.0);
+                System.out.println("뭉가 1 채택시 진화 노드 계산으로 인한 진피 값 : " + 진피);
                 return 80.0;
             }
             else {
+                System.out.println("뭉가 1 채택시 진화 노드 계산으로 인한 치적 값 : " + 80.0);
+                System.out.println("뭉가 1 채택시 진화 노드 계산으로 인한 진피 값 : " + 진피);
                 return 80.0;
             }
         } else if (뭉툭한_가시 == 2){
@@ -48,14 +52,18 @@ public class evolutioncalc {
             if(CritProbForEvDmg >0){
                 double EvDmg = CritProbForEvDmg * 1.50;
                 if(EvDmg > 75){
-                    진피 += 75;
+                    진피 = 75;
                 }
                 else {
-                    진피 += EvDmg;
+                    진피 = EvDmg;
                 }
+                System.out.println("뭉가 2 채택시 진화 노드 계산으로 인한 치적 값 : " + 80.0);
+                System.out.println("뭉가 2 채택시 진화 노드 계산으로 인한 진피 값 : " + 진피);
                 return 80.0;
             }
             else {
+                System.out.println("뭉가 2 채택시 진화 노드 계산으로 인한 치적 값 : " + 80.0);
+                System.out.println("뭉가 2 채택시 진화 노드 계산으로 인한 진피 값 : " + 진피);
                 return 80.0;
             }
 
@@ -66,6 +74,9 @@ public class evolutioncalc {
             CritProb += 일격 * 10.0;
             CritProb += 달인 * 7.0;
             치적 = CritProb;
+            System.out.println("뭉가 0 채택시 진화 노드 계산으로 인한 치적 값 : " + 치적);
+            System.out.println("뭉가 0 채택시 진화 노드 계산으로 인한 진피 값 : " + 진피);
+            System.out.println("진화 노드 계산으로 인한 치적 값 : " + 치적);
             return 치적;
         }
     }
@@ -73,11 +84,13 @@ public class evolutioncalc {
     public double get치피 (int 일격)
     {
         치피 += 일격  * 16;
+        System.out.println("진화 노드 계산으로 인한 치피 값 : " + 치피);
         return 치피;
     }
 
     public double get공이속 (int 신속){
         공이속 += 신속 * 0.0172;
+        System.out.println("진화 노드 계산으로 인한 공이속 값 : " + 공이속);
         return 공이속;
     }
 
